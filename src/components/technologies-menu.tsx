@@ -5,49 +5,49 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const hireTalentItems = [
-  { label: "Generative AI", href: "#" },
-  { label: "DevOps", href: "#" },
-  { label: "Lead Generation", href: "#" },
-  { label: "Product Development", href: "#" },
-  { label: "Web Application Development", href: "#" },
-  { label: "Mobile App Development", href: "#" },
-  { label: "ERP & CRM Implementation", href: "#" },
-  { label: "eCommerce Development", href: "#" },
-  { label: "QA / Software Testing", href: "#" },
-  { label: "Salesforce", href: "#" },
+  { label: "Generative AI", href: "/hire/generative-ai" },
+  { label: "DevOps", href: "/hire/devops" },
+  { label: "Lead Generation", href: "/hire/lead-generation" },
+  { label: "Product Development", href: "/hire/product-development" },
+  { label: "Web Application Development", href: "/hire/web-application-development" },
+  { label: "Mobile App Development", href: "/hire/mobile-app-development" },
+  { label: "ERP & CRM Implementation", href: "/hire/erp-crm-implementation" },
+  { label: "eCommerce Development", href: "/hire/ecommerce-development" },
+  { label: "QA / Software Testing", href: "/hire/qa-software-testing" },
+  { label: "Salesforce", href: "/hire/salesforce" },
 ];
 
 const technologies = {
   frontend: [
-    { label: "AngularJS", href: "#" },
-    { label: "ReactJS", href: "#" },
-    { label: "Vue.js", href: "#" },
-    { label: "Node.js", href: "#" },
+    { label: "AngularJS", href: "/technology/angularjs" },
+    { label: "ReactJS", href: "/technology/reactjs" },
+    { label: "Vue.js", href: "/technology/vuejs" },
+    { label: "Node.js", href: "/technology/nodejs" },
   ],
   mobile: [
-    { label: "React Native", href: "#" },
-    { label: "Flutter", href: "#" },
-    { label: "iOS Swift", href: "#" },
-    { label: "Android", href: "#" },
-    { label: "iOS", href: "#" },
+    { label: "React Native", href: "/technology/react-native" },
+    { label: "Flutter", href: "/technology/flutter" },
+    { label: "iOS Swift", href: "/technology/ios-swift" },
+    { label: "Android", href: "/technology/android" },
+    { label: "iOS", href: "/technology/ios" },
   ],
   backend: [
-    { label: "PHP", href: "#" },
-    { label: "Ruby on Rails", href: "#" },
-    { label: "Java", href: "#" },
-    { label: "Python", href: "#" },
-    { label: ".NET", href: "#" },
-    { label: "Golang", href: "#" },
-    { label: "Magento", href: "#" },
+    { label: "PHP", href: "/technology/php" },
+    { label: "Ruby on Rails", href: "/technology/ruby-on-rails" },
+    { label: "Java", href: "/technology/java" },
+    { label: "Python", href: "/technology/python" },
+    { label: ".NET", href: "/technology/dotnet" },
+    { label: "Golang", href: "/technology/golang" },
+    { label: "Magento", href: "/technology/magento" },
   ],
   others: [
-    { label: "MEAN Stack", href: "#" },
-    { label: "MERN Stack", href: "#" },
-    { label: "DevOps – Azure", href: "#" },
-    { label: "DevOps – AWS", href: "#" },
-    { label: "Dynamics CRM", href: "#" },
-    { label: "Testing", href: "#" },
-    { label: "C# / MVC", href: "#" },
+    { label: "MEAN Stack", href: "/technology/mean-stack" },
+    { label: "MERN Stack", href: "/technology/mern-stack" },
+    { label: "DevOps – Azure", href: "/technology/devops-azure" },
+    { label: "DevOps – AWS", href: "/technology/devops-aws" },
+    { label: "Dynamics CRM", href: "/technology/dynamics-crm" },
+    { label: "Testing", href: "/technology/testing" },
+    { label: "C# / MVC", href: "/technology/csharp-mvc" },
   ],
 };
 
@@ -93,7 +93,7 @@ export function TechnologiesMenu() {
                     ))}
                   </ul>
                   <Link
-                    href="#"
+                    href="/hire/dedicated-team"
                     className="mt-5 inline-block rounded-[4px] bg-primary px-4 py-2.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-primary-600 hover:shadow-lg"
                   >
                     Hire Dedicated Team

@@ -5,29 +5,29 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const whoWeServe = [
-  { label: "Startups", href: "#" },
-  { label: "Scaleups", href: "#" },
-  { label: "Enterprises", href: "#" },
-  { label: "Product / SaaS firm", href: "#" },
-  { label: "IT Staff Agency", href: "#" },
+  { label: "Startups", href: "/industries/startups" },
+  { label: "Scaleups", href: "/industries/scaleups" },
+  { label: "Enterprises", href: "/industries/enterprises" },
+  { label: "Product / SaaS firm", href: "/industries/saas" },
+  { label: "IT Staff Agency", href: "/industries/it-staff" },
 ];
 
 const industriesColumn1 = [
-  { label: "Education & Learning", href: "#" },
-  { label: "Finance & Banking", href: "#" },
-  { label: "Food and Beverage", href: "#" },
-  { label: "Healthcare", href: "#" },
-  { label: "Manufacturing", href: "#" },
-  { label: "Media & Entertainment", href: "#" },
+  { label: "Education & Learning", href: "/industries/education" },
+  { label: "Finance & Banking", href: "/industries/finance" },
+  { label: "Food and Beverage", href: "/industries/food" },
+  { label: "Healthcare", href: "/industries/healthcare" },
+  { label: "Manufacturing", href: "/industries/manufacturing" },
+  { label: "Media & Entertainment", href: "/industries/media" },
 ];
 
 const industriesColumn2 = [
-  { label: "Real Estate", href: "#" },
-  { label: "Retail & Commerce", href: "#" },
-  { label: "Sports", href: "#" },
-  { label: "Telecommunication", href: "#" },
-  { label: "Transport & Logistics", href: "#" },
-  { label: "Travel & Hospitality", href: "#" },
+  { label: "Real Estate", href: "/industries/real-estate" },
+  { label: "Retail & Commerce", href: "/industries/retail" },
+  { label: "Sports", href: "/industries/sports" },
+  { label: "Telecommunication", href: "/industries/telecom" },
+  { label: "Transport & Logistics", href: "/industries/logistics" },
+  { label: "Travel & Hospitality", href: "/industries/travel" },
 ];
 
 export function IndustriesMenu() {
@@ -53,10 +53,10 @@ export function IndustriesMenu() {
             transition={{ duration: 0.25, ease: "easeOut" }}
             className="absolute left-1/2 top-full z-[10000] w-[1100px] -translate-x-1/2"
           >
-            <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_10px_35px_rgba(0,0,0,0.12)] border border-gray-200">
+            <div className="overflow-hidden rounded-[12px] bg-white shadow-[0_10px_35px_rgba(0,0,0,0.12)] border border-gray-200">
               <div className="flex gap-[60px] px-[50px] py-9">
                 <div className="w-[200px] flex-shrink-0">
-                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
+                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-gray-500">
                     Who We Serve
                   </h3>
                   <ul className="space-y-[13px]">
@@ -74,7 +74,7 @@ export function IndustriesMenu() {
                 </div>
 
                 <div className="w-[280px] flex-shrink-0 border-l border-gray-200 pl-[50px]">
-                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
+                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-gray-500">
                     Industries
                   </h3>
                   <ul className="space-y-[13px]">
@@ -92,7 +92,7 @@ export function IndustriesMenu() {
                 </div>
 
                 <div className="w-[280px] flex-shrink-0">
-                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
+                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-gray-500">
                     Industries
                   </h3>
                   <ul className="space-y-[13px]">

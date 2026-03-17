@@ -8,22 +8,22 @@ const menuItems = [
   {
     title: "SecureSmartz",
     subtitle: "Cybersecurity Solutions",
-    href: "#",
+    href: "/secure-smartz",
   },
   {
     title: "CyberSmartz",
     subtitle: "AI for All Businesses",
-    href: "#",
+    href: "/cyber-smartz",
   },
   {
     title: "QASmartz",
     subtitle: "Quality Assurance & Automation Testing",
-    href: "#",
+    href: "/qa-smartz",
   },
   {
     title: "DataSmartz360",
     subtitle: "Data & Analytics Solutions",
-    href: "#",
+    href: "/data-smartz360",
   },
 ];
 
@@ -48,10 +48,10 @@ export function EnterpriseMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute left-0 top-full z-[10000] w-[300px]"
+            className="absolute left-0 top-full z-[10000] w-[320px]"
           >
             <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_8px_25px_rgba(0,0,0,0.12)] border border-gray-200">
-              <div className="p-4">
+              <div className="p-3">
                 {menuItems.map((item) => (
                   <Link
                     key={item.title}
@@ -61,7 +61,7 @@ export function EnterpriseMenu() {
                     <span className="text-[15px] font-semibold text-[#333] group-hover:text-primary transition-colors duration-200">
                       {item.title}
                     </span>
-                    <span className="mt-1 text-[13px] italic text-[#666]">
+                    <span className="mt-0.5 text-[13px] italic text-[#666]">
                       {item.subtitle}
                     </span>
                   </Link>
