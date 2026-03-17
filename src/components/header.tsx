@@ -5,11 +5,11 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { MegaMenu } from "./mega-menu";
+import { EnterpriseMenu } from "./enterprise-menu";
+import { IndustriesMenu } from "./industries-menu";
 
 const navItems = [
-  { label: "Key Offerings", href: "#" },
-  { label: "Enterprise Solutions", href: "#" },
-  { label: "Industries", href: "#" },
   { label: "Technologies", href: "#" },
   { label: "Resources", href: "#" },
   { label: "About", href: "#" },
@@ -40,6 +40,9 @@ export function Header() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8">
+          <MegaMenu />
+          <EnterpriseMenu />
+          <IndustriesMenu />
           {navItems.map((item) => (
             <Link
               key={item.label}
@@ -47,7 +50,6 @@ export function Header() {
               className="group flex items-center gap-1 text-sm font-medium text-muted hover:text-primary transition-colors duration-150"
             >
               {item.label}
-              <ChevronDown className="h-4 w-4 opacity-50 group-hover:opacity-100 transition-opacity" />
             </Link>
           ))}
         </nav>
@@ -80,6 +82,27 @@ export function Header() {
             className="lg:hidden border-t border-muted/10 bg-surface"
           >
             <nav className="flex flex-col p-content-x py-6 gap-4">
+              <Link
+                href="#"
+                className="text-base font-medium text-muted hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Key Offerings
+              </Link>
+              <Link
+                href="#"
+                className="text-base font-medium text-muted hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Enterprise Solutions
+              </Link>
+              <Link
+                href="#"
+                className="text-base font-medium text-muted hover:text-primary transition-colors py-2"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Industries
+              </Link>
               {navItems.map((item) => (
                 <Link
                   key={item.label}
