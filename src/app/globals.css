@@ -1,0 +1,247 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0B3D91;
+  --color-primary-600: #1157E0;
+  --color-primary-400: #4C7BFF;
+
+  --color-accent-teal: #14B8A6;
+  --color-accent-gold: #F59E0B;
+
+  --color-text: #0F172A;
+  --color-muted: #475569;
+  --color-surface: #FFFFFF;
+  --color-surface-2: #F8FAFC;
+
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-danger: #EF4444;
+
+  --color-bg: #FFFFFF;
+  --color-card-shadow: rgba(11,61,145,0.08);
+
+  --color-cta: var(--color-primary);
+  --color-cta-text: #FFFFFF;
+
+  --font-syne: 'Syne', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
+
+  --text-xs: 11px;
+  --text-sm: 12px;
+  --text-base: 13px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 18px;
+  --text-2xl: 22px;
+  --text-3xl: 28px;
+  --text-hero: 36px;
+
+  --radius-input: 8px;
+  --radius-button: 10px;
+  --radius-card: 16px;
+  --radius-panel: 20px;
+  --radius-modal: 24px;
+
+  --height-navbar: 72px;
+  --height-header: 80px;
+
+  --padding-hero: 120px;
+  --padding-section: 96px;
+  --padding-content-x: 80px;
+  --padding-content-y: 72px;
+  --padding-card: 24px;
+
+  --gap-grid: 24px;
+  --gap-grid-lg: 32px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 120px;
+}
+
+.dark {
+  --color-primary: #4C7BFF;
+  --color-primary-600: #2B63FF;
+  --color-accent-teal: #2DD4BF;
+  --color-accent-gold: #FBBF24;
+
+  --color-text: #E6EEF8;
+  --color-muted: #94A3B8;
+  --color-surface: #0B1220;
+  --color-surface-2: #071028;
+
+  --color-bg: #071028;
+  --color-card-shadow: rgba(0,0,0,0.45);
+
+  --color-cta-text: #071028;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-400: var(--color-primary-400);
+  --color-accent-teal: var(--color-accent-teal);
+  --color-accent-gold: var(--color-accent-gold);
+  --color-text: var(--color-text);
+  --color-muted: var(--color-muted);
+  --color-surface: var(--color-surface);
+  --color-surface-2: var(--color-surface-2);
+  --color-success: var(--color-success);
+  --color-warning: var(--color-warning);
+  --color-danger: var(--color-danger);
+  --color-bg: var(--color-bg);
+  --color-cta: var(--color-cta);
+  --color-cta-text: var(--color-cta-text);
+
+  --font-syne: var(--font-syne);
+  --font-dm-sans: var(--font-dm-sans);
+  --font-jetbrains: var(--font-jetbrains);
+
+  --text-xs: var(--text-xs);
+  --text-sm: var(--text-sm);
+  --text-base: var(--text-base);
+  --text-md: var(--text-md);
+  --text-lg: var(--text-lg);
+  --text-xl: var(--text-xl);
+  --text-2xl: var(--text-2xl);
+  --text-3xl: var(--text-3xl);
+  --text-hero: var(--text-hero);
+
+  --radius-input: var(--radius-input);
+  --radius-button: var(--radius-button);
+  --radius-card: var(--radius-card);
+  --radius-panel: var(--radius-panel);
+  --radius-modal: var(--radius-modal);
+
+  --height-navbar: var(--height-navbar);
+  --height-header: var(--height-header);
+
+  --padding-hero: var(--padding-hero);
+  --padding-section: var(--padding-section);
+  --padding-content-x: var(--padding-content-x);
+  --padding-content-y: var(--padding-content-y);
+  --padding-card: var(--padding-card);
+
+  --gap-grid: var(--gap-grid);
+  --gap-grid-lg: var(--gap-grid-lg);
+
+  --space-1: var(--space-1);
+  --space-2: var(--space-2);
+  --space-3: var(--space-3);
+  --space-4: var(--space-4);
+  --space-5: var(--space-5);
+  --space-6: var(--space-6);
+  --space-7: var(--space-7);
+  --space-8: var(--space-8);
+  --space-9: var(--space-9);
+  --space-10: var(--space-10);
+}
+
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-dm-sans);
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.skeleton {
+  background: linear-gradient(90deg, var(--color-surface-2) 25%, var(--color-surface) 50%, var(--color-surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeSlideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+}
+
+.animate-fade-slide-in {
+  animation: fadeSlideIn 200ms ease-out forwards;
+}
+
+.animate-fade-slide-out {
+  animation: fadeSlideOut 200ms ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 200ms ease-out forwards;
+}
+
+.animate-scale-out {
+  animation: scaleOut 200ms ease-out forwards;
+}
+
+.animate-card-hover {
+  transition: transform 150ms ease-out, border-color 150ms ease-out;
+}
+
+.animate-card-hover:hover {
+  transform: translateY(-2px);
+}
+
+.animate-button {
+  transition: all 100ms ease-out;
+}
+
+.animate-button:hover {
+  transform: scale(1.02);
+}
+
+.animate-button:active {
+  transform: scale(0.98);
+}
