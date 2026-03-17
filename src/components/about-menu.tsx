@@ -4,28 +4,33 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
-const leftColumnItems = [
-  { label: "Case Studies", href: "#" },
-  { label: "Clients Experiences", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Webinars", href: "#" },
-  { label: "Press Release", href: "#" },
-  { label: "Expert Q & A", href: "#" },
-  { label: "Podcasts", href: "#" },
-  { label: "Whitepapers", href: "#" },
+const column1 = [
+  { label: "Our Story", href: "#" },
+  { label: "25+ Years of Excellence", href: "#" },
+  { label: "Why Netsmartz", href: "#" },
+  { label: "Timeline", href: "#" },
+  { label: "Leadership Team", href: "#" },
+  { label: "Life at Netsmartz", href: "#" },
+  { label: "Netsmartz Academy", href: "#" },
+  { label: "Learning & Development", href: "#" },
 ];
 
-const rightColumnItems = [
-  { label: "eBooks", href: "#" },
-  { label: "Brochure", href: "#" },
-  { label: "Infographics", href: "#" },
-  { label: "Tech Tales", href: "#" },
-  { label: "SaaS Masterclasses", href: "#" },
-  { label: "FAQ", href: "#" },
-  { label: "All Resources", href: "#" },
+const column2 = [
+  { label: "AI-First Culture", href: "#" },
+  { label: "Sustainability", href: "#" },
+  { label: "Talent Stories", href: "#" },
+  { label: "The GPW Journal", href: "#" },
+  { label: "Events", href: "#" },
+  { label: "We're Hiring", href: "#" },
+  { label: "Giving Back", href: "#" },
+  { label: "Referral Partners", href: "#" },
 ];
 
-export function ResourcesMenu() {
+const column3 = [
+  { label: "Thought Leadership", href: "#" },
+];
+
+export function AboutMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -35,7 +40,7 @@ export function ResourcesMenu() {
       onMouseLeave={() => setIsOpen(false)}
     >
       <button className="flex items-center gap-2 text-[16px] font-medium text-[#2d2d2d] transition-all duration-200 hover:text-primary">
-        Resources
+        About Us
         <ChevronDown className="h-4 w-4 opacity-60" />
       </button>
 
@@ -46,13 +51,13 @@ export function ResourcesMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute right-0 top-full z-[10000] w-[580px]"
+            className="absolute right-0 top-full z-[10000] w-[720px]"
           >
             <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_10px_35px_rgba(0,0,0,0.12)] border border-gray-200">
-              <div className="flex gap-[50px] px-8 py-7">
+              <div className="flex gap-[40px] px-6 py-6">
                 <div className="flex-1">
                   <ul className="space-y-[11px]">
-                    {leftColumnItems.map((item) => (
+                    {column1.map((item) => (
                       <li key={item.label}>
                         <Link
                           href={item.href}
@@ -67,7 +72,22 @@ export function ResourcesMenu() {
 
                 <div className="flex-1">
                   <ul className="space-y-[11px]">
-                    {rightColumnItems.map((item) => (
+                    {column2.map((item) => (
+                      <li key={item.label}>
+                        <Link
+                          href={item.href}
+                          className="block text-[15px] text-[#333] font-medium transition-all duration-200 hover:text-primary hover:underline"
+                        >
+                          {item.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="flex-1">
+                  <ul className="space-y-[11px]">
+                    {column3.map((item) => (
                       <li key={item.label}>
                         <Link
                           href={item.href}

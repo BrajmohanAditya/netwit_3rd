@@ -36,9 +36,9 @@ export function EnterpriseMenu() {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm font-medium text-muted hover:text-primary transition-colors duration-150">
+      <button className="flex items-center gap-2 text-[16px] font-medium text-[#2d2d2d] transition-all duration-200 hover:text-primary">
         Enterprise Solutions
-        <ChevronDown className="h-4 w-4 opacity-50" />
+        <ChevronDown className="h-4 w-4 opacity-60" />
       </button>
 
       <AnimatePresence>
@@ -48,7 +48,7 @@ export function EnterpriseMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -4 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute left-0 top-full z-50 w-[300px] pt-3"
+            className="absolute left-0 top-full z-[10000] w-[300px]"
           >
             <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_8px_25px_rgba(0,0,0,0.12)] border border-gray-200">
               <div className="p-4">

@@ -21,7 +21,7 @@ const staggerContainer = {
 
 export function Hero() {
   return (
-    <section className="relative flex min-h-screen items-center justify-center overflow-hidden bg-bg pt-header">
+    <section className="relative flex min-h-screen items-center justify-center bg-bg pt-header">
       <div className="absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
         <div className="absolute right-0 top-1/4 h-[500px] w-[500px] rounded-full bg-primary/10 blur-[120px]" />

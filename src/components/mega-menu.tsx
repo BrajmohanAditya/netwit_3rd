@@ -5,24 +5,23 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronRight } from "lucide-react";
 
-const leftColumnItems = [
-  { label: "Tailored Tech & Non-tech Teams", href: "#" },
-  { label: "DevOps", href: "#" },
-  { label: "Sales Acceleration", href: "#" },
-  { label: "QA & Automation Testing", href: "#" },
-  { label: "Accounting Services", href: "#" },
-  { label: "Customer Support", href: "#" },
-  { label: "Marketing Services", href: "#" },
-  { label: "Global Capability Center (GCC)", href: "#" },
+const servicesItems = [
+  { label: "DevOps", href: "/services/devops" },
+  { label: "Sales Acceleration", href: "/services/sales-acceleration" },
+  { label: "QA & Automation Testing", href: "/services/qa-automation-testing" },
+  { label: "Accounting Services", href: "/services/accounting-services" },
+  { label: "Customer Support", href: "/services/customer-support" },
+  { label: "Marketing Services", href: "/services/marketing-services" },
+  { label: "Global Capability Center (GCC)", href: "/services/global-capability-center" },
 ];
 
-const rightColumnItems = [
-  { label: "Cybersecurity", href: "#", badge: null },
-  { label: "ESG", href: "#", badge: null },
-  { label: "AI Pods", href: "#", badge: "NEW", arrow: false },
-  { label: "Data Pods", href: "#", badge: "NEW", arrow: true },
-  { label: "Azure Migration", href: "#", badge: "NEW", arrow: true },
-  { label: "Managed Detection Response", href: "#", badge: "NEW", arrow: true },
+const solutionsItems = [
+  { label: "Cybersecurity", href: "/solutions/cybersecurity", badge: null },
+  { label: "ESG", href: "/solutions/esg", badge: null },
+  { label: "AI Pods", href: "/solutions/ai-pods", badge: "NEW", arrow: false },
+  { label: "Data Pods", href: "/solutions/data-pods", badge: "NEW", arrow: true },
+  { label: "Azure Migration", href: "/solutions/azure-migration", badge: "NEW", arrow: true },
+  { label: "Managed Detection Response", href: "/solutions/managed-detection-response", badge: "NEW", arrow: true },
 ];
 
 export function MegaMenu() {
@@ -34,9 +33,9 @@ export function MegaMenu() {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm font-medium text-muted hover:text-primary transition-colors duration-150">
+      <button className="flex items-center gap-2 text-[16px] font-medium text-[#2d2d2d] transition-all duration-200 hover:text-primary">
         Key Offerings
-        <ChevronDown className="h-4 w-4 opacity-50" />
+        <ChevronDown className="h-4 w-4 opacity-60" />
       </button>
 
       <AnimatePresence>
@@ -46,7 +45,7 @@ export function MegaMenu() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute left-0 top-full z-50 w-[700px] -translate-x-1/4 pt-3"
+            className="absolute left-0 top-full z-[10000] w-[700px]"
           >
             <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_8px_30px_rgba(0,0,0,0.12)] border border-gray-200">
               <div className="flex p-5">
@@ -55,7 +54,7 @@ export function MegaMenu() {
                     Services
                   </h3>
                   <ul className="space-y-0.5">
-                    {leftColumnItems.map((item) => (
+                    {servicesItems.map((item) => (
                       <li key={item.label}>
                         <Link
                           href={item.href}
@@ -73,7 +72,7 @@ export function MegaMenu() {
                     Solutions
                   </h3>
                   <ul className="space-y-0.5">
-                    {rightColumnItems.map((item) => (
+                    {solutionsItems.map((item) => (
                       <li key={item.label}>
                         <Link
                           href={item.href}

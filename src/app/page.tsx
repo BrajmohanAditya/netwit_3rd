@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main>
+      <main className="overflow-visible">
         <Hero />
         <Statistics />
         <ServiceCards />

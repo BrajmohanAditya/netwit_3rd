@@ -60,9 +60,9 @@ export function TechnologiesMenu() {
       onMouseEnter={() => setIsOpen(true)}
       onMouseLeave={() => setIsOpen(false)}
     >
-      <button className="flex items-center gap-1 text-sm font-medium text-muted hover:text-primary transition-colors duration-150">
+      <button className="flex items-center gap-2 text-[16px] font-medium text-[#2d2d2d] transition-all duration-200 hover:text-primary">
         Technologies
-        <ChevronDown className="h-4 w-4 opacity-50" />
+        <ChevronDown className="h-4 w-4 opacity-60" />
       </button>
 
       <AnimatePresence>
@@ -71,21 +71,21 @@ export function TechnologiesMenu() {
             initial={{ opacity: 0, y: -8 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
-            transition={{ duration: 0.2, ease: "easeOut" }}
-            className="absolute left-1/2 top-full z-50 w-[1100px] -translate-x-1/2 pt-3"
+            transition={{ duration: 0.25, ease: "easeOut" }}
+            className="absolute left-1/2 top-full z-[10000] w-[1150px] -translate-x-1/2"
           >
-            <div className="overflow-hidden rounded-[12px] bg-white shadow-[0_10px_30px_rgba(0,0,0,0.08)]">
+            <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_10px_35px_rgba(0,0,0,0.12)] border border-gray-200">
               <div className="flex">
-                <div className="w-[320px] border-r border-[#eee] p-6">
-                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[1px] text-[#888]">
+                <div className="w-[300px] border-r border-gray-200 p-7">
+                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
                     Hire Talent For
                   </h3>
-                  <ul className="space-y-[10px]">
+                  <ul className="space-y-[11px]">
                     {hireTalentItems.map((item) => (
                       <li key={item.label}>
                         <Link
                           href={item.href}
-                          className="block text-sm text-[#222] transition-all duration-200 hover:translate-x-1 hover:text-primary"
+                          className="block text-[15px] text-[#333] transition-all duration-200 hover:text-primary hover:underline"
                         >
                           {item.label}
                         </Link>
@@ -94,25 +94,25 @@ export function TechnologiesMenu() {
                   </ul>
                   <Link
                     href="#"
-                    className="mt-6 inline-block rounded-[8px] bg-[#ff7a00] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#e66f00]"
+                    className="mt-5 inline-block rounded-[4px] bg-primary px-4 py-2.5 text-[14px] font-semibold text-white transition-all duration-200 hover:bg-primary-600 hover:shadow-lg"
                   >
                     Hire Dedicated Team
                   </Link>
                 </div>
 
-                <div className="flex-1 p-6">
-                  <h3 className="mb-4 text-xs font-semibold uppercase tracking-[1px] text-[#888]">
+                <div className="flex-1 p-7">
+                  <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
                     Technologies
                   </h3>
-                  <div className="grid grid-cols-4 gap-x-8 gap-y-3">
+                  <div className="grid grid-cols-4 gap-x-10 gap-y-3">
                     <div>
-                      <h4 className="mb-2 text-xs font-semibold text-[#666]">Frontend</h4>
-                      <ul className="space-y-[8px]">
+                      <h4 className="mb-3 text-[13px] font-semibold text-[#666]">Frontend</h4>
+                      <ul className="space-y-[10px]">
                         {technologies.frontend.map((item) => (
                           <li key={item.label}>
                             <Link
                               href={item.href}
-                              className="block text-sm text-[#222] transition-all duration-200 hover:translate-x-1 hover:text-primary"
+                              className="block text-[14px] text-[#333] transition-all duration-200 hover:text-primary hover:underline"
                             >
                               {item.label}
                             </Link>
@@ -122,13 +122,13 @@ export function TechnologiesMenu() {
                     </div>
 
                     <div>
-                      <h4 className="mb-2 text-xs font-semibold text-[#666]">Mobile</h4>
-                      <ul className="space-y-[8px]">
+                      <h4 className="mb-3 text-[13px] font-semibold text-[#666]">Mobile</h4>
+                      <ul className="space-y-[10px]">
                         {technologies.mobile.map((item) => (
                           <li key={item.label}>
                             <Link
                               href={item.href}
-                              className="block text-sm text-[#222] transition-all duration-200 hover:translate-x-1 hover:text-primary"
+                              className="block text-[14px] text-[#333] transition-all duration-200 hover:text-primary hover:underline"
                             >
                               {item.label}
                             </Link>
@@ -138,13 +138,13 @@ export function TechnologiesMenu() {
                     </div>
 
                     <div>
-                      <h4 className="mb-2 text-xs font-semibold text-[#666]">Backend</h4>
-                      <ul className="space-y-[8px]">
+                      <h4 className="mb-3 text-[13px] font-semibold text-[#666]">Backend</h4>
+                      <ul className="space-y-[10px]">
                         {technologies.backend.map((item) => (
                           <li key={item.label}>
                             <Link
                               href={item.href}
-                              className="block text-sm text-[#222] transition-all duration-200 hover:translate-x-1 hover:text-primary"
+                              className="block text-[14px] text-[#333] transition-all duration-200 hover:text-primary hover:underline"
                             >
                               {item.label}
                             </Link>
@@ -154,13 +154,13 @@ export function TechnologiesMenu() {
                     </div>
 
                     <div>
-                      <h4 className="mb-2 text-xs font-semibold text-[#666]">Others</h4>
-                      <ul className="space-y-[8px]">
+                      <h4 className="mb-3 text-[13px] font-semibold text-[#666]">Others</h4>
+                      <ul className="space-y-[10px]">
                         {technologies.others.map((item) => (
                           <li key={item.label}>
                             <Link
                               href={item.href}
-                              className="block text-sm text-[#222] transition-all duration-200 hover:translate-x-1 hover:text-primary"
+                              className="block text-[14px] text-[#333] transition-all duration-200 hover:text-primary hover:underline"
                             >
                               {item.label}
                             </Link>
