@@ -2,6 +2,47 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ArrowRight, CheckCircle, LineChart, Lightbulb, Settings, LifeBuoy } from "lucide-react";
 import Link from "next/link";
+import { ToolsSlider } from "@/components/tools-slider";
+import { TrustedBySlider } from "@/components/trusted-by-slider";
+
+// CSS-rendered AWS Certification Badge component
+const AwsBadge = ({ label, color = "purple", type = "SPECIALTY" }: { label: React.ReactNode, color?: "purple" | "teal", type?: string }) => {
+  const bgColor = color === "purple" ? "bg-[#522b91]" : "bg-[#007b82]";
+  return (
+    <div className={`relative w-[80px] sm:w-[85px] h-[90px] sm:h-[95px] ${bgColor} flex flex-col items-center justify-center p-1.5 text-center text-white font-bold leading-tight drop-shadow-sm`}
+         style={{ clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)" }}>
+      <span className="text-[10px] opacity-90 mb-0.5 tracking-wider">aws</span>
+      <span className="text-[8.5px] leading-[1.15]">{label}</span>
+      <span className="text-[6px] opacity-80 mt-1 tracking-widest">{type}</span>
+    </div>
+  );
+};
+
+// CSS-rendered Azure Certification Shield component
+const AzureBadge = ({ label, type = "ASSOCIATE", stars = 2 }: { label: React.ReactNode, type?: string, stars?: number }) => {
+  return (
+    <div 
+      className="relative w-[90px] sm:w-[95px] h-[100px] sm:h-[105px] flex flex-col items-center bg-[#005ea5] drop-shadow-md"
+      style={{ clipPath: "polygon(0 0, 100% 0, 100% 75%, 50% 100%, 0 75%)" }}
+    >
+       <div className="absolute top-0 left-0 right-0 h-[26px] bg-[#001e36]"></div>
+       <div className="relative z-10 w-full h-full flex flex-col items-center justify-between py-1.5">
+         <div className="text-[6px] text-white mt-1 leading-[1.1] font-semibold tracking-wider text-center">Microsoft<br/>CERTIFIED</div>
+         <div className="bg-white w-[100%] text-[#001e36] text-[7.5px] sm:text-[8px] font-extrabold py-2 px-1 flex items-center justify-center text-center leading-[1.1] shadow-sm">
+           {label}
+         </div>
+         <div className="flex flex-col items-center mb-1.5">
+           <div className="text-white text-[6px] font-bold tracking-widest uppercase">{type}</div>
+           <div className="flex gap-0.5 mt-0.5">
+             {Array.from({ length: stars }).map((_, i) => (
+               <span key={i} className="text-white text-[8px] leading-none">★</span>
+             ))}
+           </div>
+         </div>
+       </div>
+    </div>
+  );
+};
 
 export default function DevOpsPage() {
   return (
@@ -144,6 +185,8 @@ export default function DevOpsPage() {
             </div>
           </div>
         </section>
+
+        <TrustedBySlider />
 
         {/* Trusted Expertise Section - Force Reload */}
         <section className="py-20 bg-white">
@@ -360,6 +403,69 @@ export default function DevOpsPage() {
                   SaaS business.
                 </p>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <ToolsSlider />
+
+        {/* Certifications Section */}
+        <section className="py-24 bg-[#f8fafc]">
+          <div className="max-w-[1240px] mx-auto px-6">
+            <div className="grid lg:grid-cols-2 gap-16 lg:gap-8 items-center">
+              
+              {/* Left Side: Badges */}
+              <div className="flex flex-col items-center gap-10">
+                {/* AWS Badges */}
+                <div className="flex flex-col items-center gap-2 relative">
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <AwsBadge label={<>SAP on AWS</>} />
+                    <AwsBadge label={<>Security</>} />
+                    <AwsBadge label={<>Machine<br/>Learning</>} />
+                    <AwsBadge label={<>Database</>} />
+                    <AwsBadge label={<>Data<br/>Analytics</>} />
+                  </div>
+                  <div className="flex flex-wrap gap-2 justify-center">
+                    <AwsBadge label={<>Advanced<br/>Networking</>} />
+                    <AwsBadge label={<>DevOps<br/>Engineer</>} color="teal" type="PROFESSIONAL" />
+                    <AwsBadge label={<>Solutions<br/>Architect</>} color="teal" type="PROFESSIONAL" />
+                  </div>
+                </div>
+
+                {/* Azure Badges */}
+                <div className="flex flex-col items-center gap-3">
+                  <div className="flex flex-wrap gap-3 justify-center">
+                    <AzureBadge label={<>AZURE<br/>DEVOPS ENGINEER</>} type="EXPERT" stars={3} />
+                    <AzureBadge label={<>AZURE<br/>ADMINISTRATOR</>} type="ASSOCIATE" stars={2} />
+                    <AzureBadge label={<>AZURE SECURITY<br/>ENGINEER</>} type="ASSOCIATE" stars={2} />
+                    <AzureBadge label={<>AZURE SOLUTIONS<br/>ARCHITECT</>} type="EXPERT" stars={3} />
+                    <AzureBadge label={<>AZURE<br/>AI ENGINEER</>} type="ASSOCIATE" stars={2} />
+                  </div>
+                  <div className="flex flex-wrap gap-3 justify-center">
+                    <AzureBadge label={<>AZURE<br/>DATA ENGINEER</>} type="ASSOCIATE" stars={2} />
+                  </div>
+                </div>
+              </div>
+
+              {/* Right Side: Text & Buttons */}
+              <div className="flex flex-col justify-center lg:pl-12">
+                <h2 className="text-[32px] lg:text-[40px] font-bold text-gray-900 mb-6 leading-[1.15]">
+                  Certified Microsoft Azure and <br className="hidden lg:block" />
+                  <span className="text-[var(--color-primary)]">AWS Proficiency</span>
+                </h2>
+                <p className="text-[#6b7280] text-[16px] lg:text-[17px] mb-10 leading-relaxed max-w-[500px]">
+                  Craft innovative solutions and exceptional customer journeys by harnessing our leading cloud-based capability and AI.
+                </p>
+                <div className="flex flex-col gap-4">
+                  <button className="bg-[var(--color-primary)] hover:bg-[#ea580c] text-white font-bold py-4 px-8 rounded flex items-center justify-center gap-3 transition-colors w-full sm:w-[380px] shadow-sm hover:shadow-md text-[16px]">
+                    Hire AWS DevOps Engineer <ArrowRight className="w-5 h-5" />
+                  </button>
+                  <button className="bg-black hover:bg-gray-800 text-white font-bold py-4 px-8 rounded flex items-center justify-center gap-3 transition-colors w-full sm:w-[380px] shadow-sm hover:shadow-md text-[16px]">
+                    Hire Azure DevOps Engineer <ArrowRight className="w-5 h-5" />
+                  </button>
+                </div>
+              </div>
+
             </div>
           </div>
         </section>
