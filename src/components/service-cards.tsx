@@ -55,19 +55,19 @@ const cardHover: Variants = {
 
 export function ServiceCards() {
   return (
-    <section id="services" className="bg-bg py-section">
-      <div className="mx-auto max-w-[1200px] px-content-x">
+    <section id="services" className="bg-bg py-12 sm:py-section">
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mb-12 text-center"
+          className="mb-8 sm:mb-12 text-center"
         >
-          <h2 className="font-syne text-3xl font-bold text-text md:text-4xl">
+          <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl font-bold text-text">
             What Are You Looking to Do?
           </h2>
-          <p className="mx-auto mt-4 max-w-[600px] text-base text-muted">
+          <p className="mx-auto mt-3 sm:mt-4 max-w-[600px] text-sm sm:text-base text-muted px-2">
             Explore our comprehensive range of services designed to transform your business
           </p>
         </motion.div>
@@ -77,7 +77,7 @@ export function ServiceCards() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-6 md:grid-cols-2"
+          className="grid gap-4 sm:gap-6 md:grid-cols-2"
         >
           {services.map((service) => (
             <motion.div
@@ -85,24 +85,24 @@ export function ServiceCards() {
               variants={fadeSlideIn}
               transition={{ duration: 0.4, ease: "easeOut" }}
               whileHover="hover"
-              className="group relative overflow-hidden rounded-card border border-muted/20 bg-surface p-8 transition-colors hover:border-primary/30"
+              className="group relative overflow-hidden rounded-card border border-muted/20 bg-surface p-5 sm:p-6 lg:p-8 transition-colors hover:border-primary/30"
             >
               <motion.div
                 variants={cardHover}
-                className="flex flex-col gap-4"
+                className="flex flex-col gap-3 sm:gap-4"
               >
-                <div className={`inline-flex h-14 w-14 items-center justify-center rounded-panel bg-${service.color}/10`}>
-                  <service.icon className={`h-7 w-7 text-${service.color}`} />
+                <div className={`inline-flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-panel bg-${service.color}/10`}>
+                  <service.icon className={`h-6 w-6 sm:h-7 sm:w-7 text-${service.color}`} />
                 </div>
-                <h3 className="font-syne text-xl font-bold text-text">
+                <h3 className="font-syne text-lg sm:text-xl font-bold text-text">
                   {service.title}
                 </h3>
-                <p className="text-base text-muted">{service.description}</p>
+                <p className="text-sm sm:text-base text-muted">{service.description}</p>
                 <Link
                   href="#contact"
-                  className="mt-2 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-colors group-hover:gap-3"
+                  className="mt-1 sm:mt-2 inline-flex items-center gap-2 text-xs sm:text-sm font-semibold text-primary transition-colors group-hover:gap-3"
                 >
-                  Learn More <ArrowRight className="h-4 w-4" />
+                  Learn More <ArrowRight className="h-3 w-3 sm:h-4 sm:w-4" />
                 </Link>
               </motion.div>
             </motion.div>

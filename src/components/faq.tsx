@@ -40,21 +40,21 @@ export function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section className="bg-bg py-section">
+    <section className="bg-bg py-12 sm:py-section">
       <motion.div
         initial={{ opacity: 0, y: 8 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.4, ease: "easeOut" }}
-        className="mx-auto max-w-[800px] px-content-x"
+        className="mx-auto max-w-[800px] px-4 sm:px-6"
       >
-        <div className="mb-12 text-center">
-          <h2 className="font-syne text-3xl font-bold text-text md:text-4xl">
+        <div className="mb-8 sm:mb-12 text-center">
+          <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl font-bold text-text">
             Frequently Asked Questions
           </h2>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-2 sm:space-y-3">
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
@@ -66,11 +66,11 @@ export function FAQ() {
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex w-full items-center justify-between p-5 text-left transition-colors hover:bg-surface-2"
+                className="flex w-full items-center justify-between p-4 sm:p-5 text-left transition-colors hover:bg-surface-2"
               >
-                <span className="font-medium text-text">{faq.question}</span>
+                <span className="font-medium text-text text-sm sm:text-base pr-2">{faq.question}</span>
                 <ChevronDown
-                  className={`h-5 w-5 text-muted transition-transform duration-200 ${
+                  className={`h-4 w-4 sm:h-5 sm:w-5 text-muted transition-transform duration-200 flex-shrink-0 ${
                     openIndex === index ? "rotate-180" : ""
                   }`}
                 />
@@ -83,8 +83,8 @@ export function FAQ() {
                     exit={{ height: 0, opacity: 0 }}
                     transition={{ duration: 0.2, ease: "easeOut" }}
                   >
-                    <div className="border-t border-muted/20 p-5">
-                      <p className="text-base text-muted">{faq.answer}</p>
+                    <div className="border-t border-muted/20 p-4 sm:p-5">
+                      <p className="text-sm sm:text-base text-muted">{faq.answer}</p>
                     </div>
                   </motion.div>
                 )}

@@ -25,13 +25,13 @@ const staggerContainer = {
 
 export function Statistics() {
   return (
-    <section className="bg-surface-2 py-section">
+    <section className="bg-surface-2 py-12 sm:py-section">
       <motion.div
         variants={staggerContainer}
         initial="initial"
         whileInView="animate"
         viewport={{ once: true, margin: "-100px" }}
-        className="mx-auto flex max-w-[1200px] justify-around px-content-x"
+        className="mx-auto max-w-[1200px] px-4 sm:px-6 grid grid-cols-2 md:flex md:justify-around gap-6 sm:gap-8"
       >
         {stats.map((stat, index) => (
           <motion.div
@@ -40,10 +40,10 @@ export function Statistics() {
             transition={{ duration: 0.4, ease: "easeOut" }}
             className="flex flex-col items-center text-center"
           >
-            <span className="font-syne text-4xl font-bold text-primary md:text-5xl">
+            <span className="font-syne text-3xl sm:text-4xl md:text-5xl font-bold text-primary">
               {stat.value}
             </span>
-            <span className="mt-2 text-base text-muted">{stat.label}</span>
+            <span className="mt-1 sm:mt-2 text-sm sm:text-base text-muted">{stat.label}</span>
           </motion.div>
         ))}
       </motion.div>

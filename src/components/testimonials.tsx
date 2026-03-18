@@ -40,16 +40,16 @@ const staggerContainer = {
 
 export function Testimonials() {
   return (
-    <section className="bg-surface-2 py-section">
-      <div className="mx-auto max-w-[1200px] px-content-x">
+    <section className="bg-surface-2 py-12 sm:py-section">
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-          className="mb-12 text-center"
+          className="mb-8 sm:mb-12 text-center"
         >
-          <h2 className="font-syne text-3xl font-bold text-text md:text-4xl">
+          <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl font-bold text-text">
             Client Testimonials
           </h2>
         </motion.div>
@@ -59,26 +59,26 @@ export function Testimonials() {
           initial="initial"
           whileInView="animate"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid gap-6 md:grid-cols-3"
+          className="grid gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3"
         >
           {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.author}
               variants={fadeSlideIn}
               transition={{ duration: 0.4, ease: "easeOut" }}
-              className="group rounded-card border border-muted/20 bg-surface p-6 transition-colors hover:border-primary/30"
+              className="group rounded-card border border-muted/20 bg-surface p-5 sm:p-6 transition-colors hover:border-primary/30"
             >
-              <div className="mb-4 text-4xl text-primary/30">"</div>
-              <p className="mb-6 text-base text-muted">{testimonial.quote}</p>
-              <div className="flex items-center gap-4">
-                <div className="h-12 w-12 rounded-full bg-primary/20" />
+              <div className="mb-3 sm:mb-4 text-3xl sm:text-4xl text-primary/30">"</div>
+              <p className="mb-4 sm:mb-6 text-sm sm:text-base text-muted">{testimonial.quote}</p>
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="h-10 w-10 sm:h-12 sm:w-12 rounded-full bg-primary/20" />
                 <div>
-                  <p className="font-semibold text-text">{testimonial.author}</p>
-                  <p className="text-sm text-muted">{testimonial.role}</p>
+                  <p className="font-semibold text-text text-sm sm:text-base">{testimonial.author}</p>
+                  <p className="text-xs sm:text-sm text-muted">{testimonial.role}</p>
                 </div>
               </div>
-              <button className="mt-6 flex items-center gap-2 text-sm font-medium text-primary transition-colors hover:text-primary-600">
-                <Play className="h-4 w-4" /> Watch Video
+              <button className="mt-4 sm:mt-6 flex items-center gap-2 text-xs sm:text-sm font-medium text-primary transition-colors hover:text-primary-600">
+                <Play className="h-3 w-3 sm:h-4 sm:w-4" /> Watch Video
               </button>
             </motion.div>
           ))}
