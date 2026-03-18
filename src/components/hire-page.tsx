@@ -41,21 +41,8 @@ function PageContent({ title, subtitle, description, features, benefits }: {
     <>
       <Header />
       <main className="pt-[80px]">
-        {/* Breadcrumb */}
-        <div className="bg-gray-50 py-4">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="flex items-center gap-2 text-sm text-gray-500">
-              <Link href="/" className="hover:text-primary">Home</Link>
-              <span>/</span>
-              <Link href="/" className="hover:text-primary">Hire Talent</Link>
-              <span>/</span>
-              <span className="text-gray-900">{title}</span>
-            </div>
-          </div>
-        </div>
-
         {/* Hero Section */}
-        <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 py-20 lg:py-24">
+        <section className="relative overflow-hidden bg-gradient-to-b from-white to-gray-50 pt-12 pb-20 lg:pt-16 lg:pb-24">
           <div className="absolute inset-0 opacity-30">
             <svg className="absolute top-0 right-0 w-1/2 h-full" viewBox="0 0 800 800" fill="none">
               <circle cx="400" cy="400" r="300" stroke="#E5E7EB" strokeWidth="1" strokeDasharray="4 4" />
