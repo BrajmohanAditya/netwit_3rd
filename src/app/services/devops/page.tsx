@@ -43,7 +43,7 @@ export default function DevOpsPage() {
                   y2="100%"
                 >
                   <stop offset="0%" stopColor="#0B3D91" stopOpacity="0.1" />
-                  <stop offset="50%" stopColor="#F97316" stopOpacity="0.05" />
+                  <stop offset="50%" stopColor="var(--color-primary)" stopOpacity="0.05" />
                   <stop offset="100%" stopColor="#0B3D91" stopOpacity="0.1" />
                 </linearGradient>
               </defs>
@@ -103,7 +103,7 @@ export default function DevOpsPage() {
               {/* CTA Button */}
               <Link
                 href="#contact"
-                className="inline-flex items-center gap-3 bg-[#ff7a20] text-white px-8 py-4 rounded-lg font-semibold shadow-xl transition-transform transform hover:scale-105"
+                className="inline-flex items-center gap-3 bg-[var(--color-cta)] text-white px-8 py-4 rounded-lg font-semibold shadow-xl transition-transform transform hover:scale-105"
               >
                 Accelerate SaaS Growth with AI-First DevOps
                 <ArrowRight className="w-5 h-5" />
@@ -114,36 +114,30 @@ export default function DevOpsPage() {
                 <span className="text-sm text-gray-400 font-medium">
                   Powered by:
                 </span>
-                <div className="flex items-center gap-6">
+                <div className="flex items-center gap-8">
                   {/* AWS */}
-                  <div className="h-8 flex items-center text-gray-400 font-medium text-sm tracking-wide">
-                    <svg
-                      className="h-6 w-auto"
-                      viewBox="0 0 64 24"
-                      fill="currentColor"
-                    >
-                      <path d="M6.69 15.63c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77V9.74l2.7-2.7c.67-.67.67-1.77 0-2.44-.67-.67-1.77-.67-2.44 0l-3.8 3.8c-.67.67-.67 1.77 0 2.44l.67.67v4.16zm17.94.12c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-3.46l1.77-4.16 3.45 7.62c.34.79 1.12 1.35 1.97 1.35.67 0 1.35-.34 1.77-.9l1.9-3.12v3.46c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-5.84c0-1.12-.9-1.9-1.9-1.9h-1.23l-2.93-6.49c-.45-1.01-1.46-1.68-2.58-1.68-1.12 0-2.13.67-2.58 1.68l-2.93 6.49h-1.23c-1 0-1.9.78-1.9 1.9v5.84zm21.19-1.77c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-5.84c0-.9-.67-1.68-1.57-1.8l-3.91-.56c-.79-.11-1.46.45-1.57 1.24v.11l-1.68 5.84c-.11.79.45 1.46 1.24 1.57l3.91.56c.9.12 1.57.9 1.57 1.68v.2zm8.69-.12c0 .9.67 1.68 1.57 1.8l3.91.56c.79.11 1.46-.45 1.57-1.24v-.11l1.68-5.84c.11-.79-.45-1.46-1.24-1.57l-3.91-.56c-.9-.12-1.57-.9-1.57-1.68v-.2c0-.98-.79-1.77-1.77-1.77s-1.77.79-1.77 1.77v5.84zm-53.32.12c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-5.84c0-.9.67-1.68 1.57-1.8l3.91-.56c.79-.11 1.46.45 1.57 1.24v.11l1.68 5.84c.11.79-.45 1.46-1.24 1.57l-3.91.56c-.9.12-1.57.9-1.57 1.68v.2zm8.69-.12c0 .9.67 1.68 1.57 1.8l3.91.56c.79.11 1.46-.45 1.57-1.24v-.11l1.68-5.84c.11-.79-.45-1.46-1.24-1.57l-3.91-.56c-.9-.12-1.57-.9-1.57-1.68v-.2c0-.98-.79-1.77-1.77-1.77s-1.77.79-1.77 1.77v5.84zm17.82-1.57l-2.7-5.73c-.23-.45-.79-.79-1.35-.79h-2.36c-.56 0-1.12.34-1.35.79l-2.7 5.73h10.46zm-14.16-7.17h2.13l1.35-3.46h3.8l1.35 3.46h2.01l-4.37-10.28h-2.15l-4.12 10.28zm46.96 8.73c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-3.46l1.77-4.16 3.45 7.62c.34.79 1.12 1.35 1.97 1.35.67 0 1.35-.34 1.77-.9l1.9-3.12v3.46c0 .98.79 1.77 1.77 1.77s1.77-.79 1.77-1.77v-5.84c0-1.12-.9-1.9-1.9-1.9h-1.23l-2.93-6.49c-.45-1.01-1.46-1.68-2.58-1.68-1.12 0-2.13.67-2.58 1.68l-2.93 6.49h-1.23c-1 0-1.9.78-1.9 1.9v5.84z" />
-                    </svg>
+                  <div className="h-8 flex items-center">
+                    <img
+                      src="/aws.svg"
+                      alt="AWS"
+                      className="h-8 w-auto object-contain"
+                    />
                   </div>
                   {/* Azure */}
-                  <div className="h-8 flex items-center text-gray-400 font-medium text-sm tracking-wide">
-                    <svg
-                      className="h-6 w-auto"
-                      viewBox="0 0 78 24"
-                      fill="currentColor"
-                    >
-                      <path d="M2.5 2.5h12v12H18V7.5h-4v-5h-4v5h-4.5v5h5v7.5h-5.5V18h-6.5v-12h6v-3.5zm21 0h12v12H30V7.5h-4v-5h-4v5h-4.5v5h5v7.5h-5.5V18h-6.5v-12h6v-3.5zm-10.5 9.5h5v5h-5v-5zm10.5 0h5v5h-5v-5z" />
-                    </svg>
+                  <div className="h-8 flex items-center">
+                    <img
+                      src="/azure.svg"
+                      alt="Azure"
+                      className="h-8 w-auto object-contain"
+                    />
                   </div>
                   {/* Google Cloud */}
-                  <div className="h-8 flex items-center text-gray-400 font-medium text-sm tracking-wide">
-                    <svg
-                      className="h-6 w-auto"
-                      viewBox="0 0 120 24"
-                      fill="currentColor"
-                    >
-                      <path d="M30.1 11.1c0-2.2-1.2-4.1-3.3-4.6v-.5c0-.5-.4-1-1-1s-1 .4-1 1v.5c-2.2.5-3.6 2.5-3.6 4.7 0 2.7 2.1 4.4 5.9 5.6 2.9.9 3.7 2.1 3.7 3.4 0 1.5-1.3 2.8-3.4 3.2v.5c0 .5-.4 1-1 1s-1-.4-1-1v-.5c-2.2-.5-3.7-2.5-3.7-4.7 0-2.7 2.1-4.4 5.9-5.6 2.9-.9 3.7-2.1 3.7-3.4zM16 4.7c1.8 0 3.3 1.3 3.3 3.1 0 1.7-1.4 3.1-3.3 3.1s-3.3-1.4-3.3-3.1c0-1.8 1.4-3.1 3.3-3.1zM16 15.3c-1.8 0-3.3-1.4-3.3-3.1 0-1.8 1.4-3.1 3.3-3.1s3.3 1.4 3.3 3.1c0 1.8-1.4 3.1-3.3 3.1zM38.8 5l-7.6 13.1c-.6 1-1.8 1.4-2.9.9-.3-.1-.6-.3-.9-.5L21 14.9c-.6-.5-.9-1.3-.9-2.1V5h6.3v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.1v14.4c0 1.7 1.3 3.1 3 3.1s3-1.3 3-3.1V5h-2.7zM48.7 5l-7.6 13.1c-.6 1-1.8 1.4-2.9.9-.3-.1-.6-.3-.9-.5l-6.4-3.5c-.6-.5-.9-1.3-.9-2.1V5h6.3v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.1v14.4c0 1.7 1.3 3.1 3 3.1s3-1.3 3-3.1V5h-2.9zM67.8 5l-7.6 13.1c-.6 1-1.8 1.4-2.9.9-.3-.1-.6-.3-.9-.5l-6.4-3.5c-.6-.5-.9-1.3-.9-2.1V5h6.3v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.1v14.4c0 1.7 1.3 3.1 3 3.1s3-1.3 3-3.1V5h-2.8zM82.6 5H75l-4.4 7.1c-.5.8-1.6 1.2-2.6.9l-.3-.1-4.6-2.2c-.5-.2-.8-.7-.8-1.3V5h6.2v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.7v15.9c0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9V5h-2.4zM96.3 5l-7.6 13.1c-.6 1-1.8 1.4-2.9.9-.3-.1-.6-.3-.9-.5l-6.4-3.5c-.6-.5-.9-1.3-.9-2.1V5h6.3v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.1v14.4c0 1.7 1.3 3.1 3 3.1s3-1.3 3-3.1V5h-2.9zM115 5h-7.6l-4.4 7.1c-.5.8-1.6 1.2-2.6.9l-.3-.1-4.6-2.2c-.5-.2-.8-.7-.8-1.3V5h6.2v2.4c0 .5.4 1 1 1s1-.4 1-1V5h7.7v15.9c0 1.6 1.3 2.9 2.9 2.9s2.9-1.3 2.9-2.9V5h-2.5z" />
-                    </svg>
+                  <div className="h-8 flex items-center">
+                    <img
+                      src="/gcp.svg"
+                      alt="Google Cloud Platform"
+                      className="h-8 w-auto object-contain"
+                    />
                   </div>
                 </div>
               </div>
@@ -151,38 +145,34 @@ export default function DevOpsPage() {
           </div>
         </section>
 
-        {/* Bottom Text Section */}
-        <section className="py-16 bg-gray-100">
-          <div className="max-w-[900px] mx-auto px-6 text-center">
-            <h2 className="text-[22px] lg:text-[26px] font-semibold text-gray-900 mb-6">
-              DevOps Can Make or{" "}
-              <span className="text-[#f97316]">Break Your Go-To-Market</span>
+        {/* Trusted Expertise Section - Force Reload */}
+        <section className="py-20 bg-white">
+          <div className="max-w-[1000px] mx-auto px-6 text-center">
+            <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
+              <span className="text-[var(--color-primary)]">Trusted</span> DevOps Expertise
             </h2>
-            <p className="text-[14px] lg:text-[16px] text-[#6b7280] leading-relaxed max-w-[800px] mx-auto">
-              Netsmartz empowers SaaS businesses with AI-based DevOps solutions
-              and services that accelerate development while maintaining
-              flexibility, ensuring seamless adaptation to evolving needs. Our
-              AI-enhanced pipelines ensure faster releases, fewer errors, and
-              smarter decision-making at every stage of your product lifecycle.
+            <p className="text-[15px] lg:text-[17px] text-[#6b7280] leading-relaxed mb-14 mx-auto max-w-[900px]">
+              We are your reliable SaaS and AI partners offering industry-leading AI-based DevOps services and solutions in the US that go beyond automation. By embedding AI-driven DevOps into your processes, we ensure intelligent deployments, predictive maintenance, and continuous innovation.
             </p>
-          </div>
-        </section>
 
-        {/* Stats Section */}
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            {/* Stats Card */}
+            <div className="bg-white rounded-2xl shadow-[0_8px_40px_rgba(0,0,0,0.08)] py-12 px-6 border border-gray-100 flex flex-col md:flex-row items-center justify-between divide-y md:divide-y-0 md:divide-x divide-gray-300">
               {[
-                { value: "50%+", label: "Faster Deployments" },
-                { value: "2000+", label: "Clients Served" },
-                { value: "1500+", label: "DevOps Experts" },
-                { value: "99.9%", label: "Uptime Guaranteed" },
+                { value: "150+", label: "Certified Talent" },
+                { value: "12+", label: "Industries" },
+                { value: "300+", label: "Happy Clients" },
+                { value: "10+", label: "Locations" },
               ].map((stat, index) => (
-                <div key={index} className="text-center">
-                  <div className="text-4xl lg:text-5xl font-bold text-gray-900 mb-2">
+                <div
+                  key={index}
+                  className="flex-1 flex flex-col items-center justify-center w-full py-6 md:py-0"
+                >
+                  <div className="text-[40px] lg:text-[50px] font-bold text-[var(--color-primary)] mb-2 leading-none tracking-tight">
                     {stat.value}
                   </div>
-                  <div className="text-gray-600">{stat.label}</div>
+                  <div className="text-gray-600 text-[15px] font-medium tracking-wide">
+                    {stat.label}
+                  </div>
                 </div>
               ))}
             </div>
@@ -193,12 +183,11 @@ export default function DevOpsPage() {
         <section className="py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-                Key Features
+              <h2 className="text-3xl lg:text-[40px] font-bold text-gray-900 mb-6">
+                Comprehensive DevOps Services
               </h2>
-              <p className="text-lg text-gray-600 max-w-[600px] mx-auto">
-                Comprehensive DevOps solutions designed to transform your
-                business
+              <p className="text-[16px] lg:text-[18px] text-[#4b5563] leading-relaxed max-w-[850px] mx-auto">
+                Get AI-powered DevOps automation designed to enhance efficiency, scalability, and innovation. From seamless integrations to intelligent automation with AI, our expertise ensures peak performance at every stage.
               </p>
             </div>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -280,10 +269,10 @@ export default function DevOpsPage() {
                 </ul>
               </div>
               <div className="relative">
-                <div className="absolute inset-0 bg-[#F97316]/10 rounded-3xl transform rotate-3"></div>
+                <div className="absolute inset-0 bg-[var(--color-primary)]/10 rounded-3xl transform rotate-3"></div>
                 <div className="relative bg-white p-10 rounded-3xl border border-gray-100 shadow-lg">
                   <div className="text-center">
-                    <div className="text-6xl font-bold text-[#F97316] mb-2">
+                    <div className="text-6xl font-bold text-[var(--color-primary)] mb-2">
                       +
                     </div>
                     <div className="text-2xl font-semibold text-gray-900 mb-4">
