@@ -5,29 +5,29 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const column1 = [
-  { label: "Our Story", href: "#" },
-  { label: "25+ Years of Excellence", href: "#" },
-  { label: "Why Netsmartz", href: "#" },
-  { label: "Timeline", href: "#" },
-  { label: "Leadership Team", href: "#" },
-  { label: "Life at Netsmartz", href: "#" },
-  { label: "Netsmartz Academy", href: "#" },
-  { label: "Learning & Development", href: "#" },
+  { label: "Our Story", href: "/about/our-story" },
+  { label: "25+ Years of Excellence", href: "/about/25-years-excellence" },
+  { label: "Why Netsmartz", href: "/about/why-netsmartz" },
+  { label: "Timeline", href: "/about/timeline" },
+  { label: "Leadership Team", href: "/about/leadership-team" },
+  { label: "Life at Netsmartz", href: "/about/life-at-netsmartz" },
+  { label: "Netsmartz Academy", href: "/about/netsmartz-academy" },
+  { label: "Learning & Development", href: "/about/learning-development" },
 ];
 
 const column2 = [
-  { label: "AI-First Culture", href: "#" },
-  { label: "Sustainability", href: "#" },
-  { label: "Talent Stories", href: "#" },
-  { label: "The GPW Journal", href: "#" },
-  { label: "Events", href: "#" },
-  { label: "We're Hiring", href: "#" },
-  { label: "Giving Back", href: "#" },
-  { label: "Referral Partners", href: "#" },
+  { label: "AI-First Culture", href: "/about/ai-first-culture" },
+  { label: "Sustainability", href: "/about/sustainability" },
+  { label: "Talent Stories", href: "/about/talent-stories" },
+  { label: "The GPW Journal", href: "/about/gpw-journal" },
+  { label: "Events", href: "/about/events" },
+  { label: "We're Hiring", href: "/about/we-are-hiring" },
+  { label: "Giving Back", href: "/about/giving-back" },
+  { label: "Referral Partners", href: "/about/referral-partners" },
 ];
 
 const column3 = [
-  { label: "Thought Leadership", href: "#" },
+  { label: "Thought Leadership", href: "/about/thought-leadership" },
 ];
 
 export function AboutMenu() {

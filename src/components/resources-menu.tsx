@@ -5,24 +5,24 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const leftColumnItems = [
-  { label: "Case Studies", href: "#" },
-  { label: "Clients Experiences", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Webinars", href: "#" },
-  { label: "Press Release", href: "#" },
-  { label: "Expert Q & A", href: "#" },
-  { label: "Podcasts", href: "#" },
-  { label: "Whitepapers", href: "#" },
+  { label: "Case Studies", href: "/resources/case-studies" },
+  { label: "Clients Experiences", href: "/resources/client-experiences" },
+  { label: "Blog", href: "/resources/blog" },
+  { label: "Webinars", href: "/resources/webinars" },
+  { label: "Press Release", href: "/resources/press-release" },
+  { label: "Expert Q & A", href: "/resources/expert-qa" },
+  { label: "Podcasts", href: "/resources/podcasts" },
+  { label: "Whitepapers", href: "/resources/whitepapers" },
 ];
 
 const rightColumnItems = [
-  { label: "eBooks", href: "#" },
-  { label: "Brochure", href: "#" },
-  { label: "Infographics", href: "#" },
-  { label: "Tech Tales", href: "#" },
-  { label: "SaaS Masterclasses", href: "#" },
-  { label: "FAQ", href: "#" },
-  { label: "All Resources", href: "#" },
+  { label: "eBooks", href: "/resources/ebooks" },
+  { label: "Brochure", href: "/resources/brochure" },
+  { label: "Infographics", href: "/resources/infographics" },
+  { label: "Tech Tales", href: "/resources/tech-tales" },
+  { label: "SaaS Masterclasses", href: "/resources/saas-masterclasses" },
+  { label: "FAQ", href: "/resources/faq" },
+  { label: "All Resources", href: "/resources/all-resources" },
 ];
 
 export function ResourcesMenu() {
