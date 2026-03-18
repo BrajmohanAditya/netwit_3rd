@@ -3,11 +3,11 @@
 import React from "react";
 
 const companies = [
+  { name: "Telstra", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Telstra_Logo.svg" },
+  { name: "Level 3", logo: "" }, // Relies on CSS fallback
   { name: "Officetrax", logo: "" }, // Relies on CSS fallback
   { name: "SAMSUNG", logo: "https://upload.wikimedia.org/wikipedia/commons/2/24/Samsung_Logo.svg" },
-  { name: "NMN", logo: "" }, // Relies on CSS fallback
-  { name: "Telstra", logo: "https://upload.wikimedia.org/wikipedia/commons/e/ee/Telstra_Logo.svg" },
-  { name: "Level 3", logo: "" } // Relies on CSS fallback
+  { name: "NMN", logo: "" } // Relies on CSS fallback
 ];
 
 // Duplicate multiple times for smooth infinite scroll
@@ -24,42 +24,36 @@ export function TrustedBySlider() {
 
       {/* Infinite slider */}
       <div className="relative w-full flex overflow-hidden group">
-        <div className="flex w-max animate-marquee space-x-16 md:space-x-32 hover:[animation-play-state:paused] px-8 items-center">
+        <div className="flex w-max animate-marquee space-x-16 md:space-x-28 hover:[animation-play-state:paused] px-8 items-center">
           {repeatedCompanies.map((company, index) => (
-            <div key={index} className="flex items-center justify-center min-w-[120px] grayscale opacity-60 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-              {company.logo ? (
-                <img 
-                  src={company.logo} 
-                  alt={company.name} 
-                  className="max-h-10 w-auto object-contain"
-                  onError={(e) => {
-                    e.currentTarget.style.display = 'none';
-                    if (e.currentTarget.nextElementSibling) {
-                      (e.currentTarget.nextElementSibling as HTMLElement).style.display = 'flex';
-                    }
-                  }}
-                />
-              ) : (
-                <div className="hidden items-center justify-center uppercase font-black text-gray-900 tracking-tight">
-                  {company.name === 'Level 3' ? (
-                    <div className="flex flex-col items-center leading-none mt-1">
-                      <div className="flex items-end gap-1.5"><span className="text-2xl font-black">Level</span> <span className="text-[34px] font-black leading-[0.8]">3</span></div>
-                      <span className="text-[6px] tracking-[0.3em] text-gray-500 uppercase mt-1 ml-1">Communications</span>
-                    </div>
-                  ) : company.name === 'NMN' ? (
-                    <div className="flex flex-col items-center leading-none">
-                      <span className="text-4xl font-black tracking-tighter">N<span className="mx-0.5">M</span>N</span>
-                      <span className="text-[5.5px] tracking-[0.2em] text-gray-400 mt-1 uppercase">Nested Minds Network</span>
-                    </div>
-                  ) : company.name === 'Officetrax' ? (
-                    <div className="flex items-baseline text-[22px] font-bold tracking-tight text-gray-800 capitalize">
-                      Officetra<span className="text-[30px] text-gray-500 -ml-0.5 font-black">X</span>
-                    </div>
-                  ) : (
-                    company.name
-                  )}
-                </div>
-              )}
+            <div key={index} className="flex items-center justify-center min-w-[140px] grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300">
+              <div className="flex items-center justify-center uppercase font-black text-gray-900 tracking-tight">
+                 {company.name === 'Level 3' ? (
+                   <div className="flex flex-col items-center leading-none mt-1">
+                     <div className="flex items-end gap-1.5"><span className="text-2xl font-black">Level</span> <span className="text-[34px] font-black leading-[0.8]">3</span></div>
+                     <span className="text-[6px] tracking-[0.3em] text-gray-500 uppercase mt-1 ml-1">Communications</span>
+                   </div>
+                 ) : company.name === 'NMN' ? (
+                   <div className="flex flex-col items-center leading-none">
+                     <span className="text-4xl font-black tracking-tighter">N<span className="mx-0.5">M</span>N</span>
+                     <span className="text-[5.5px] tracking-[0.2em] text-gray-400 mt-1 uppercase">Nested Minds Network</span>
+                   </div>
+                 ) : company.name === 'Officetrax' ? (
+                   <div className="flex items-baseline text-[22px] font-bold tracking-tight text-gray-800 capitalize">
+                     Officetra<span className="text-[30px] text-gray-500 -ml-0.5 font-black">X</span>
+                   </div>
+                 ) : company.name === 'SAMSUNG' ? (
+                   <div className="flex items-center text-[24px] font-black tracking-tighter text-[#1428a0] uppercase">
+                     SAMSUNG
+                   </div>
+                 ) : company.name === 'Telstra' ? (
+                   <div className="flex items-center text-[24px] font-extrabold tracking-tighter text-[#0062ff] capitalize">
+                     <span className="text-[28px] font-black mr-0.5 relative top-[1px]">T</span>elstra
+                   </div>
+                 ) : (
+                   company.name
+                 )}
+              </div>
             </div>
           ))}
         </div>
