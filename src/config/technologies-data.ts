@@ -169,6 +169,23 @@ export const hireData = {
       "Ongoing support",
     ],
   },
+  "dedicated-team": {
+    title: "Hire Dedicated Team",
+    subtitle: "Build Your Dream Team",
+    description: "Hire a dedicated team of experts who work exclusively on your project. Get a full-stack team tailored to your specific needs with flexible engagement models.",
+    features: [
+      { title: "Full-Stack Teams", description: "Developers, designers, and QA engineers" },
+      { title: "Flexible Engagement", description: "Monthly or project-based hiring" },
+      { title: "Direct Collaboration", description: "Work directly with your team" },
+      { title: "Scalable Resources", description: "Scale up or down as needed" },
+    ],
+    benefits: [
+      "Complete team focus",
+      "Cost-effective",
+      "Full control",
+      "Faster delivery",
+    ],
+  },
 };
 
 export const technologyData = {

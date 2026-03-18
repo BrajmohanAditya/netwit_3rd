@@ -1,3 +1,5 @@
-import TechnologyPage from "@/components/technology-page";
+import TechnologyPage, { generateStaticParams } from "@/components/technology-page";
+
+export { generateStaticParams };
 
 export default TechnologyPage;

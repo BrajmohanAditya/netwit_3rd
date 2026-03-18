@@ -1,3 +1,5 @@
-import ResourcePage from "@/components/resource-page";
+import ResourcePage, { generateStaticParams } from "@/components/resource-page";
+
+export { generateStaticParams };
 
 export default ResourcePage;

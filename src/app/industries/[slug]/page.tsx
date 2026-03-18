@@ -1,3 +1,5 @@
-import IndustryPage from "@/components/industry-page";
+import IndustryPage, { generateStaticParams } from "@/components/industry-page";
+
+export { generateStaticParams };
 
 export default IndustryPage;
