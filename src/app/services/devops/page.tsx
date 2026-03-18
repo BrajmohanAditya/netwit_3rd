@@ -1,6 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle, LineChart, Lightbulb, Settings, LifeBuoy } from "lucide-react";
 import Link from "next/link";
 
 export default function DevOpsPage() {
@@ -190,100 +190,175 @@ export default function DevOpsPage() {
                 Get AI-powered DevOps automation designed to enhance efficiency, scalability, and innovation. From seamless integrations to intelligent automation with AI, our expertise ensures peak performance at every stage.
               </p>
             </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-6">
               {[
                 {
-                  title: "CI/CD Pipeline",
+                  title: "DevSecOps",
                   description:
-                    "Automated continuous integration and deployment pipelines",
-                  icon: "⚙️",
+                    "Secure your SaaS applications with AI-powered DevSecOps. We integrate machine learning models to detect anomalies, automate threat responses, and ensure compliance—without slowing down your development cycle.",
                 },
                 {
-                  title: "Infrastructure as Code",
+                  title: "CI/CD Optimization",
                   description:
-                    "Scalable and reproducible infrastructure management",
-                  icon: "📝",
+                    "Streamline your continuous integration and delivery pipelines with AI. We leverage intelligent generative AI tools for DevOps solutions to enhance workflows, speed up deployment, and improve overall quality leading to faster releases.",
                 },
                 {
-                  title: "Container Orchestration",
-                  description: "Kubernetes and Docker container management",
-                  icon: "📦",
+                  title: "Site Reliability Engineering",
+                  description:
+                    "Our AI-enhanced SRE practices focus on system scalability, incident management, and proactive monitoring for a seamless user experience, helping you achieve unmatched reliability and performance.",
                 },
                 {
-                  title: "Cloud Migration",
-                  description: "Seamless migration to cloud platforms",
-                  icon: "☁️",
+                  title: "Infrastructure & Configuration Management",
+                  description:
+                    "We leverage AI for DevOps solutions and services to automate infrastructure provisioning and configuration, ensuring consistency, reducing human error, and enabling self-healing systems that adapt to real-time performance metrics.",
                 },
                 {
-                  title: "Monitoring & Logging",
-                  description: "Real-time monitoring and centralized logging",
-                  icon: "📊",
+                  title: "DevOps Assessment & Consultation",
+                  description:
+                    "Gain expert AI-driven insights to elevate your DevOps strategy. Our tailored assessments identify gaps and opportunities, guiding you toward enhanced efficiency and innovation.",
                 },
-                {
-                  title: "Security Automation",
-                  description: "DevSecOps integration for secure deployments",
-                  icon: "🔒",
-                },
-              ].map((feature, index) => (
-                <div
-                  key={index}
-                  className="bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-shadow border border-gray-100"
-                >
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <h3 className="text-lg font-semibold text-gray-900 mb-2">
-                    {feature.title}
-                  </h3>
-                  <p className="text-gray-600">{feature.description}</p>
-                </div>
-              ))}
+              ].map((feature, index) => {
+                let colClass = "col-span-1 md:col-span-2 lg:col-span-2";
+                if (index === 3) {
+                  colClass += " md:col-auto lg:col-start-2";
+                }
+                if (index === 4) {
+                  colClass += " md:col-start-2 lg:col-start-4";
+                }
+
+                return (
+                  <div
+                    key={index}
+                    className={`bg-white p-8 rounded-2xl border border-gray-200 shadow-sm hover:shadow-lg transition-all flex flex-col group ${colClass}`}
+                  >
+                    <h3 className="text-[18px] lg:text-[20px] font-bold text-[var(--color-primary)] mb-4 leading-snug">
+                      {feature.title}
+                    </h3>
+                    <p className="text-[#6b7280] text-[14px] lg:text-[15px] leading-relaxed mb-8 flex-grow">
+                      {feature.description}
+                    </p>
+                    <Link
+                      href="#"
+                      className="inline-flex items-center gap-1.5 text-[13px] font-bold text-gray-800 hover:text-[var(--color-primary)] transition-colors mt-auto uppercase tracking-wider"
+                    >
+                      LEARN MORE <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
 
-        {/* Benefits Section */}
-        <section className="py-20 bg-gray-50">
-          <div className="max-w-[1200px] mx-auto px-6">
+        {/* Process Steps Section */}
+        <section className="py-24 bg-white relative overflow-hidden">
+          {/* Subtle dots background on the left */}
+          <div className="absolute left-[-20px] top-1/2 -translate-y-1/2 opacity-20 hidden md:block">
+            <svg width="150" height="150" fill="none" viewBox="0 0 100 100">
+              <pattern
+                id="dot-grid"
+                x="0"
+                y="0"
+                width="16"
+                height="16"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="2" cy="2" r="2" fill="#000" />
+              </pattern>
+              <rect width="100" height="100" fill="url(#dot-grid)" />
+            </svg>
+          </div>
+
+          <div className="max-w-[1200px] mx-auto px-6 relative z-10">
+            {/* Header */}
+            <div className="text-center mb-20">
+              <h2 className="text-3xl lg:text-[40px] font-bold text-gray-900 mb-6">
+                <span className="text-[var(--color-primary)]">
+                  Accelerating Your Product Development in
+                </span>{" "}
+                4 Steps
+              </h2>
+              <p className="text-[#6b7280] text-[16px] lg:text-[18px] max-w-2xl mx-auto">
+                Seamlessly integrate DevOps best practices into your SaaS
+                operations with Netsmartz
+              </p>
+            </div>
+
+            {/* Content Area */}
             <div className="grid lg:grid-cols-2 gap-16 items-center">
-              <div>
-                <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-6">
-                  Benefits
-                </h2>
-                <p className="text-lg text-gray-600 mb-8">
-                  Achieve measurable results with our proven DevOps solutions
-                </p>
-                <ul className="space-y-4">
-                  {[
-                    "50% faster deployment cycles",
-                    "Reduced infrastructure costs",
-                    "Improved team collaboration",
-                    "Higher quality releases",
-                    "24/7 infrastructure support",
-                  ].map((benefit, index) => (
-                    <li key={index} className="flex items-center gap-3">
-                      <CheckCircle className="w-6 h-6 text-green-500 flex-shrink-0" />
-                      <span className="text-gray-700 font-medium">
-                        {benefit}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              <div className="relative">
-                <div className="absolute inset-0 bg-[var(--color-primary)]/10 rounded-3xl transform rotate-3"></div>
-                <div className="relative bg-white p-10 rounded-3xl border border-gray-100 shadow-lg">
-                  <div className="text-center">
-                    <div className="text-6xl font-bold text-[var(--color-primary)] mb-2">
-                      +
+              {/* Left Side: Staggered Tiles */}
+              <div className="relative max-w-lg mx-auto lg:mx-0 w-full">
+                <div className="flex gap-6">
+                  {/* Column 1 */}
+                  <div className="flex flex-col gap-6 w-1/2">
+                    {/* Tile 1 (Active) */}
+                    <div className="relative bg-[var(--color-primary)] text-white rounded-2xl p-6 aspect-square flex flex-col justify-center items-start border border-[var(--color-primary)] shadow-lg hover:shadow-xl transition-all cursor-pointer">
+                      <div className="absolute -top-3 -right-3 w-8 h-8 bg-gray-900 text-white flex items-center justify-center rounded-md font-bold shadow-md">
+                        1
+                      </div>
+                      <LineChart className="w-12 h-12 mb-4 text-white" strokeWidth={1.5} />
+                      <h4 className="text-[17px] font-bold leading-tight">
+                        Strategic
+                        <br />
+                        Planning
+                      </h4>
                     </div>
-                    <div className="text-2xl font-semibold text-gray-900 mb-4">
-                      Business Value
+
+                    {/* Tile 3 */}
+                    <div className="relative bg-white text-[var(--color-primary)] rounded-2xl p-6 aspect-square flex flex-col justify-center items-start border border-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
+                      <div className="absolute -bottom-3 right-6 w-8 h-8 bg-[var(--color-primary)] text-white flex items-center justify-center rounded-md font-bold shadow-md">
+                        3
+                      </div>
+                      <Settings className="w-12 h-12 mb-4 text-[var(--color-primary)]" strokeWidth={1.5} />
+                      <h4 className="text-[17px] font-bold leading-tight">
+                        Solution
+                        <br />
+                        Development
+                      </h4>
                     </div>
-                    <p className="text-gray-600">
-                      Join 2000+ clients who transformed their business with our
-                      DevOps solutions
-                    </p>
+                  </div>
+
+                  {/* Column 2 (Staggered down) */}
+                  <div className="flex flex-col gap-6 w-1/2 pt-12">
+                    {/* Tile 2 */}
+                    <div className="relative bg-white text-[var(--color-primary)] rounded-2xl p-6 aspect-square flex flex-col justify-center items-start border border-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
+                      <div className="absolute top-8 -right-3 w-8 h-8 bg-[var(--color-primary)] text-white flex items-center justify-center rounded-md font-bold shadow-md">
+                        2
+                      </div>
+                      <Lightbulb className="w-12 h-12 mb-4 text-[var(--color-primary)]" strokeWidth={1.5} />
+                      <h4 className="text-[17px] font-bold leading-tight">
+                        Implementation
+                        <br />
+                        Process
+                      </h4>
+                    </div>
+
+                    {/* Tile 4 */}
+                    <div className="relative bg-white text-[var(--color-primary)] rounded-2xl p-6 aspect-square flex flex-col justify-center items-start border border-[var(--color-primary)] hover:shadow-lg transition-all cursor-pointer">
+                      <div className="absolute -bottom-3 -right-3 w-8 h-8 bg-[var(--color-primary)] text-white flex items-center justify-center rounded-md font-bold shadow-md">
+                        4
+                      </div>
+                      <LifeBuoy className="w-12 h-12 mb-4 text-[var(--color-primary)]" strokeWidth={1.5} />
+                      <h4 className="text-[17px] font-bold leading-tight">
+                        Operational
+                        <br />
+                        Support
+                      </h4>
+                    </div>
                   </div>
                 </div>
+              </div>
+
+              {/* Right Side: Step Details */}
+              <div className="lg:pl-8">
+                <h3 className="text-[28px] font-bold text-[var(--color-primary)] mb-6">
+                  Strategic Planning
+                </h3>
+                <p className="text-[#6b7280] text-[16px] leading-relaxed max-w-lg">
+                  Our experts analyze the current IT infrastructure, resources, and
+                  product portfolio to devise a winning DevOps strategy for your
+                  SaaS business.
+                </p>
               </div>
             </div>
           </div>
