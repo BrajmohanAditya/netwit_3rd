@@ -2,40 +2,78 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
-
-const fadeSlideIn = {
-  initial: { opacity: 0, y: 8 },
-  animate: { opacity: 1, y: 0 },
-};
 
 export function StrategyCTA() {
   return (
-    <section className="relative overflow-hidden bg-primary py-12 sm:py-section">
-      <div className="absolute inset-0 -z-10">
-        <div className="absolute right-0 top-0 h-[200px] w-[200px] sm:h-[300px] sm:w-[300px] md:h-[400px] md:w-[400px] rounded-full bg-white/10 blur-[60px] sm:blur-[80px] md:blur-[100px]" />
-        <div className="absolute bottom-0 left-1/4 h-[150px] w-[150px] sm:h-[200px] sm:w-[200px] md:h-[300px] md:w-[300px] rounded-full bg-accent-teal/20 blur-[50px] sm:blur-[60px] md:blur-[80px]" />
+    <section className="relative overflow-hidden bg-[#0c1e2a] py-28 sm:py-36 flex items-center justify-center">
+      {/* Mesh Network Background Overlay */}
+      <div className="absolute inset-0 opacity-[0.25] pointer-events-none flex items-center justify-center overflow-hidden mix-blend-screen mix-blend-plus-lighter">
+        <svg 
+          className="w-[120vw] h-[120vh] min-w-[1200px] object-cover" 
+          viewBox="0 0 1000 600" 
+          fill="none" 
+          preserveAspectRatio="xMidYMid slice"
+        >
+          <g stroke="rgba(255,255,255,0.4)" strokeWidth="0.5">
+            {/* Connecting Lines */}
+            <path d="M100,100 L300,150 L200,300 Z" />
+            <path d="M300,150 L550,100 L400,250 Z" />
+            <path d="M550,100 L850,200 L650,300 Z" />
+            <path d="M850,200 L950,50 L750,150 Z" />
+            <path d="M200,300 L400,250 L350,500 L150,450 Z" />
+            <path d="M400,250 L650,300 L550,550 L350,500 Z" />
+            <path d="M650,300 L900,400 L750,550 L550,550 Z" />
+            <path d="M900,400 L1050,250 L850,200 Z" />
+            {/* Additional connecting lines for density */}
+            <path d="M400,250 L200,100 L550,100" />
+            <path d="M650,300 L950,50" />
+            <path d="M350,500 L100,600" />
+            <path d="M750,550 L1000,600" />
+            <path d="M100,100 L150,450" />
+            <path d="M850,200 L1050,250" />
+            <path d="M550,550 L750,550" />
+            <path d="M200,300 L150,450" />
+          </g>
+          <g fill="rgba(255,255,255,0.7)">
+            {/* Nodes */}
+            <circle cx="100" cy="100" r="3" />
+            <circle cx="300" cy="150" r="3" />
+            <circle cx="200" cy="300" r="3" />
+            <circle cx="550" cy="100" r="3" />
+            <circle cx="400" cy="250" r="3" />
+            <circle cx="850" cy="200" r="3" />
+            <circle cx="650" cy="300" r="3" />
+            <circle cx="950" cy="50" r="3" />
+            <circle cx="750" cy="150" r="3" />
+            <circle cx="350" cy="500" r="3" />
+            <circle cx="150" cy="450" r="3" />
+            <circle cx="550" cy="550" r="3" />
+            <circle cx="900" cy="400" r="3" />
+            <circle cx="750" cy="550" r="3" />
+            <circle cx="1050" cy="250" r="3" />
+            <circle cx="200" cy="100" r="3" />
+            <circle cx="100" cy="600" r="3" />
+            <circle cx="1000" cy="600" r="3" />
+          </g>
+        </svg>
       </div>
 
       <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, scale: 0.98 }}
+        whileInView={{ opacity: 1, scale: 1 }}
         viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="mx-auto max-w-[800px] px-4 sm:px-6 text-center"
+        transition={{ duration: 0.5, ease: "easeOut" }}
+        className="relative z-10 mx-auto max-w-[800px] px-6 text-center flex flex-col items-center"
       >
-        <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white px-2">
+        <h2 className="text-[28px] sm:text-[34px] md:text-[38px] font-bold text-white tracking-wide mb-10 leading-snug">
           Ready to Embrace an AI-First SaaS Strategy?
         </h2>
-        <p className="mx-auto mt-4 sm:mt-6 max-w-[600px] text-sm sm:text-base md:text-lg text-white/80 px-2">
-          Join 2000+ businesses worldwide that have transformed their operations with our cutting-edge solutions.
-        </p>
+        
         <Link
           href="#contact"
-          className="animate-button group mt-6 sm:mt-10 inline-flex items-center gap-2 rounded-button bg-white px-6 sm:px-8 py-3 sm:py-3.5 text-sm sm:text-base font-semibold text-primary transition-all hover:bg-white/90 active:scale-[0.98]"
+          className="inline-flex items-center justify-center bg-white text-[#0c1e2a] px-8 py-3.5 rounded-[4px] text-[14px] font-bold tracking-wide transition-all hover:bg-gray-100 hover:-translate-y-0.5 shadow-lg active:scale-[0.98]"
         >
-          Get Started
-          <ArrowRight className="h-4 sm:h-5 w-4 sm:w-5 transition-transform group-hover:translate-x-1" />
+          Let's Drive Innovation
         </Link>
       </motion.div>
     </section>

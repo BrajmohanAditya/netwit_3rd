@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Hero } from "@/components/hero";
+import { SaasLeaderSection } from "@/components/saas-leader";
 import { Statistics } from "@/components/statistics";
 import { ServiceCards } from "@/components/service-cards";
 import { Testimonials } from "@/components/testimonials";
@@ -19,6 +20,7 @@ export default function Home() {
       <Header />
       <main className="overflow-visible">
         <Hero />
+        <SaasLeaderSection />
         <Statistics />
         <ServiceCards />
         <Testimonials />

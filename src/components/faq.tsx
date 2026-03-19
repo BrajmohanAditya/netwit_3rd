@@ -2,89 +2,89 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { Plus, Minus } from "lucide-react";
+import Link from "next/link";
 
 const faqs = [
   {
-    question: "What industries do you specialize in?",
-    answer: "We serve a wide range of industries including healthcare, finance, e-commerce, manufacturing, and technology. Our solutions are tailored to meet the unique challenges of each sector.",
+    question: "Q: What is an AI SaaS solution?",
+    answer: "An AI SaaS (Software as a Service) solution leverages artificial intelligence capabilities hosted in the cloud. It allows businesses to access advanced machine learning models, predictive analytics, and natural language processing without managing the underlying complex infrastructure. This enables rapid scaling and continuous feature updates.",
   },
   {
-    question: "How long does implementation typically take?",
-    answer: "Implementation timelines vary based on project complexity. Small to medium projects typically take 2-4 weeks, while enterprise solutions may take 3-6 months. We provide detailed timelines during the consultation phase.",
+    question: "Q: What makes Netsmartz the ideal partner to accelerate your business growth with AI?",
+    answer: "Netsmartz combines decades of enterprise software engineering expertise with cutting-edge AI research. We don't just provide off-the-shelf tools; we act as a dedicated partner, deeply integrating custom AI models seamlessly into your existing tech stack ensuring data security and measurable ROI.",
   },
   {
-    question: "What kind of support do you offer?",
-    answer: "We offer comprehensive support including 24/7 technical support, dedicated account managers, regular maintenance, and priority access to new features and updates.",
+    question: "Q: Why should a SaaS business adopt an AI-first approach?",
+    answer: "An AI-first approach shifts the focus from simply digitizing workflows to actively automating decisions and personalizing user experiences at scale. It significantly drives better user retention, lowers churn through predictive analytics, and provides a continuous competitive moat in rapidly evolving industries.",
   },
   {
-    question: "Do you offer custom solutions?",
-    answer: "Yes, we specialize in creating custom solutions tailored to your specific business needs. Our team works closely with you to understand your requirements and deliver personalized implementations.",
+    question: "Q: Can AI help reduce SaaS operational costs?",
+    answer: "Yes, significantly. AI automates repetitive administrative tasks, streamlines customer support through intelligent agents, optimizes server resource allocation, and improves incident response times. This allows your human team to focus exclusively on high-value strategic initiatives.",
   },
   {
-    question: "What is your pricing model?",
-    answer: "We offer flexible pricing models including project-based, subscription, and retainer options. We work with businesses of all sizes and can create a pricing plan that fits your budget.",
-  },
-  {
-    question: "How do you ensure data security?",
-    answer: "We follow industry-leading security practices including encryption, regular security audits, compliance with GDPR and SOC 2, and implementation of zero-trust security architecture.",
+    question: "Q: What unique benefit does Netsmartz offer to drive success in the AI-powered SaaS industry?",
+    answer: "Our unique differentiator is our proprietary integration framework paired with global technology centers. We deploy specialized, home-grown AI accelerators that cut development timelines in half, supported by dedicated 24/7 global talent that scales with your growth.",
   },
 ];
 
 const fadeSlideIn = {
-  initial: { opacity: 0, y: 8 },
+  initial: { opacity: 0, y: 15 },
   animate: { opacity: 1, y: 0 },
 };
 
 export function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <section className="bg-bg py-12 sm:py-section">
-      <motion.div
-        initial={{ opacity: 0, y: 8 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.4, ease: "easeOut" }}
-        className="mx-auto max-w-[800px] px-4 sm:px-6"
-      >
-        <div className="mb-8 sm:mb-12 text-center">
-          <h2 className="font-syne text-2xl sm:text-3xl md:text-4xl font-bold text-text">
-            Frequently Asked Questions
+    <section className="bg-white dark:bg-[var(--color-bg)] py-20 px-6 font-sans">
+      <div className="max-w-[800px] mx-auto flex flex-col items-center">
+        
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.4 }}
+          className="text-center w-full mb-10"
+        >
+          <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] dark:text-[var(--color-text)]">
+            Frequently <span className="text-[#ea580c]">Asked Questions</span>
           </h2>
-        </div>
+        </motion.div>
 
-        <div className="space-y-2 sm:space-y-3">
+        <div className="w-full space-y-[2px] mb-10">
           {faqs.map((faq, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 8 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              variants={fadeSlideIn}
+              initial="initial"
+              whileInView="animate"
               viewport={{ once: true, margin: "-50px" }}
-              transition={{ duration: 0.4, ease: "easeOut" }}
-              className="overflow-hidden rounded-card border border-muted/20 bg-surface"
+              transition={{ duration: 0.4, delay: index * 0.1 }}
+              className="bg-[#8f96a1] overflow-hidden"
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="flex w-full items-center justify-between p-4 sm:p-5 text-left transition-colors hover:bg-surface-2"
+                className="w-full flex items-center justify-between p-4 md:px-6 md:py-4 text-left transition-colors hover:bg-[#7e8590]"
               >
-                <span className="font-medium text-text text-sm sm:text-base pr-2">{faq.question}</span>
-                <ChevronDown
-                  className={`h-4 w-4 sm:h-5 sm:w-5 text-muted transition-transform duration-200 flex-shrink-0 ${
-                    openIndex === index ? "rotate-180" : ""
-                  }`}
-                />
+                <span className="font-semibold text-white text-[13px] md:text-[14px]">
+                  {faq.question}
+                </span>
+                <span className="text-white ml-4 shrink-0 transition-transform duration-300">
+                  {openIndex === index ? <Minus className="w-4 h-4" /> : <Plus className="w-4 h-4" />}
+                </span>
               </button>
+              
               <AnimatePresence>
                 {openIndex === index && (
                   <motion.div
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: "auto", opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.2, ease: "easeOut" }}
+                    transition={{ duration: 0.25, ease: "easeOut" }}
                   >
-                    <div className="border-t border-muted/20 p-4 sm:p-5">
-                      <p className="text-sm sm:text-base text-muted">{faq.answer}</p>
+                    <div className="p-4 md:px-6 md:pb-5 text-white/90 text-[13px] md:text-[14px] leading-relaxed border-t border-white/20 bg-[#7e8590]/50">
+                      {faq.answer}
                     </div>
                   </motion.div>
                 )}
@@ -92,7 +92,22 @@ export function FAQ() {
             </motion.div>
           ))}
         </div>
-      </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.4, delay: 0.3 }}
+        >
+          <Link
+            href="/faq"
+            className="inline-flex items-center justify-center bg-[#ea580c] text-white px-8 py-2.5 rounded-[4px] text-[13px] font-bold uppercase tracking-wide hover:bg-[#d94e09] transition-colors shadow-sm"
+          >
+            See All FAQs
+          </Link>
+        </motion.div>
+
+      </div>
     </section>
   );
 }
