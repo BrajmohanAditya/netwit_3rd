@@ -3,7 +3,7 @@ import { Footer } from "@/components/footer";
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Settings, FileText, TrendingUp, Users, ClipboardList, Handshake, FileEdit, Mails, CalendarCheck, Network } from "lucide-react";
-
+import SuccessStoriesSlider from "./SuccessStoriesSlider";
 export default function SalesAccelerationPage() {
   return (
     <>
@@ -266,6 +266,9 @@ export default function SalesAccelerationPage() {
             </div>
           </div>
         </section>
+
+        {/* Success Stories Slider */}
+        <SuccessStoriesSlider />
 
         {/* Meet Sally Section */}
         <section className="bg-[#f8f9fa] dark:bg-black/20 py-24 px-6 border-t border-gray-200 dark:border-gray-800">
