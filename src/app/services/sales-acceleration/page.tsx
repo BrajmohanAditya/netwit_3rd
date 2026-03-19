@@ -1,6 +1,7 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SalesAccelerationPage() {
   return (
@@ -74,6 +75,47 @@ export default function SalesAccelerationPage() {
               Build a Scalable, AI-Powered Sales Engine
             </Link>
 
+          </div>
+        </section>
+
+        {/* Introduction Section */}
+        <section className="py-20 md:py-28 bg-[var(--color-bg)] px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--color-text)] mb-6 leading-tight">
+              Tap into <span className="text-[#ea580c]">AI-powered</span> Sales
+            </h2>
+            <p className="text-[16px] md:text-[18px] text-[var(--color-muted)] leading-[1.8]">
+              Harness the power of AI-first sales enablement to enhance lead generation, optimize sales cycles, and boost conversion rates. Our intelligent automation and predictive analytics in AI-driven B2B appointment settings for SaaS enable your team to focus on high-value opportunities while reducing manual effort.
+            </p>
+          </div>
+        </section>
+
+        {/* Trusted Sales Expertise Section */}
+        <section className="py-16 md:py-24 bg-[var(--color-bg)]">
+          <div className="max-w-[1200px] mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+            {/* Image Side */}
+            <div className="w-full lg:w-1/2 relative">
+              <div className="relative aspect-[5/3] lg:aspect-[4/3] w-full rounded-2xl md:rounded-[2.5rem] overflow-hidden shadow-lg border border-[var(--color-surface-2)]">
+                <Image 
+                  src="/images/trusted_sales_expertise.png" 
+                  alt="Business professionals analyzing data" 
+                  fill 
+                  className="object-cover"
+                />
+              </div>
+              {/* Subtle accent matching the image's faint circle glow/overlay */}
+              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-[#ea580c]/10 rounded-full blur-2xl pointer-events-none hidden md:block"></div>
+            </div>
+
+            {/* Content Side */}
+            <div className="w-full lg:w-1/2">
+              <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--color-text)] mb-6 leading-tight">
+                Trusted Sales <span className="text-[#ea580c]">Expertise</span>
+              </h2>
+              <p className="text-[16px] md:text-[18px] text-[var(--color-muted)] leading-[1.8]">
+                With years of experience in sales appointment setting services in the USA, our specialists bring deep industry knowledge to craft customized solutions that accelerate growth. We implement proven methodologies, backed by AI-powered technology, to drive results and enhance sales efficiency through an AI appointment setter.
+              </p>
+            </div>
           </div>
         </section>
       </main>
