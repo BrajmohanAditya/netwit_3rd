@@ -7,6 +7,7 @@ import { ArrowRight } from "lucide-react";
 import ComprehensiveServices from "./ComprehensiveServices";
 import AccountingChallenges from "./AccountingChallenges";
 import AccountingTools from "./AccountingTools";
+import SuccessStories from "./SuccessStories";
 export default function AccountingServicesPage() {
   return (
     <>
@@ -68,6 +69,7 @@ export default function AccountingServicesPage() {
         <ComprehensiveServices />
         <AccountingChallenges />
         <AccountingTools />
+        <SuccessStories />
         
       </main>
       <Footer />
