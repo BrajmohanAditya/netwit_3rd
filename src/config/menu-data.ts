@@ -143,8 +143,10 @@ export const services = {
 
 export const solutions = {
   cybersecurity: {
-    title: "Cybersecurity Solutions",
-    subtitle: "Protect Your Business with Enterprise-Grade Security",
+    title: "End-to-End, AI-Powered Cybersecurity for SaaS Operation",
+    subtitle: "360° protection for networks, endpoints, and cloud environments",
+    label: "AI-Driven Cybersecurity Services & Solutions",
+    buttonText: "Stay One Step Ahead with AI-Powered Cyber Defense",
     description: "Safeguard your organization with our comprehensive cybersecurity solutions. We provide end-to-end protection against evolving threats.",
     features: [
       { title: "Threat Detection", description: "AI-powered threat monitoring and detection" },
@@ -163,8 +165,8 @@ export const solutions = {
     ],
   },
   esg: {
-    title: "ESG Solutions",
-    subtitle: "Drive Sustainability with Comprehensive ESG Services",
+    title: "Demystifying ESG",
+    subtitle: "Understanding Environmental, Social, and Governance Framework",
     description: "Transform your business with our Environmental, Social, and Governance solutions. Achieve sustainability goals while improving business performance.",
     features: [
       { title: "ESG Assessment", description: "Comprehensive ESG maturity analysis" },

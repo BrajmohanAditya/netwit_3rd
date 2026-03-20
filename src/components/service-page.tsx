@@ -5,6 +5,11 @@ import { use } from "react";
 import { ArrowRight, CheckCircle, Shield, Zap, Target, TrendingUp, Users, Globe } from "lucide-react";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { CybersecurityServices } from "@/components/cybersecurity-services";
+import { CybersecurityAddons } from "@/components/cybersecurity-addons";
+import { EsgContent } from "@/components/esg-content";
+import { EsgBenefits } from "@/components/esg-benefits";
+import { EsgFrameworks } from "@/components/esg-frameworks";
 
 interface Feature {
   title: string;
@@ -17,6 +22,8 @@ interface ServiceData {
   description: string;
   features: Feature[];
   benefits: string[];
+  label?: string;
+  buttonText?: string;
 }
 
 interface ServicePageProps {
@@ -65,80 +72,118 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
       <Header />
       <main className="pt-[80px]">
         {/* Hero Section */}
-        <section className="relative py-24 bg-gradient-to-b from-primary/5 to-transparent">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <span className="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium mb-6">
-                {type === "service" ? "Services" : "Solutions"}
+        <section 
+          className={`relative py-32 overflow-hidden ${['cybersecurity', 'esg'].includes(slug) ? 'min-h-[60vh] flex items-center bg-black' : 'bg-gradient-to-b from-primary/5 to-transparent'}`}
+        >
+          {['cybersecurity', 'esg'].includes(slug) && (
+            <div className="absolute inset-0 z-0">
+              <div 
+                className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-60"
+                style={{ backgroundImage: `url(/images/${slug === 'cybersecurity' ? 'cybersecurity_hero.png' : 'esg_hero.png'})` }}
+              ></div>
+              <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/80"></div>
+            </div>
+          )}
+          <div className="max-w-[1200px] mx-auto px-6 relative z-10 w-full text-center">
+            <div className={['cybersecurity', 'esg'].includes(slug) ? 'max-w-[1000px] mx-auto' : 'max-w-[800px] text-left'}>
+              <span className={`inline-block px-4 py-1.5 rounded-full mb-6 font-medium text-sm ${['cybersecurity', 'esg'].includes(slug) ? 'text-white/80' : 'bg-primary/10 text-primary'}`}>
+                {pageData.label || (type === "service" ? "Services" : "Solutions")}
               </span>
-              <h1 className="text-5xl font-bold text-[#2d2d2d] mb-6 leading-tight">
+              <h1 className={`font-bold mb-6 leading-tight ${['cybersecurity', 'esg'].includes(slug) ? 'text-white text-5xl md:text-7xl' : 'text-5xl text-[#2d2d2d]'}`}>
                 {pageData.title}
               </h1>
-              <p className="text-xl text-muted mb-8 leading-relaxed">
+              <p className={`text-xl mb-8 leading-relaxed mx-auto max-w-2xl ${['cybersecurity', 'esg'].includes(slug) ? 'text-white/90' : 'text-muted'}`}>
                 {pageData.subtitle}
               </p>
-              <div className="flex gap-4">
+              <div className={`flex gap-4 ${['cybersecurity', 'esg'].includes(slug) ? 'justify-center' : ''}`}>
                 <Link
                   href="#contact"
-                  className="inline-flex items-center gap-2 bg-primary text-white px-8 py-4 rounded-full font-semibold transition-all hover:bg-primary-600 hover:shadow-lg"
+                  className={`inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 hover:shadow-2xl ${
+                    slug === 'cybersecurity' 
+                      ? 'bg-gradient-to-r from-[#FF8C42] to-[#F05A22] text-white' 
+                      : slug === 'esg'
+                      ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white'
+                      : 'bg-primary text-white hover:bg-primary-600 shadow-lg'
+                  }`}
                 >
-                  Get Started <ArrowRight className="w-5 h-5" />
+                  {pageData.buttonText || "Get Started"} {!['cybersecurity', 'esg'].includes(slug) && <ArrowRight className="w-5 h-5" />}
                 </Link>
-                <Link
-                  href="#overview"
-                  className="inline-flex items-center gap-2 border border-gray-300 text-[#2d2d2d] px-8 py-4 rounded-full font-semibold transition-all hover:border-primary hover:text-primary"
-                >
-                  Learn More
-                </Link>
+                {!['cybersecurity', 'esg'].includes(slug) && (
+                  <Link
+                    href="#overview"
+                    className="inline-flex items-center gap-2 border border-gray-300 text-[#2d2d2d] px-8 py-4 rounded-full font-semibold transition-all hover:border-primary hover:text-primary"
+                  >
+                    Learn More
+                  </Link>
+                )}
               </div>
             </div>
           </div>
         </section>
 
         {/* Overview Section */}
-        <section id="overview" className="py-20 bg-white">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="max-w-[800px]">
-              <h2 className="text-3xl font-bold text-[#2d2d2d] mb-6">Overview</h2>
-              <p className="text-lg text-muted leading-relaxed">
-                {pageData.description}
-              </p>
+        {slug !== "esg" && (
+          <section id="overview" className="py-20 bg-white">
+            <div className="max-w-[1200px] mx-auto px-6">
+              <div className="max-w-[800px]">
+                <h2 className="text-3xl font-bold text-[#2d2d2d] mb-6">Overview</h2>
+                <p className="text-lg text-muted leading-relaxed">
+                  {pageData.description}
+                </p>
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
+
+        {/* Custom ESG Content */}
+        {slug === "esg" && <EsgContent />}
+
+        {/* ESG Benefits Grid */}
+        {slug === "esg" && <EsgBenefits />}
+
+        {/* ESG Frameworks Detail */}
+        {slug === "esg" && <EsgFrameworks />}
+
+        {/* Consulting Services (Specific to Cybersecurity) */}
+        {slug === "cybersecurity" && <CybersecurityServices />}
+        
+        {/* Add-on Services (Specific to Cybersecurity) */}
+        {slug === "cybersecurity" && <CybersecurityAddons />}
 
         {/* Features Section */}
-        <section className="py-20 bg-surface-2">
-          <div className="max-w-[1200px] mx-auto px-6">
-            <div className="text-center mb-16">
-              <h2 className="text-3xl font-bold text-[#2d2d2d] mb-4">Key Features</h2>
-              <p className="text-lg text-muted max-w-[600px] mx-auto">
-                Comprehensive solutions designed to transform your business
-              </p>
-            </div>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {pageData.features.map((feature: Feature, index: number) => {
-                const Icon = getIcon(index);
-                return (
-                  <div
-                    key={index}
-                    className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all"
-                  >
-                    <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
-                      <Icon className="w-6 h-6 text-primary" />
+        {slug !== "cybersecurity" && (
+          <section className="py-20 bg-surface-2">
+            <div className="max-w-[1200px] mx-auto px-6">
+              <div className="text-center mb-16">
+                <h2 className="text-3xl font-bold text-[#2d2d2d] mb-4">Key Features</h2>
+                <p className="text-lg text-muted max-w-[600px] mx-auto">
+                  Comprehensive solutions designed to transform your business
+                </p>
+              </div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {pageData.features.map((feature: Feature, index: number) => {
+                  const Icon = getIcon(index);
+                  return (
+                    <div
+                      key={index}
+                      className="bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary/30 hover:shadow-lg transition-all"
+                    >
+                      <div className="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center mb-4">
+                        <Icon className="w-6 h-6 text-primary" />
+                      </div>
+                      <h3 className="text-lg font-semibold text-[#2d2d2d] mb-2">
+                        {feature.title}
+                      </h3>
+                      <p className="text-muted">
+                        {feature.description}
+                      </p>
                     </div>
-                    <h3 className="text-lg font-semibold text-[#2d2d2d] mb-2">
-                      {feature.title}
-                    </h3>
-                    <p className="text-muted">
-                      {feature.description}
-                    </p>
-                  </div>
-                );
-              })}
+                  );
+                })}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
+        )}
 
         {/* Benefits Section */}
         <section className="py-20 bg-white">
