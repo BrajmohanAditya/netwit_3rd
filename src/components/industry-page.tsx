@@ -7,6 +7,80 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { industriesData } from "@/config/industries-data";
 
+import { StartupsHero } from "@/components/industries-startups-hero";
+import { StartupsServices } from "@/components/industries-startups-services";
+import { StartupsGrowth } from "@/components/industries-startups-growth";
+import { StartupsClientsDo } from "@/components/industries-startups-clients-do";
+import { StartupsHire } from "@/components/industries-startups-hire";
+import { StartupsInsights } from "@/components/industries-startups-insights";
+import { StartupsCarousel } from "@/components/industries-startups-carousel";
+
+import { ScaleupsHero } from "@/components/industries-scaleups-hero";
+import { ScaleupsExpertise } from "@/components/industries-scaleups-expertise";
+import { ScaleupsWhyAndTimeline } from "@/components/industries-scaleups-why";
+import { ScaleupsWhatWeDo } from "@/components/industries-scaleups-what-we-do";
+import { ScaleupsEngagement } from "@/components/industries-scaleups-engagement";
+import { ScaleupsPlanned } from "@/components/industries-scaleups-planned";
+import { ScaleupsClients } from "@/components/industries-scaleups-clients";
+import { ScaleupsSuccessStories } from "@/components/industries-scaleups-success";
+import { ScaleupsInsights } from "@/components/industries-scaleups-insights";
+
+import { EnterpriseHero } from "@/components/industries-enterprise-hero";
+import { EnterpriseSuccessStories } from "@/components/industries-enterprise-success";
+import { EnterpriseClients } from "@/components/industries-enterprise-clients";
+import { EnterpriseWhatWeDo } from "@/components/industries-enterprise-what-we-do";
+import { EnterpriseMetricsTech } from "@/components/industries-enterprise-metrics";
+import { EnterpriseIndustries } from "@/components/industries-enterprise-industries";
+import { EnterpriseInsights } from "@/components/industries-enterprise-insights";
+import { SaasClients } from "@/components/industries-saas-clients";
+
+// New IT Staff Components
+import { ItStaffHero } from "@/components/industries-it-staff-hero";
+import { ItStaffServices } from "@/components/industries-it-staff-services";
+import { ItStaffBenefits } from "@/components/industries-it-staff-benefits";
+
+// New Education Components
+import { EducationHero } from "@/components/industries-education-hero";
+import { EducationSolutions } from "@/components/industries-education-solutions";
+import { EducationBenefits } from "@/components/industries-education-benefits";
+import { EducationClients } from "@/components/industries-education-clients";
+
+// New Finance Components
+import { FinanceHero } from "@/components/industries-finance-hero";
+import { FinanceClients } from "@/components/industries-finance-clients";
+import { FinanceSolutions } from "@/components/industries-finance-solutions";
+import { FinanceBenefits } from "@/components/industries-finance-benefits";
+
+// New Food Components
+import { FoodHero } from "@/components/industries-food-hero";
+import { FoodClients } from "@/components/industries-food-clients";
+import { FoodSolutions } from "@/components/industries-food-solutions";
+import { FoodBenefits } from "@/components/industries-food-benefits";
+
+// New Healthcare Components
+import { HealthcareHero } from "@/components/industries-healthcare-hero";
+import { HealthcareClients } from "@/components/industries-healthcare-clients";
+import { HealthcareSolutions } from "@/components/industries-healthcare-solutions";
+import { HealthcareBenefits } from "@/components/industries-healthcare-benefits";
+
+// New Manufacturing Components
+import { ManufacturingHero } from "@/components/industries-manufacturing-hero";
+import { ManufacturingClients } from "@/components/industries-manufacturing-clients";
+import { ManufacturingSolutions } from "@/components/industries-manufacturing-solutions";
+import { ManufacturingBenefits } from "@/components/industries-manufacturing-benefits";
+
+// New Media Components
+import { MediaHero } from "@/components/industries-media-hero";
+import { MediaClients } from "@/components/industries-media-clients";
+import { MediaSolutions } from "@/components/industries-media-solutions";
+import { MediaBenefits } from "@/components/industries-media-benefits";
+
+// New Real Estate Components
+import { RealEstateHero } from "@/components/industries-real-estate-hero";
+import { RealEstateClients } from "@/components/industries-real-estate-clients";
+import { RealEstateSolutions } from "@/components/industries-real-estate-solutions";
+import { RealEstateBenefits } from "@/components/industries-real-estate-benefits";
+
 export default function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = industriesData[slug as keyof typeof industriesData];
@@ -22,6 +96,225 @@ export default function IndustryPage({ params }: { params: Promise<{ slug: strin
             <Link href="/" className="text-primary hover:underline">Go back home</Link>
           </div>
         </div>
+        <Footer />
+      </>
+    );
+  }
+
+  // Render the requested layout mockups directly to the startups slug as instructed
+  if (slug === "startups") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <EnterpriseHero />
+          <EnterpriseWhatWeDo />
+          <EnterpriseMetricsTech />
+          <ScaleupsEngagement />
+          <EnterpriseSuccessStories />
+          <EnterpriseClients />
+          <EnterpriseIndustries />
+          <StartupsHire /> 
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "enterprise" || slug === "enterprises") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <EnterpriseHero />
+          <EnterpriseWhatWeDo />
+          <EnterpriseMetricsTech />
+          <ScaleupsEngagement />
+          <EnterpriseSuccessStories />
+          <EnterpriseClients />
+          <EnterpriseIndustries />
+          <StartupsHire /> 
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "saas") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <EnterpriseHero />
+          <ScaleupsEngagement />
+          <EnterpriseSuccessStories />
+          <SaasClients />
+          <EnterpriseWhatWeDo />
+          <EnterpriseMetricsTech />
+          <EnterpriseIndustries />
+          <StartupsHire /> 
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "it-staff") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <ItStaffHero />
+          <ItStaffBenefits />
+          <ItStaffServices />
+          <ScaleupsEngagement />
+          <StartupsHire /> 
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "education") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <EducationHero />
+          <EducationClients />
+          <EducationSolutions />
+          <EducationBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "finance") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <FinanceHero />
+          <FinanceClients />
+          <FinanceSolutions />
+          <FinanceBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "food") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <FoodHero />
+          <FoodClients />
+          <FoodSolutions />
+          <FoodBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "healthcare") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <HealthcareHero />
+          <HealthcareClients />
+          <HealthcareSolutions />
+          <HealthcareBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "manufacturing") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <ManufacturingHero />
+          <ManufacturingClients />
+          <ManufacturingSolutions />
+          <ManufacturingBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "media") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <MediaHero />
+          <MediaClients />
+          <MediaSolutions />
+          <MediaBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "real-estate") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <RealEstateHero />
+          <RealEstateClients />
+          <RealEstateSolutions />
+          <RealEstateBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "scaleups") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[80px]">
+          <ScaleupsHero />
+          <ScaleupsExpertise />
+          <ScaleupsEngagement />
+          <ScaleupsPlanned />
+          <ScaleupsWhyAndTimeline />
+          <ScaleupsWhatWeDo />
+          <ScaleupsClients />
+          <StartupsHire /> 
+          <ScaleupsSuccessStories />
+          <ScaleupsInsights />
+          <StartupsCarousel />
+        </main>
         <Footer />
       </>
     );

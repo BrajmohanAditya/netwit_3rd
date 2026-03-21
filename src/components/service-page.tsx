@@ -27,6 +27,16 @@ import { AzureMigrationHero } from "@/components/azure-migration-hero";
 import { AzureMigrationValue } from "@/components/azure-migration-value";
 import { AzureMigrationStall } from "@/components/azure-migration-stall";
 import { AzureMigrationAMMP } from "@/components/azure-migration-ammp";
+import { AzureMigrationSecurity } from "@/components/azure-migration-security";
+import { AzureMigrationPaths } from "@/components/azure-migration-paths";
+import { AzureMigrationIndustries } from "@/components/azure-migration-industries";
+import { AzureMigrationWhyNetsmartz } from "@/components/azure-migration-why-netsmartz";
+import { AzureMigrationFaq } from "@/components/azure-migration-faq";
+import { MdrHero } from "@/components/mdr-hero";
+import { MdrBreaches } from "@/components/mdr-breaches";
+import { MdrAssessment } from "@/components/mdr-assessment";
+import { MdrIndustries } from "@/components/mdr-industries";
+import { MdrWhyNetsmartz } from "@/components/mdr-why-netsmartz";
 
 interface Feature {
   title: string;
@@ -95,6 +105,8 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
           <DataPodsHero />
         ) : slug === "azure-migration" ? (
           <AzureMigrationHero />
+        ) : slug === "managed-detection-response" ? (
+          <MdrHero />
         ) : (
         <section 
           className={`relative py-32 overflow-hidden ${['cybersecurity', 'esg'].includes(slug) ? 'min-h-[60vh] flex items-center bg-black' : 'bg-gradient-to-b from-primary/5 to-transparent'}`}
@@ -147,7 +159,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
         )}
 
         {/* Overview Section */}
-        {slug !== "esg" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
+        {slug !== "esg" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && slug !== "managed-detection-response" && (
           <section id="overview" className="py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
               <div className="max-w-[800px]">
@@ -203,12 +215,29 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
           <>
             <AzureMigrationValue />
             <AzureMigrationStall />
+            <AzureMigrationSecurity />
             <AzureMigrationAMMP />
+            <AzureMigrationPaths />
+            <AzureMigrationIndustries />
+            <AIPodsTrustedBy />
+            <AzureMigrationWhyNetsmartz />
+            <AzureMigrationFaq />
+          </>
+        )}
+
+        {/* Custom MDR Content */}
+        {slug === "managed-detection-response" && (
+          <>
+            <MdrBreaches />
+            <MdrAssessment />
+            <MdrIndustries />
+            <AIPodsTrustedBy />
+            <MdrWhyNetsmartz />
           </>
         )}
 
         {/* Features Section */}
-        {slug !== "cybersecurity" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
+        {slug !== "cybersecurity" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && slug !== "managed-detection-response" && (
           <section className="py-20 bg-surface-2">
             <div className="max-w-[1200px] mx-auto px-6">
               <div className="text-center mb-16">
@@ -243,7 +272,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
         )}
 
         {/* Benefits Section */}
-        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
+        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && slug !== "managed-detection-response" && (
         <section className="py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -281,7 +310,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
         )}
 
         {/* CTA Section */}
-        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
+        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && slug !== "managed-detection-response" && (
         <section id="contact" className="py-20 bg-primary">
           <div className="max-w-[800px] mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
