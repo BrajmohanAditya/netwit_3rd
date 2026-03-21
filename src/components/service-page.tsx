@@ -10,6 +10,23 @@ import { CybersecurityAddons } from "@/components/cybersecurity-addons";
 import { EsgContent } from "@/components/esg-content";
 import { EsgBenefits } from "@/components/esg-benefits";
 import { EsgFrameworks } from "@/components/esg-frameworks";
+import { AiPodsHero } from "@/components/aipods-hero";
+import { AiPodsContent } from "@/components/aipods-content";
+import { AiPodsBottomContent } from "@/components/aipods-bottom-content";
+import { AiPodsComparison } from "@/components/aipods-comparison";
+import { AiPodsWorkflow } from "@/components/aipods-workflow";
+import { AiPodsContact } from "@/components/aipods-contact";
+import { AiPodsFaq } from "@/components/aipods-faq";
+import { DataPodsHero } from "@/components/data-pods-hero";
+import { DataPodsProblem } from "@/components/data-pods-problem";
+import { DataPodsContent } from "@/components/data-pods-content";
+import { DataPodsIndustries } from "@/components/data-pods-industries";
+import { AIPodsTrustedBy } from "@/components/aipods-trusted-by";
+import { DataPodsWhyNetsmartz } from "@/components/data-pods-why-netsmartz";
+import { AzureMigrationHero } from "@/components/azure-migration-hero";
+import { AzureMigrationValue } from "@/components/azure-migration-value";
+import { AzureMigrationStall } from "@/components/azure-migration-stall";
+import { AzureMigrationAMMP } from "@/components/azure-migration-ammp";
 
 interface Feature {
   title: string;
@@ -72,6 +89,13 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
       <Header />
       <main className="pt-[80px]">
         {/* Hero Section */}
+        {slug === "ai-pods" ? (
+          <AiPodsHero />
+        ) : slug === "data-pods" ? (
+          <DataPodsHero />
+        ) : slug === "azure-migration" ? (
+          <AzureMigrationHero />
+        ) : (
         <section 
           className={`relative py-32 overflow-hidden ${['cybersecurity', 'esg'].includes(slug) ? 'min-h-[60vh] flex items-center bg-black' : 'bg-gradient-to-b from-primary/5 to-transparent'}`}
         >
@@ -120,9 +144,10 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             </div>
           </div>
         </section>
+        )}
 
         {/* Overview Section */}
-        {slug !== "esg" && (
+        {slug !== "esg" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
           <section id="overview" className="py-20 bg-white">
             <div className="max-w-[1200px] mx-auto px-6">
               <div className="max-w-[800px]">
@@ -150,8 +175,40 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
         {/* Add-on Services (Specific to Cybersecurity) */}
         {slug === "cybersecurity" && <CybersecurityAddons />}
 
+        {/* Custom AI Pods Content */}
+        {slug === "ai-pods" && (
+          <>
+            <AiPodsContent />
+            <AiPodsComparison />
+            <AiPodsWorkflow />
+            <AiPodsBottomContent />
+            <AiPodsFaq />
+            <AiPodsContact />
+          </>
+        )}
+
+        {/* Custom Data Pods Content */}
+        {slug === "data-pods" && (
+          <>
+            <DataPodsProblem />
+            <DataPodsContent />
+            <DataPodsIndustries />
+            <AIPodsTrustedBy />
+            <DataPodsWhyNetsmartz />
+          </>
+        )}
+
+        {/* Custom Azure Migration Content */}
+        {slug === "azure-migration" && (
+          <>
+            <AzureMigrationValue />
+            <AzureMigrationStall />
+            <AzureMigrationAMMP />
+          </>
+        )}
+
         {/* Features Section */}
-        {slug !== "cybersecurity" && (
+        {slug !== "cybersecurity" && slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
           <section className="py-20 bg-surface-2">
             <div className="max-w-[1200px] mx-auto px-6">
               <div className="text-center mb-16">
@@ -186,6 +243,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
         )}
 
         {/* Benefits Section */}
+        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
         <section className="py-20 bg-white">
           <div className="max-w-[1200px] mx-auto px-6">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -220,8 +278,10 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             </div>
           </div>
         </section>
+        )}
 
         {/* CTA Section */}
+        {slug !== "ai-pods" && slug !== "data-pods" && slug !== "azure-migration" && (
         <section id="contact" className="py-20 bg-primary">
           <div className="max-w-[800px] mx-auto px-6 text-center">
             <h2 className="text-4xl font-bold text-white mb-6">
@@ -246,6 +306,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             </div>
           </div>
         </section>
+        )}
       </main>
       <Footer />
     </>
