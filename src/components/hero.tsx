@@ -33,7 +33,7 @@ export function Hero() {
       {/* Cyber Signal Grid */}
       <div className="absolute inset-0 z-0 bg-[radial-gradient(rgba(37,99,235,0.1)_1px,transparent_1px)] bg-[size:50px_50px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_20%,transparent_100%)] opacity-40 pointer-events-none"></div>
 
-      <div className="max-w-[1250px] mx-auto w-full relative z-10 grid lg:grid-cols-[1.1fr,0.9fr] gap-16 items-center">
+      <div className="max-w-[1250px] mx-auto w-full relative z-10 grid lg:grid-cols-[1.1fr_0.9fr] gap-16 items-center">
         
         {/* Left Column: Narrative */}
         <motion.div
@@ -45,7 +45,7 @@ export function Hero() {
           <motion.div variants={fadeSlideIn} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-blue-500/30 bg-blue-500/10 backdrop-blur-xl shadow-[0_10px_40px_rgba(37,99,235,0.2)]">
                <Bot className="w-5 h-5 text-blue-400" />
-               <span className="text-blue-400 text-xs font-black tracking-[0.3em] uppercase italic text-glow_blue">The AI-First Engineering Protocol</span>
+               <span className="text-blue-400 text-xs font-black tracking-[0.3em] uppercase italic text-glow-blue">The AI-First Engineering Protocol</span>
             </div>
           </motion.div>
 
@@ -123,7 +123,7 @@ export function Hero() {
                   <div className="space-y-10 flex-1 relative z-10">
                      <div className="text-xs text-slate-500 font-mono uppercase tracking-[0.4em] font-black">Core // ENGINE.NEURAL_AUTO</div>
                      
-                     <h2 className="text-4xl font-black text-white leading-[1.1] tracking-tight group-hover:text-glow_blue transition-all italic underline decoration-blue-600/20">
+                     <h2 className="text-4xl font-black text-white leading-[1.1] tracking-tight group-hover:text-glow-blue transition-all italic underline decoration-blue-600/20">
                         Institutional Grade. <br/>Architectural Velocity.
                      </h2>
                      
