@@ -7,6 +7,66 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { resourcesData } from "@/config/resources-data";
 
+// Custom Case Studies Components
+import { CaseStudiesHero } from "@/components/case-studies-hero";
+import { CaseStudiesGrid } from "@/components/case-studies-grid";
+
+// Custom Client Experiences Components
+import { ClientExperiencesHero } from "@/components/client-experiences-hero";
+import { ClientExperiencesGrid } from "@/components/client-experiences-grid";
+
+// Custom Blog Components
+import { BlogHero } from "@/components/blog-hero";
+import { BlogGrid } from "@/components/blog-grid";
+
+// Custom Webinars Components
+import { WebinarsHero } from "@/components/webinars-hero";
+import { WebinarsGrid } from "@/components/webinars-grid";
+
+// Custom Press Release Components
+import { PressReleaseHero } from "@/components/press-release-hero";
+import { PressReleaseGrid } from "@/components/press-release-grid";
+
+// Custom Expert Q&A Components
+import { ExpertQaHero } from "@/components/expert-qa-hero";
+import { ExpertQaGrid } from "@/components/expert-qa-grid";
+
+// Custom Podcasts Components
+import { PodcastsHero } from "@/components/podcasts-hero";
+import { PodcastsGrid } from "@/components/podcasts-grid";
+
+// Custom Whitepapers Components
+import { WhitepapersHero } from "@/components/whitepapers-hero";
+import { WhitepapersGrid } from "@/components/whitepapers-grid";
+
+// Custom eBooks Components
+import { EbooksHero } from "@/components/ebooks-hero";
+import { EbooksGrid } from "@/components/ebooks-grid";
+
+// Custom Brochure Components
+import { BrochureHero } from "@/components/brochure-hero";
+import { BrochureGrid } from "@/components/brochure-grid";
+
+// Custom Infographics Components
+import { InfographicsHero } from "@/components/infographics-hero";
+import { InfographicsGrid } from "@/components/infographics-grid";
+
+// Custom Tech Tales Components
+import { TechTalesHero } from "@/components/tech-tales-hero";
+import { TechTalesGrid } from "@/components/tech-tales-grid";
+
+// Custom SaaS Masterclasses Components
+import { SaasMasterclassesHero } from "@/components/saas-masterclasses-hero";
+import { SaasMasterclassesGrid } from "@/components/saas-masterclasses-grid";
+
+// Custom FAQ Components
+import { FaqHero } from "@/components/faq-hero";
+import { FaqGrid } from "@/components/faq-grid";
+
+// Custom All Resources Components
+import { AllResourcesHero } from "@/components/all-resources-hero";
+import { AllResourcesGrid } from "@/components/all-resources-grid";
+
 export default function ResourcePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = resourcesData[slug as keyof typeof resourcesData];
@@ -22,6 +82,201 @@ export default function ResourcePage({ params }: { params: Promise<{ slug: strin
             <Link href="/" className="text-primary hover:underline">Go back home</Link>
           </div>
         </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "case-studies") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050608]">
+          <CaseStudiesHero />
+          <CaseStudiesGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "client-experiences") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050810]">
+          <ClientExperiencesHero />
+          <ClientExperiencesGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "blog") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050608]">
+          <BlogHero />
+          <BlogGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "webinars") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050814]">
+          <WebinarsHero />
+          <WebinarsGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "press-release") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#05060d]">
+          <PressReleaseHero />
+          <PressReleaseGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "expert-qa") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050a0f]">
+          <ExpertQaHero />
+          <ExpertQaGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "podcasts") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0a050d]">
+          <PodcastsHero />
+          <PodcastsGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "whitepapers") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#05060a]">
+          <WhitepapersHero />
+          <WhitepapersGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ebooks") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#08050d]">
+          <EbooksHero />
+          <EbooksGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "brochure") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0c0d12]">
+          <BrochureHero />
+          <BrochureGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "infographics") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050805]">
+          <InfographicsHero />
+          <InfographicsGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "tech-tales") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050608]">
+          <TechTalesHero />
+          <TechTalesGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "saas-masterclasses") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050505]">
+          <SaasMasterclassesHero />
+          <SaasMasterclassesGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "faq") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#05060b]">
+          <FaqHero />
+          <FaqGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "all-resources") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020202]">
+          <AllResourcesHero />
+          <AllResourcesGrid />
+        </main>
         <Footer />
       </>
     );

@@ -1,24 +1,24 @@
-import EnterprisePage from "@/components/enterprise-page";
+import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+
+// High-Fidelity Data Smartz 360 Components
+import { DataSmartzHero } from "@/components/data-smartz-hero";
+import { DataSmartzIntelligence } from "@/components/data-smartz-intelligence";
 
 export default function DataSmartz360Page() {
-  const pageData = {
-    title: "DataSmartz360",
-    subtitle: "Data & Analytics Solutions",
-    description: "Unlock the power of your data with DataSmartz360 - comprehensive data and analytics solutions that transform raw data into actionable insights. Our team helps organizations build robust data infrastructure and derive meaningful business intelligence.",
-    features: [
-      { title: "Data Engineering", description: "Scalable data pipelines and architecture design", icon: "🏗️" },
-      { title: "BI Dashboards", description: "Interactive business intelligence dashboards", icon: "📊" },
-      { title: "Data Insights", description: "Advanced analytics and visualization", icon: "🔍" },
-      { title: "Data Governance", description: "Quality management and security", icon: "🛡️" },
-    ],
-    benefits: [
-      "Data-driven decisions",
-      "Improved data quality",
-      "Real-time insights",
-      "Better business outcomes",
-      "Scalable data infrastructure",
-    ],
-  };
+  return (
+    <>
+      <Header />
+      <main className="pt-[0px] bg-[#020617]">
+        
+        {/* Modern Data Intelligence Hero */}
+        <DataSmartzHero />
+        
+        {/* Core Big Data & Intelligence Solutions */}
+        <DataSmartzIntelligence />
 
-  return <EnterprisePage {...pageData} />;
+      </main>
+      <Footer />
+    </>
+  );
 }

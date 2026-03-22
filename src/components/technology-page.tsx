@@ -7,6 +7,116 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { technologyData } from "@/config/technologies-data";
 
+// Custom Angular Components
+import { AngularHero } from "@/components/tech-angular-hero";
+import { AngularFeatures } from "@/components/tech-angular-features";
+import { AngularBenefits } from "@/components/tech-angular-benefits";
+
+// Custom React Components
+import { ReactHero } from "@/components/tech-react-hero";
+import { ReactFeatures } from "@/components/tech-react-features";
+import { ReactBenefits } from "@/components/tech-react-benefits";
+
+// Custom Vue Components
+import { VueHero } from "@/components/tech-vue-hero";
+import { VueFeatures } from "@/components/tech-vue-features";
+import { VueBenefits } from "@/components/tech-vue-benefits";
+
+// Custom Node Components
+import { NodeHero } from "@/components/tech-node-hero";
+import { NodeFeatures } from "@/components/tech-node-features";
+import { NodeBenefits } from "@/components/tech-node-benefits";
+
+// Custom React Native Components
+import { ReactNativeHero } from "@/components/tech-react-native-hero";
+import { ReactNativeFeatures } from "@/components/tech-react-native-features";
+import { ReactNativeBenefits } from "@/components/tech-react-native-benefits";
+
+// Custom Flutter Components
+import { FlutterHero } from "@/components/tech-flutter-hero";
+import { FlutterFeatures } from "@/components/tech-flutter-features";
+import { FlutterBenefits } from "@/components/tech-flutter-benefits";
+
+// Custom Swift/iOS Components
+import { SwiftHero } from "@/components/tech-swift-hero";
+import { SwiftFeatures } from "@/components/tech-swift-features";
+import { SwiftBenefits } from "@/components/tech-swift-benefits";
+
+// Custom Android Components
+import { AndroidHero } from "@/components/tech-android-hero";
+import { AndroidFeatures } from "@/components/tech-android-features";
+import { AndroidBenefits } from "@/components/tech-android-benefits";
+
+// Custom General iOS Components
+import { IosHero } from "@/components/tech-ios-hero";
+import { IosFeatures } from "@/components/tech-ios-features";
+import { IosBenefits } from "@/components/tech-ios-benefits";
+
+// Custom PHP Components
+import { PhpHero } from "@/components/tech-php-hero";
+import { PhpFeatures } from "@/components/tech-php-features";
+import { PhpBenefits } from "@/components/tech-php-benefits";
+
+// Custom Ruby on Rails Components
+import { RailsHero } from "@/components/tech-rails-hero";
+import { RailsFeatures } from "@/components/tech-rails-features";
+import { RailsBenefits } from "@/components/tech-rails-benefits";
+
+// Custom Java Components
+import { JavaHero } from "@/components/tech-java-hero";
+import { JavaFeatures } from "@/components/tech-java-features";
+import { JavaBenefits } from "@/components/tech-java-benefits";
+
+// Custom Python Components
+import { PythonHero } from "@/components/tech-python-hero";
+import { PythonFeatures } from "@/components/tech-python-features";
+import { PythonBenefits } from "@/components/tech-python-benefits";
+
+// Custom .NET Components
+import { DotnetHero } from "@/components/tech-dotnet-hero";
+import { DotnetFeatures } from "@/components/tech-dotnet-features";
+import { DotnetBenefits } from "@/components/tech-dotnet-benefits";
+
+// Custom Golang Components
+import { GolangHero } from "@/components/tech-golang-hero";
+import { GolangFeatures } from "@/components/tech-golang-features";
+import { GolangBenefits } from "@/components/tech-golang-benefits";
+
+// Custom Magento Components
+import { MagentoHero } from "@/components/tech-magento-hero";
+import { MagentoFeatures } from "@/components/tech-magento-features";
+import { MagentoBenefits } from "@/components/tech-magento-benefits";
+
+// Custom MERN Components
+import { MernHero } from "@/components/tech-mern-hero";
+import { MernFeatures } from "@/components/tech-mern-features";
+import { MernBenefits } from "@/components/tech-mern-benefits";
+
+// Custom Azure DevOps Components
+import { DevopsAzureHero } from "@/components/tech-devops-azure-hero";
+import { DevopsAzureFeatures } from "@/components/tech-devops-azure-features";
+import { DevopsAzureBenefits } from "@/components/tech-devops-azure-benefits";
+
+// Custom AWS DevOps Components
+import { DevopsAwsHero } from "@/components/tech-devops-aws-hero";
+import { DevopsAwsFeatures } from "@/components/tech-devops-aws-features";
+import { DevopsAwsBenefits } from "@/components/tech-devops-aws-benefits";
+
+// Custom Dynamics CRM Components
+import { DynamicsCrmHero } from "@/components/tech-dynamics-crm-hero";
+import { DynamicsCrmFeatures } from "@/components/tech-dynamics-crm-features";
+import { DynamicsCrmBenefits } from "@/components/tech-dynamics-crm-benefits";
+
+// Custom C# MVC Components
+import { CsharpMvcHero } from "@/components/tech-csharp-mvc-hero";
+import { CsharpMvcFeatures } from "@/components/tech-csharp-mvc-features";
+import { CsharpMvcBenefits } from "@/components/tech-csharp-mvc-benefits";
+
+// Custom Software Testing Components
+import { TestingHero } from "@/components/tech-testing-hero";
+import { TestingFeatures } from "@/components/tech-testing-features";
+import { TestingBenefits } from "@/components/tech-testing-benefits";
+
 export default function TechnologyPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = technologyData[slug as keyof typeof technologyData];
@@ -22,6 +132,314 @@ export default function TechnologyPage({ params }: { params: Promise<{ slug: str
             <Link href="/" className="text-primary hover:underline">Go back home</Link>
           </div>
         </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "angularjs") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#09090b]">
+          <AngularHero />
+          <AngularFeatures />
+          <AngularBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "reactjs") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#000000]">
+          <ReactHero />
+          <ReactFeatures />
+          <ReactBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "vuejs") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0c1322]">
+          <VueHero />
+          <VueFeatures />
+          <VueBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "nodejs") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0d1117]">
+          <NodeHero />
+          <NodeFeatures />
+          <NodeBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "react-native") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0a0f1c]">
+          <ReactNativeHero />
+          <ReactNativeFeatures />
+          <ReactNativeBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "flutter") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#040b16]">
+          <FlutterHero />
+          <FlutterFeatures />
+          <FlutterBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ios-swift") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-black">
+          <SwiftHero />
+          <SwiftFeatures />
+          <SwiftBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "android") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#101216]">
+          <AndroidHero />
+          <AndroidFeatures />
+          <AndroidBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ios") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020816]">
+          <IosHero />
+          <IosFeatures />
+          <IosBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "php") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0b0f19]">
+          <PhpHero />
+          <PhpFeatures />
+          <PhpBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ruby-on-rails") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0d0708]">
+          <RailsHero />
+          <RailsFeatures />
+          <RailsBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "java") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#080d15]">
+          <JavaHero />
+          <JavaFeatures />
+          <JavaBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "python") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0b101e]">
+          <PythonHero />
+          <PythonFeatures />
+          <PythonBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "dotnet") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#090b10]">
+          <DotnetHero />
+          <DotnetFeatures />
+          <DotnetBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "golang") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0a0f12]">
+          <GolangHero />
+          <GolangFeatures />
+          <GolangBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "magento") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0c0908]">
+          <MagentoHero />
+          <MagentoFeatures />
+          <MagentoBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "mern-stack") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#05080a]">
+          <MernHero />
+          <MernFeatures />
+          <MernBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "devops-azure") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050b14]">
+          <DevopsAzureHero />
+          <DevopsAzureFeatures />
+          <DevopsAzureBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "devops-aws") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0f1523]">
+          <DevopsAwsHero />
+          <DevopsAwsFeatures />
+          <DevopsAwsBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "dynamics-crm") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050b14]">
+          <DynamicsCrmHero />
+          <DynamicsCrmFeatures />
+          <DynamicsCrmBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "testing") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050608]">
+          <TestingHero />
+          <TestingFeatures />
+          <TestingBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "csharp-mvc") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0a0710]">
+          <CsharpMvcHero />
+          <CsharpMvcFeatures />
+          <CsharpMvcBenefits />
+        </main>
         <Footer />
       </>
     );

@@ -7,11 +7,11 @@ import { motion, AnimatePresence } from "framer-motion";
 const column1 = [
   { label: "Our Story", href: "/about/our-story" },
   { label: "25+ Years of Excellence", href: "/about/25-years-excellence" },
-  { label: "Why Netsmartz", href: "/about/why-netsmartz" },
+  { label: "Why Netwit", href: "/about/why-netsmartz" },
   { label: "Timeline", href: "/about/timeline" },
   { label: "Leadership Team", href: "/about/leadership-team" },
-  { label: "Life at Netsmartz", href: "/about/life-at-netsmartz" },
-  { label: "Netsmartz Academy", href: "/about/netsmartz-academy" },
+  { label: "Life at Netwit", href: "/about/life-at-netsmartz" },
+  { label: "Netwit Academy", href: "/about/netsmartz-academy" },
   { label: "Learning & Development", href: "/about/learning-development" },
 ];
 

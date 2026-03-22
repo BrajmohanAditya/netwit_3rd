@@ -57,6 +57,11 @@ import { SalesforceHero } from "@/components/hire-salesforce-hero";
 import { SalesforceFeatures } from "@/components/hire-salesforce-features";
 import { SalesforceBenefits } from "@/components/hire-salesforce-benefits";
 
+// Custom Dedicated Teams Components
+import { TeamHero } from "@/components/hire-team-hero";
+import { TeamFeatures } from "@/components/hire-team-features";
+import { TeamBenefits } from "@/components/hire-team-benefits";
+
 export default function HirePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = hireData[slug as keyof typeof hireData];
@@ -211,6 +216,20 @@ export default function HirePage({ params }: { params: Promise<{ slug: string }>
           <SalesforceHero />
           <SalesforceFeatures />
           <SalesforceBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "dedicated-team") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0c0c0e]">
+          <TeamHero />
+          <TeamFeatures />
+          <TeamBenefits />
         </main>
         <Footer />
       </>

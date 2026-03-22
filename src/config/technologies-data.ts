@@ -465,23 +465,6 @@ export const technologyData = {
     ],
   },
   // Others
-  "mean-stack": {
-    title: "MEAN Stack Development",
-    subtitle: "Full-Stack JavaScript",
-    description: "Build full-stack JavaScript applications with our MEAN Stack experts. Create modern web apps using MongoDB, Express, Angular, and Node.js.",
-    features: [
-      { title: "MongoDB", description: "NoSQL database" },
-      { title: "Express.js", description: "Web framework" },
-      { title: "Angular", description: "Frontend framework" },
-      { title: "Node.js", description: "Server runtime" },
-    ],
-    benefits: [
-      "JavaScript everywhere",
-      "JSON everywhere",
-      "Flexible",
-      "Fast development",
-    ],
-  },
   "mern-stack": {
     title: "MERN Stack Development",
     subtitle: "Modern Full-Stack JS",

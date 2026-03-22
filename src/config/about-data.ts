@@ -2,7 +2,7 @@ export const aboutData = {
   "our-story": {
     title: "Our Story",
     subtitle: "A Journey of Innovation & Excellence",
-    description: "Founded with a vision to transform how businesses leverage technology, Netsmartz has grown from a small startup to a global technology solutions provider. Our journey is marked by continuous innovation, client success, and a commitment to excellence.",
+    description: "Founded with a vision to transform how businesses leverage technology, Netwit has grown from a small startup to a global technology solutions provider. Our journey is marked by continuous innovation, client success, and a commitment to excellence.",
     stats: [
       { value: "25+", label: "Years of Excellence" },
       { value: "2000+", label: "Clients Worldwide" },
@@ -19,7 +19,7 @@ export const aboutData = {
   "25-years-excellence": {
     title: "25+ Years of Excellence",
     subtitle: "Quarter Century of Innovation",
-    description: "For over 25 years, Netsmartz has been at the forefront of technology innovation. Our longevity is a testament to our commitment to quality, customer satisfaction, and continuous improvement.",
+    description: "For over 25 years, Netwit has been at the forefront of technology innovation. Our longevity is a testament to our commitment to quality, customer satisfaction, and continuous improvement.",
     stats: [
       { value: "25+", label: "Years in Business" },
       { value: "2000+", label: "Projects Delivered" },
@@ -34,9 +34,9 @@ export const aboutData = {
     ],
   },
   "why-netsmartz": {
-    title: "Why Netsmartz",
+    title: "Why Netwit",
     subtitle: "Your Partner in Digital Transformation",
-    description: "At Netsmartz, we don't just provide technology solutions – we become your strategic partner in digital transformation. Our commitment to excellence, innovation, and client success sets us apart.",
+    description: "At Netwit, we don't just provide technology solutions – we become your strategic partner in digital transformation. Our commitment to excellence, innovation, and client success sets us apart.",
     stats: [
       { value: "1500+", label: "Expert Engineers" },
       { value: "2000+", label: "Successful Projects" },
@@ -53,7 +53,7 @@ export const aboutData = {
   timeline: {
     title: "Timeline",
     subtitle: "Our Journey Through the Years",
-    description: "Explore the key milestones that have shaped Netsmartz into what we are today. From our humble beginnings to becoming a global technology leader.",
+    description: "Explore the key milestones that have shaped Netwit into what we are today. From our humble beginnings to becoming a global technology leader.",
     stats: [
       { value: "1999", label: "Founded" },
       { value: "2010", label: "Global Expansion" },
@@ -85,9 +85,9 @@ export const aboutData = {
     ],
   },
   "life-at-netsmartz": {
-    title: "Life at Netsmartz",
+    title: "Life at Netwit",
     subtitle: "Where Innovation Meets Culture",
-    description: "At Netsmartz, we believe that great work happens in an environment that nurtures creativity, collaboration, and well-being. Our culture is built on trust, transparency, and continuous learning.",
+    description: "At Netwit, we believe that great work happens in an environment that nurtures creativity, collaboration, and well-being. Our culture is built on trust, transparency, and continuous learning.",
     stats: [
       { value: "1500+", label: "Team Members" },
       { value: "10+", label: "Global Offices" },
@@ -102,9 +102,9 @@ export const aboutData = {
     ],
   },
   "netsmartz-academy": {
-    title: "Netsmartz Academy",
+    title: "Netwit Academy",
     subtitle: "Building Future Tech Leaders",
-    description: "Netsmartz Academy is our commitment to nurturing the next generation of tech talent. Through comprehensive training programs, mentorship, and hands-on projects, we develop industry-ready professionals.",
+    description: "Netwit Academy is our commitment to nurturing the next generation of tech talent. Through comprehensive training programs, mentorship, and hands-on projects, we develop industry-ready professionals.",
     stats: [
       { value: "5000+", label: "Graduates" },
       { value: "100+", label: "Training Programs" },
@@ -121,7 +121,7 @@ export const aboutData = {
   "learning-development": {
     title: "Learning & Development",
     subtitle: "Continuous Growth for All",
-    description: "We invest heavily in our people's growth through continuous learning opportunities. From technical skills to leadership development, Netsmartz ensures every team member has the resources to thrive.",
+    description: "We invest heavily in our people's growth through continuous learning opportunities. From technical skills to leadership development, Netwit ensures every team member has the resources to thrive.",
     stats: [
       { value: "200+", label: "Training Hours/Year" },
       { value: "100%", label: "Team Access" },
@@ -138,7 +138,7 @@ export const aboutData = {
   "ai-first-culture": {
     title: "AI-First Culture",
     subtitle: "Innovation Driven by Intelligence",
-    description: "At Netsmartz, AI is not just a service – it's embedded in our DNA. Our AI-first culture means every solution we deliver leverages the latest in artificial intelligence and machine learning.",
+    description: "At Netwit, AI is not just a service – it's embedded in our DNA. Our AI-first culture means every solution we deliver leverages the latest in artificial intelligence and machine learning.",
     stats: [
       { value: "200+", label: "AI Engineers" },
       { value: "100+", label: "AI Projects" },
@@ -155,7 +155,7 @@ export const aboutData = {
   sustainability: {
     title: "Sustainability",
     subtitle: "Technology for a Greener Future",
-    description: "Netsmartz is committed to sustainable technology practices. We help our clients reduce their carbon footprint through energy-efficient cloud solutions, green computing initiatives, and sustainable IT practices.",
+    description: "Netwit is committed to sustainable technology practices. We help our clients reduce their carbon footprint through energy-efficient cloud solutions, green computing initiatives, and sustainable IT practices.",
     stats: [
       { value: "40%", label: "Carbon Reduction" },
       { value: "100%", label: "Green Energy Offices" },
@@ -172,7 +172,7 @@ export const aboutData = {
   "talent-stories": {
     title: "Talent Stories",
     subtitle: "Voices of Our People",
-    description: "Hear from the talented individuals who make Netsmartz great. Our talent stories showcase the diverse perspectives, achievements, and growth journeys of our team members.",
+    description: "Hear from the talented individuals who make Netwit great. Our talent stories showcase the diverse perspectives, achievements, and growth journeys of our team members.",
     stats: [
       { value: "1500+", label: "Team Members" },
       { value: "50+", label: "Countries" },
@@ -206,7 +206,7 @@ export const aboutData = {
   events: {
     title: "Events",
     subtitle: "Connect, Learn, Innovate",
-    description: "Netsmartz hosts and participates in events worldwide, bringing together industry leaders, technology experts, and innovators to share knowledge and shape the future.",
+    description: "Netwit hosts and participates in events worldwide, bringing together industry leaders, technology experts, and innovators to share knowledge and shape the future.",
     stats: [
       { value: "100+", label: "Events/Year" },
       { value: "10K+", label: "Attendees" },
@@ -223,7 +223,7 @@ export const aboutData = {
   "we-are-hiring": {
     title: "We're Hiring",
     subtitle: "Join Our Global Team",
-    description: "Netsmartz is always looking for talented individuals to join our team. Explore exciting career opportunities and become part of a company that values innovation, growth, and excellence.",
+    description: "Netwit is always looking for talented individuals to join our team. Explore exciting career opportunities and become part of a company that values innovation, growth, and excellence.",
     stats: [
       { value: "200+", label: "Open Positions" },
       { value: "50+", label: "Countries" },
@@ -240,7 +240,7 @@ export const aboutData = {
   "giving-back": {
     title: "Giving Back",
     subtitle: "Making a Difference",
-    description: "Netsmartz is committed to making a positive impact in our communities. Through our corporate social responsibility initiatives, we support education, environment, and social causes.",
+    description: "Netwit is committed to making a positive impact in our communities. Through our corporate social responsibility initiatives, we support education, environment, and social causes.",
     stats: [
       { value: "$1M+", label: "Charity Donated" },
       { value: "100+", label: "Charity Partners" },
@@ -257,7 +257,7 @@ export const aboutData = {
   "referral-partners": {
     title: "Referral Partners",
     subtitle: "Grow With Us",
-    description: "Join our referral partner program and earn rewards for introducing clients to Netsmartz. It's a win-win opportunity for individuals and businesses to benefit from our success.",
+    description: "Join our referral partner program and earn rewards for introducing clients to Netwit. It's a win-win opportunity for individuals and businesses to benefit from our success.",
     stats: [
       { value: "500+", label: "Active Partners" },
       { value: "30%", label: "Commission Rate" },
@@ -274,7 +274,7 @@ export const aboutData = {
   "thought-leadership": {
     title: "Thought Leadership",
     subtitle: "Shaping the Future of Tech",
-    description: "Netsmartz thought leaders are shaping the future of technology through innovation, research, and industry expertise. Discover insights that drive the future of digital transformation.",
+    description: "Netwit thought leaders are shaping the future of technology through innovation, research, and industry expertise. Discover insights that drive the future of digital transformation.",
     stats: [
       { value: "50+", label: "Thought Leaders" },
       { value: "500+", label: "Publications" },

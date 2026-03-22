@@ -7,6 +7,62 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { aboutData } from "@/config/about-data";
 
+// Custom Our Story Components
+import { OurStoryHero } from "@/components/our-story-hero";
+import { OurStoryTimeline } from "@/components/our-story-timeline";
+
+// Custom Excellence Components
+import { ExcellenceHero } from "@/components/excellence-hero";
+import { ExcellencePillars } from "@/components/excellence-pillars";
+
+// Custom Why Netwit Components
+import { WhyNetwitHero } from "@/components/why-netwit-hero";
+import { WhyNetwitDifferentiation } from "@/components/why-netwit-differentiation";
+
+// Custom Timeline Components
+import { TimelineHero } from "@/components/timeline-hero";
+import { TimelineFeed } from "@/components/timeline-feed";
+
+// Custom Leadership Components
+import { LeadershipHero } from "@/components/leadership-hero";
+import { LeadershipProfiles } from "@/components/leadership-profiles";
+
+// Custom Life At Netwit Components
+import { LifeAtNetwitHero } from "@/components/life-at-netwit-hero";
+import { LifeAtNetwitCulture } from "@/components/life-at-netwit-culture";
+
+// Custom Netwit Academy Components
+import { NetwitAcademyHero } from "@/components/netwit-academy-hero";
+import { NetwitAcademyCurriculum } from "@/components/netwit-academy-curriculum";
+
+// Custom L&D, AI, and Sustainability Components
+import { LearningDevelopmentHero } from "@/components/learning-development-hero";
+import { LearningDevelopmentGrowth } from "@/components/learning-development-growth";
+import { AiCultureHero } from "@/components/ai-culture-hero";
+import { AiCultureProtocol } from "@/components/ai-culture-protocol";
+import { SustainabilityHero } from "@/components/sustainability-hero";
+import { SustainabilityImpact } from "@/components/sustainability-impact";
+
+// Custom Talent Stories and GPW Journal Components
+import { TalentStoriesHero } from "@/components/talent-stories-hero";
+import { TalentStoriesGrid } from "@/components/talent-stories-grid";
+import { GpwJournalHero } from "@/components/gpw-journal-hero";
+import { GpwJournalArticles } from "@/components/gpw-journal-articles";
+
+// Custom Events, Hiring, Giving Back, and Referral Components
+import { EventsHero } from "@/components/events-hero";
+import { EventsGrid } from "@/components/events-grid";
+import { HiringHero } from "@/components/hiring-hero";
+import { HiringBenefits } from "@/components/hiring-benefits";
+import { GivingBackHero } from "@/components/giving-back-hero";
+import { GivingBackImpact } from "@/components/giving-back-impact";
+import { ReferralHero } from "@/components/referral-hero";
+import { ReferralProgram } from "@/components/referral-program";
+
+// Custom Thought Leadership Components
+import { ThoughtLeadershipHero } from "@/components/thought-leadership-hero";
+import { ThoughtLeadershipPillars } from "@/components/thought-leadership-pillars";
+
 export default function AboutPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = aboutData[slug as keyof typeof aboutData];
@@ -22,6 +78,227 @@ export default function AboutPage({ params }: { params: Promise<{ slug: string }
             <Link href="/" className="text-primary hover:underline">Go back home</Link>
           </div>
         </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "our-story") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#02050b]">
+          <OurStoryHero />
+          <OurStoryTimeline />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "25-years-excellence") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050505]">
+          <ExcellenceHero />
+          <ExcellencePillars />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "why-netsmartz") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#080a0d]">
+          <WhyNetwitHero />
+          <WhyNetwitDifferentiation />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "timeline") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#02050b]">
+          <TimelineHero />
+          <TimelineFeed />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "leadership-team") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#030303]">
+          <LeadershipHero />
+          <LeadershipProfiles />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "life-at-netsmartz") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#09020f]">
+          <LifeAtNetwitHero />
+          <LifeAtNetwitCulture />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "netsmartz-academy") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020502]">
+          <NetwitAcademyHero />
+          <NetwitAcademyCurriculum />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "learning-development") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050b1a]">
+          <LearningDevelopmentHero />
+          <LearningDevelopmentGrowth />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ai-first-culture") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020202]">
+          <AiCultureHero />
+          <AiCultureProtocol />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "sustainability") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#030303]">
+          <SustainabilityHero />
+          <SustainabilityImpact />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "talent-stories") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0d0d0d]">
+          <TalentStoriesHero />
+          <TalentStoriesGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "gpw-journal") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020512]">
+          <GpwJournalHero />
+          <GpwJournalArticles />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "events") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0d021c]">
+          <EventsHero />
+          <EventsGrid />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "we-are-hiring") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020617]">
+          <HiringHero />
+          <HiringBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "giving-back") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020502]">
+          <GivingBackHero />
+          <GivingBackImpact />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "referral-partners") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#0d0d0d]">
+          <ReferralHero />
+          <ReferralProgram />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "thought-leadership") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020617]">
+          <ThoughtLeadershipHero />
+          <ThoughtLeadershipPillars />
+        </main>
         <Footer />
       </>
     );
@@ -109,7 +386,7 @@ export default function AboutPage({ params }: { params: Promise<{ slug: string }
             <p className="text-xl text-white/80 mb-8">
               {slug === "we-are-hiring" 
                 ? "Explore career opportunities and become part of our success story"
-                : "Get in touch with our team to learn more about Netsmartz"
+                : "Get in touch with our team to learn more about Netwit"
               }
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

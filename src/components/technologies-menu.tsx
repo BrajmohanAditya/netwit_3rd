@@ -41,7 +41,6 @@ const technologies = {
     { label: "Magento", href: "/technology/magento" },
   ],
   others: [
-    { label: "MEAN Stack", href: "/technology/mean-stack" },
     { label: "MERN Stack", href: "/technology/mern-stack" },
     { label: "DevOps – Azure", href: "/technology/devops-azure" },
     { label: "DevOps – AWS", href: "/technology/devops-aws" },
