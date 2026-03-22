@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, Signal, Network, WifiHigh, Activity } from "lucide-react";
+import { ArrowRight, Signal, Network, Wifi, Activity } from "lucide-react";
 import Link from "next/link";
 
 export function TelecomHero() {
@@ -64,7 +64,7 @@ export function TelecomHero() {
                {/* Orbiting Elements */}
                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[280px] h-[280px] border border-cyan-500/30 rounded-full animate-[spin_10s_linear_infinite] pointer-events-none">
                   <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 w-10 h-10 bg-[#020817] border border-cyan-400 rounded-xl flex items-center justify-center shadow-[0_0_20px_rgba(34,211,238,0.5)]">
-                     <WifiHigh className="w-5 h-5 text-cyan-400" />
+                     <Wifi className="w-5 h-5 text-cyan-400" />
                   </div>
                </div>
                
