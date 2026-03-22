@@ -81,6 +81,36 @@ import { RealEstateClients } from "@/components/industries-real-estate-clients";
 import { RealEstateSolutions } from "@/components/industries-real-estate-solutions";
 import { RealEstateBenefits } from "@/components/industries-real-estate-benefits";
 
+// New Travel Components
+import { TravelHero } from "@/components/industries-travel-hero";
+import { TravelClients } from "@/components/industries-travel-clients";
+import { TravelSolutions } from "@/components/industries-travel-solutions";
+import { TravelBenefits } from "@/components/industries-travel-benefits";
+
+// New Logistics Components
+import { LogisticsHero } from "@/components/industries-logistics-hero";
+import { LogisticsClients } from "@/components/industries-logistics-clients";
+import { LogisticsSolutions } from "@/components/industries-logistics-solutions";
+import { LogisticsBenefits } from "@/components/industries-logistics-benefits";
+
+// New Telecom Components
+import { TelecomHero } from "@/components/industries-telecom-hero";
+import { TelecomClients } from "@/components/industries-telecom-clients";
+import { TelecomSolutions } from "@/components/industries-telecom-solutions";
+import { TelecomBenefits } from "@/components/industries-telecom-benefits";
+
+// New Sports Components
+import { SportsHero } from "@/components/industries-sports-hero";
+import { SportsClients } from "@/components/industries-sports-clients";
+import { SportsSolutions } from "@/components/industries-sports-solutions";
+import { SportsBenefits } from "@/components/industries-sports-benefits";
+
+// New Retail Components
+import { RetailHero } from "@/components/industries-retail-hero";
+import { RetailClients } from "@/components/industries-retail-clients";
+import { RetailSolutions } from "@/components/industries-retail-solutions";
+import { RetailBenefits } from "@/components/industries-retail-benefits";
+
 export default function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = industriesData[slug as keyof typeof industriesData];
@@ -314,6 +344,91 @@ export default function IndustryPage({ params }: { params: Promise<{ slug: strin
           <ScaleupsSuccessStories />
           <ScaleupsInsights />
           <StartupsCarousel />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "retail") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#030303]">
+          <RetailHero />
+          <RetailClients />
+          <RetailSolutions />
+          <RetailBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "sports") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#030303]">
+          <SportsHero />
+          <SportsClients />
+          <SportsSolutions />
+          <SportsBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "telecom") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#020817]">
+          <TelecomHero />
+          <TelecomClients />
+          <TelecomSolutions />
+          <TelecomBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "logistics") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#09090b]">
+          <LogisticsHero />
+          <LogisticsClients />
+          <LogisticsSolutions />
+          <LogisticsBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "travel") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#f8fafc]">
+          <TravelHero />
+          <TravelClients />
+          <TravelSolutions />
+          <TravelBenefits />
+          <ScaleupsEngagement />
+          <EnterpriseInsights />
         </main>
         <Footer />
       </>

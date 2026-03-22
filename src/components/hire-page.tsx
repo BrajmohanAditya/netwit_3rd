@@ -7,6 +7,56 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { hireData } from "@/config/technologies-data";
 
+// Custom Generative AI Components
+import { GenAiHero } from "@/components/hire-genai-hero";
+import { GenAiFeatures } from "@/components/hire-genai-features";
+import { GenAiBenefits } from "@/components/hire-genai-benefits";
+
+// Custom DevOps Components
+import { DevOpsHero } from "@/components/hire-devops-hero";
+import { DevOpsFeatures } from "@/components/hire-devops-features";
+import { DevOpsBenefits } from "@/components/hire-devops-benefits";
+
+// Custom Lead Generation Components
+import { LeadGenHero } from "@/components/hire-leadgen-hero";
+import { LeadGenFeatures } from "@/components/hire-leadgen-features";
+import { LeadGenBenefits } from "@/components/hire-leadgen-benefits";
+
+// Custom Product Development Components
+import { ProductHero } from "@/components/hire-product-hero";
+import { ProductFeatures } from "@/components/hire-product-features";
+import { ProductBenefits } from "@/components/hire-product-benefits";
+
+// Custom Web App Development Components
+import { WebAppHero } from "@/components/hire-webapp-hero";
+import { WebAppFeatures } from "@/components/hire-webapp-features";
+import { WebAppBenefits } from "@/components/hire-webapp-benefits";
+
+// Custom Mobile App Development Components
+import { MobileHero } from "@/components/hire-mobile-hero";
+import { MobileFeatures } from "@/components/hire-mobile-features";
+import { MobileBenefits } from "@/components/hire-mobile-benefits";
+
+// Custom ERP & CRM Implementation Components
+import { ErpHero } from "@/components/hire-erp-hero";
+import { ErpFeatures } from "@/components/hire-erp-features";
+import { ErpBenefits } from "@/components/hire-erp-benefits";
+
+// Custom E-commerce Development Components
+import { EcommerceHero } from "@/components/hire-ecommerce-hero";
+import { EcommerceFeatures } from "@/components/hire-ecommerce-features";
+import { EcommerceBenefits } from "@/components/hire-ecommerce-benefits";
+
+// Custom QA & Software Testing Components
+import { QaHero } from "@/components/hire-qa-hero";
+import { QaFeatures } from "@/components/hire-qa-features";
+import { QaBenefits } from "@/components/hire-qa-benefits";
+
+// Custom Salesforce Components
+import { SalesforceHero } from "@/components/hire-salesforce-hero";
+import { SalesforceFeatures } from "@/components/hire-salesforce-features";
+import { SalesforceBenefits } from "@/components/hire-salesforce-benefits";
+
 export default function HirePage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = hireData[slug as keyof typeof hireData];
@@ -22,6 +72,146 @@ export default function HirePage({ params }: { params: Promise<{ slug: string }>
             <Link href="/" className="text-primary hover:underline">Go back home</Link>
           </div>
         </div>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "generative-ai") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-black">
+          <GenAiHero />
+          <GenAiFeatures />
+          <GenAiBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "devops") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050505]">
+          <DevOpsHero />
+          <DevOpsFeatures />
+          <DevOpsBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "lead-generation") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#fcfcfd]">
+          <LeadGenHero />
+          <LeadGenFeatures />
+          <LeadGenBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "product-development") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#030303]">
+          <ProductHero />
+          <ProductFeatures />
+          <ProductBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "web-application-development") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#09090b]">
+          <WebAppHero />
+          <WebAppFeatures />
+          <WebAppBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "mobile-app-development") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#fafafa]">
+          <MobileHero />
+          <MobileFeatures />
+          <MobileBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "erp-crm-implementation") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#07101d]">
+          <ErpHero />
+          <ErpFeatures />
+          <ErpBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "ecommerce-development") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#050505]">
+          <EcommerceHero />
+          <EcommerceFeatures />
+          <EcommerceBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "qa-software-testing") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#070707]">
+          <QaHero />
+          <QaFeatures />
+          <QaBenefits />
+        </main>
+        <Footer />
+      </>
+    );
+  }
+
+  if (slug === "salesforce") {
+    return (
+      <>
+        <Header />
+        <main className="pt-[0px] bg-[#f8fafc]">
+          <SalesforceHero />
+          <SalesforceFeatures />
+          <SalesforceBenefits />
+        </main>
         <Footer />
       </>
     );
