@@ -7,10 +7,10 @@ export function ManufacturingClients() {
     <section className="w-full bg-[#171a21] py-16 px-6 flex flex-col items-center border-t border-gray-800">
       
       <div className="max-w-[1000px] w-full flex flex-col items-center">
-         <p className="text-[14px] text-gray-400 font-bold mb-10 text-center uppercase tracking-[0.2em] relative">
-           <span className="bg-[#171a21] px-4">Trusted by Industry Leaders</span>
+         <div className="text-[14px] text-gray-400 font-bold mb-10 text-center uppercase tracking-[0.2em] relative w-full">
+           <span className="bg-[#171a21] px-4 text-center">Trusted by Industry Leaders</span>
            <div className="absolute top-1/2 left-0 w-full h-[1px] bg-gray-800 -z-10"></div>
-         </p>
+         </div>
          
          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 md:gap-16 items-center justify-items-center opacity-70">
             {/* Dummy Client 1 */}
