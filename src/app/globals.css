@@ -1,5 +1,4 @@
 @import "tailwindcss";
-
 @theme {
   --color-primary: #0B3D91;
   --color-primary-600: #1157E0;
@@ -17,9 +16,9 @@
   --color-card-shadow: rgba(11, 61, 145, 0.08);
   --color-cta: #0B3D91;
   --color-cta-text: #FFFFFF;
-  --font-syne: "Syne", sans-serif;
-  --font-dm-sans: "DM Sans", sans-serif;
-  --font-jetbrains: "JetBrains Mono", monospace;
+  --font-syne: 'Syne', sans-serif;
+  --font-dm-sans: 'DM Sans', sans-serif;
+  --font-jetbrains: 'JetBrains Mono', monospace;
   --text-xs: 11px;
   --text-sm: 12px;
   --text-base: 13px;
@@ -45,17 +44,14 @@
   --color-glow-blue: #60a5fa;
   --shadow-glow-blue: 0 0 10px rgba(96, 165, 250, 0.4);
 }
-
 @utility text-glow-blue {
   color: var(--color-glow-blue);
   text-shadow: var(--shadow-glow-blue);
 }
-
 :root {
   --color-bg: #FFFFFF;
   --color-text: #0F172A;
 }
-
 .dark {
   --color-primary: #4C7BFF;
   --color-text: #E6EEF8;
@@ -63,29 +59,24 @@
   --color-surface: #0B1220;
   --color-bg: #071028;
 }
-
 body {
   background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-dm-sans);
 }
-
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
 }
-
 .skeleton {
   background: linear-gradient(90deg, var(--color-surface-2) 25%, var(--color-surface) 50%, var(--color-surface-2) 75%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
 }
-
 @keyframes fadeSlideIn {
   from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
-
 .animate-fade-slide-in { animation: fadeSlideIn 400ms ease-out forwards; }
 .animate-button { transition: transform 200ms ease-out; }
 .animate-button:hover { transform: scale(1.02); }
