@@ -136,12 +136,12 @@ export default function QAAutomationTools() {
                           }}
                         />
                         {/* Fallback box shown if image fails */}
-                        <div className={`hidden w-10 h-10 rounded-lg flex items-center justify-center text-[18px] font-bold ${tool.fallbackColor || 'bg-gray-100 text-gray-600'}`}>
+                        <div className={`hidden w-10 h-10 rounded-lg flex items-center justify-center text-[18px] font-bold ${'fallbackColor' in tool ? tool.fallbackColor : 'bg-gray-100 text-gray-600'}`}>
                           {tool.name.charAt(0)}
                         </div>
                       </div>
                     ) : (
-                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl text-[20px] font-bold shadow-sm border border-black/5 ${tool.color}`}>
+                      <div className={`w-12 h-12 flex items-center justify-center rounded-xl text-[20px] font-bold shadow-sm border border-black/5 ${'color' in tool ? (tool as { color: string }).color : 'bg-gray-100 text-gray-600'}`}>
                         {tool.name.charAt(0)}
                       </div>
                     )}

@@ -1,6 +1,6 @@
 "use client";
 
-import { Award, Cloud, Cpu, Globe, GraduationCap, ShieldCheck, Sparkles, Star, TrendingUp, Users, Zap } from "lucide-react";
+import { Award, Cloud, Cpu, Globe, GraduationCap, ShieldCheck, Sparkles, Star, TrendingUp, Users, Zap, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 const pillars = [

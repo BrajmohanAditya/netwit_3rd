@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, HelpCircle, LifeBuoy, MessageCircle, QuestionMark, Search, ShieldCheck, Sparkles, Zap } from "lucide-react";
+import { ArrowRight, HelpCircle, LifeBuoy, MessageCircle, Search, ShieldCheck, Sparkles, Zap } from "lucide-react";
 import Link from "next/link";
 
 export function FaqHero() {

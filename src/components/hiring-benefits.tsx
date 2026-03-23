@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, CheckCircle, Globe, Heart, Layout, Sparkles, Star, TrendingUp, Users, Zap } from "lucide-react";
+import { ArrowRight, Briefcase, CheckCircle, Globe, Heart, Layout, Sparkles, Star, TrendingUp, Users, Zap } from "lucide-react";
 import Link from "next/link";
 
 const benefitPillars = [
