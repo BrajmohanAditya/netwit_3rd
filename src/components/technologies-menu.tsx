@@ -67,15 +67,15 @@ export function TechnologiesMenu() {
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0, y: -8 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -8 }}
+            initial={{ opacity: 0, y: -8, x: "-50%" }}
+            animate={{ opacity: 1, y: 0, x: "-50%" }}
+            exit={{ opacity: 0, y: -8, x: "-50%" }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute left-1/2 top-full z-[10000] w-[1150px] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-[10000] w-[800px]"
           >
             <div className="overflow-hidden rounded-[6px] bg-[#f5f5f5] shadow-[0_10px_35px_rgba(0,0,0,0.12)] border border-gray-200">
               <div className="flex">
-                <div className="w-[300px] border-r border-gray-200 p-7">
+                <div className="w-[220px] border-r border-gray-200 p-6">
                   <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
                     Hire Talent For
                   </h3>
@@ -99,11 +99,11 @@ export function TechnologiesMenu() {
                   </Link>
                 </div>
 
-                <div className="flex-1 p-7">
+                <div className="flex-1 p-6">
                   <h3 className="mb-5 text-[14px] font-semibold uppercase tracking-[1px] text-[#000]">
                     Technologies
                   </h3>
-                  <div className="grid grid-cols-4 gap-x-10 gap-y-3">
+                  <div className="grid grid-cols-4 gap-x-4 gap-y-3">
                     <div>
                       <h4 className="mb-3 text-[13px] font-semibold text-[#666]">Frontend</h4>
                       <ul className="space-y-[10px]">

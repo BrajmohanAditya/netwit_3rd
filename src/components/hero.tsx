@@ -22,7 +22,7 @@ const staggerContainer = {
 export function Hero() {
   return (
     <section className="relative min-h-screen flex items-center bg-[#020617] pt-[80px] pb-16 px-6 overflow-hidden font-sans">
-      
+
       {/* Background glow orbs */}
       <div className="absolute inset-0 z-0 pointer-events-none">
         <div className="absolute top-[10%] left-[-10%] h-[500px] w-[500px] rounded-full bg-blue-600/20 blur-[120px]" />
@@ -34,7 +34,7 @@ export function Hero() {
       <div className="absolute inset-0 z-0 bg-[radial-gradient(rgba(96,165,250,0.15)_1px,transparent_1px)] bg-[size:44px_44px] [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,#000_30%,transparent_100%)] pointer-events-none" />
 
       <div className="max-w-[1280px] mx-auto w-full relative z-10 grid lg:grid-cols-[1.15fr_0.85fr] gap-12 xl:gap-20 items-center">
-        
+
         {/* ── Left Column ── */}
         <motion.div
           variants={staggerContainer}
@@ -69,7 +69,7 @@ export function Hero() {
             transition={{ duration: 0.55 }}
             className="text-base md:text-lg text-slate-300 max-w-[540px] leading-relaxed border-l-2 border-blue-500/50 pl-6"
           >
-            Netsmartz is the global steward for technical excellence. We build high-fidelity AI ecosystems, secure infrastructures, and scalable talent registries for the world&apos;s most ambitious enterprises.
+            Netwit is the global steward for technical excellence. We build high-fidelity AI ecosystems, secure infrastructures, and scalable talent registries for the world&apos;s most ambitious enterprises.
           </motion.p>
 
           {/* CTAs */}
