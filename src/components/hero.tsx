@@ -79,13 +79,13 @@ export function Hero() {
             className="flex flex-wrap items-center gap-4"
           >
             <Link
-              href="#contact"
-              className="px-8 py-4 bg-blue-600 text-white font-bold rounded-full transition-all hover:scale-105 hover:bg-blue-500 shadow-[0_10px_40px_rgba(37,99,235,0.45)] uppercase tracking-wide text-sm"
+              href="/initialize-roadmap"
+              className="px-8 py-4 bg-primary text-white font-bold rounded-full transition-all hover:scale-105 hover:bg-primary-600 shadow-[0_10px_40px_rgba(37,99,235,0.45)] uppercase tracking-wide text-sm"
             >
               Initialize Roadmap
             </Link>
             <Link
-              href="#services"
+              href="/services"
               className="flex items-center gap-2 px-8 py-4 rounded-full font-bold border border-white/20 text-white hover:bg-white/10 hover:border-white/40 transition-all text-sm uppercase tracking-wide group"
             >
               Explore Services <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />

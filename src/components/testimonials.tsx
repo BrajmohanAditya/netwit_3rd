@@ -38,7 +38,7 @@ export function Testimonials() {
     <section className="bg-white dark:bg-[var(--color-bg)] py-20 px-6 font-sans border-y border-[var(--color-surface-2)]">
       <div className="max-w-[1200px] mx-auto">
         <h2 className="text-[32px] md:text-[40px] font-bold text-center mb-16 text-[#111827] dark:text-[var(--color-text)]">
-          What <span className="text-[#f97316]">Our Clients</span> Say
+          What <span className="text-primary">Our Clients</span> Say
         </h2>
 
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-20 max-w-[1000px] mx-auto">
@@ -59,7 +59,7 @@ export function Testimonials() {
                 </p>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-5 mt-auto">
                   <div className="w-[60px] h-[60px] bg-[#111827] dark:bg-[var(--color-surface-2)] flex items-center justify-center rounded-sm shrink-0">
-                    <Quote className="w-8 h-8 text-white dark:text-[#f97316] fill-current rotate-180" />
+                    <Quote className="w-8 h-8 text-white dark:text-primary fill-current rotate-180" />
                   </div>
                   <div>
                     <h4 className="text-[16px] md:text-[18px] font-bold text-[#111827] dark:text-[var(--color-text)]">
@@ -84,7 +84,7 @@ export function Testimonials() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.98 }}
                 transition={{ duration: 0.3 }}
-                className="w-full relative aspect-[16/10] bg-[#f97316] overflow-hidden flex shadow-lg"
+                className="w-full relative aspect-[16/10] bg-primary overflow-hidden flex shadow-lg"
               >
                 {/* Logo top left corner */}
                 <div className="absolute top-4 left-4 z-20 flex items-center gap-1.5 opacity-90">
@@ -116,14 +116,14 @@ export function Testimonials() {
                     {testimonials[active].videoRole}
                   </p>
 
-                  <button className="flex items-center gap-1.5 bg-white text-[#f97316] px-4 py-1.5 rounded-full text-[11px] md:text-[12px] font-bold uppercase hover:scale-[1.03] transition-transform w-fit whitespace-nowrap shadow-sm">
-                    <Play className="w-[14px] h-[14px] fill-[#f97316]" /> Watch now
+                  <button className="flex items-center gap-1.5 bg-white text-primary px-4 py-1.5 rounded-full text-[11px] md:text-[12px] font-bold uppercase hover:scale-[1.03] transition-transform w-fit whitespace-nowrap shadow-sm">
+                    <Play className="w-[14px] h-[14px] fill-primary" /> Watch now
                   </button>
                 </div>
 
                 {/* Right image portion with gradient mask */}
                 <div className="w-1/2 absolute right-0 top-0 bottom-0 pointer-events-none">
-                  <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#f97316] via-[#f97316]/80 to-transparent z-10"></div>
+                  <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-primary via-primary/80 to-transparent z-10"></div>
                   <img
                     src={testimonials[active].image}
                     alt={testimonials[active].author}
@@ -140,7 +140,7 @@ export function Testimonials() {
                   key={t.id}
                   onClick={() => setActive(idx)}
                   className={`relative w-[50px] h-[50px] md:w-[60px] md:h-[60px] rounded-full overflow-hidden transition-all duration-300 transform border-[3px] focus:outline-none ${active === idx
-                      ? 'border-white scale-110 shadow-md ring-1 ring-[#f97316] z-10'
+                      ? 'border-white scale-110 shadow-md ring-1 ring-primary z-10'
                       : 'border-transparent opacity-50 grayscale hover:opacity-80 hover:grayscale-[50%]'
                     }`}
                 >

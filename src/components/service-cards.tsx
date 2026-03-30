@@ -11,7 +11,7 @@ const services = [
     tag: "Next-Gen AI",
     icon: Bot,
     benefit: "Neural Sync",
-    href: "#"
+    href: "/services/ai-development"
   },
   { 
     title: "Cyber Security Shield", 
@@ -19,7 +19,7 @@ const services = [
     tag: "Zero-Trust",
     icon: ShieldAlert,
     stat: "NIST Audit",
-    href: "#"
+    href: "/cyber-smartz"
   },
   { 
     title: "Cloud Ops Architecture", 
@@ -27,7 +27,7 @@ const services = [
     tag: "High Velocity",
     icon: Database,
     stat: "Global Scale",
-    href: "#"
+    href: "/services/devops"
   },
   { 
     title: "Data Intelligence Hub", 
@@ -35,7 +35,7 @@ const services = [
     tag: "Actionable 360",
     icon: BarChart3,
     stat: "Pattern Lead",
-    href: "#"
+    href: "/data-smartz360"
   },
   { 
     title: "QA Velocity Lab", 
@@ -43,7 +43,7 @@ const services = [
     tag: "Flawless Code",
     icon: MonitorPlay,
     stat: "70% Time Save",
-    href: "#"
+    href: "/services/qa-automation-testing"
   },
   { 
     title: "Global Tech Centers", 
@@ -51,7 +51,7 @@ const services = [
     tag: "High Capacity",
     icon: Users,
     stat: "1500+ Experts",
-    href: "#"
+    href: "/services/global-capability-center"
   },
 ];
 
@@ -122,10 +122,10 @@ export function ServiceCards() {
               <p className="text-slate-400 text-lg font-light leading-relaxed font-sans italic">Our specialists are ready to architect your high-fidelity digital ecosystem. Connect with our principal desk for a strategic roadmap audit.</p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center pt-4">
-                 <Link href="#contact" className="px-14 py-6 bg-blue-600 text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(37,99,235,0.3)] italic uppercase tracking-wider">
+                 <Link href="/enterprise-risk-audit" className="px-14 py-6 bg-primary text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(37,99,235,0.3)] italic uppercase tracking-wider">
                     <ShieldCheck className="w-5 h-5 flex-shrink-0" /> Enterprise Risk Audit
                  </Link>
-                 <Link href="#contact" className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic bg-white/5 shadow-sm uppercase tracking-wider">
+                 <Link href="/global-capacity-registry" className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic bg-white/5 shadow-sm uppercase tracking-wider">
                     <Globe className="w-4 h-4" /> Global Capacity Registry
                  </Link>
               </div>

@@ -15,7 +15,7 @@ const stats = [
     label: "AI Neural Specialists", 
     value: "200+", 
     icon: Code, 
-    color: "text-emerald-500", 
+    color: "text-primary-400", 
     tag: "High Velocity" 
   },
   { 

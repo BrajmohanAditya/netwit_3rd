@@ -90,7 +90,7 @@ export function GlobalTechCenters() {
           className="text-center w-full"
         >
           <h2 className="text-[26px] md:text-[32px] font-bold text-[#111827] dark:text-[var(--color-text)] mb-12 lg:mb-16">
-            Our <span className="text-[#ea580c]">Global Technology Centers</span> at a Glance
+            Our <span className="text-primary">Global Technology Centers</span> at a Glance
           </h2>
         </motion.div>
 
@@ -110,8 +110,8 @@ export function GlobalTechCenters() {
                 
                 {/* Simulated Location Pins */}
                 <div className="absolute top-[30%] left-[25%] -translate-x-1/2 -translate-y-1/2 flex flex-col items-center animate-bounce">
-                  <MapPin className="w-6 h-6 md:w-8 md:h-8 text-[#f97316] fill-[#f97316] drop-shadow-lg" />
-                  <div className="w-1.5 h-1.5 bg-[#f97316] rounded-full mt-0.5 blur-[1px]"></div>
+                  <MapPin className="w-6 h-6 md:w-8 md:h-8 text-primary fill-primary drop-shadow-lg" />
+                  <div className="w-1.5 h-1.5 bg-primary rounded-full mt-0.5 blur-[1px]"></div>
                 </div>
               </div>
             </div>
@@ -158,14 +158,14 @@ export function GlobalTechCenters() {
                   onClick={() => setActiveId(loc.id)}
                   className={`px-1.5 py-1 transition-colors ${
                     activeId === loc.id 
-                      ? 'text-[#f97316]' 
+                      ? 'text-primary' 
                       : 'text-[#4b5563] dark:text-[var(--color-muted)] hover:text-[#111827] dark:hover:text-white'
                   }`}
                 >
                   {loc.id}
                 </button>
                 {idx < locations.length - 1 && (
-                  <span className="text-[#f97316] font-light mx-0.5 md:mx-1 opacity-80">|</span>
+                  <span className="text-primary font-light mx-0.5 md:mx-1 opacity-80">|</span>
                 )}
               </div>
             ))}

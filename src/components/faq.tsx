@@ -48,7 +48,7 @@ export function FAQ() {
           className="text-center w-full mb-10"
         >
           <h2 className="text-[26px] sm:text-[30px] font-bold text-[#111827] dark:text-[var(--color-text)]">
-            Frequently <span className="text-[#ea580c]">Asked Questions</span>
+            Frequently <span className="text-primary">Asked Questions</span>
           </h2>
         </motion.div>
 
@@ -101,7 +101,7 @@ export function FAQ() {
         >
           <Link
             href="/faq"
-            className="inline-flex items-center justify-center bg-[#ea580c] text-white px-8 py-2.5 rounded-[4px] text-[13px] font-bold uppercase tracking-wide hover:bg-[#d94e09] transition-colors shadow-sm"
+            className="inline-flex items-center justify-center bg-primary text-white px-8 py-2.5 rounded-[4px] text-[13px] font-bold uppercase tracking-wide hover:bg-primary-600 transition-colors shadow-sm"
           >
             See All FAQs
           </Link>

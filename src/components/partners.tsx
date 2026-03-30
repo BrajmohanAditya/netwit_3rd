@@ -168,7 +168,7 @@ export function Partners() {
         
         <div className="text-center w-full mb-12 sm:mb-16">
           <h2 className="text-[28px] sm:text-[34px] font-bold text-[#111827] dark:text-[var(--color-text)] leading-tight mb-4">
-            Partner <span className="text-[#ea580c]">With Us</span>
+            Partner <span className="text-primary">With Us</span>
           </h2>
           <p className="text-[14px] sm:text-[16px] text-[#4b5563] dark:text-[var(--color-muted)] font-medium max-w-[600px] mx-auto leading-relaxed">
             Join hands with us and experience the difference of working with a trusted global AI-based SaaS technology partner. Let's unlock new possibilities and accelerate your journey to success.

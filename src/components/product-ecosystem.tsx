@@ -9,8 +9,8 @@ export function ProductEcosystem() {
       render: () => (
         <div className="flex items-center gap-1.5 pointer-events-none select-none">
           <div className="relative w-4 h-5 flex flex-col justify-end">
-            <div className="w-1.5 h-1.5 bg-[#f97316] rounded-full absolute top-0 left-1/2 -translate-x-1/2"></div>
-            <div className="w-full h-2.5 bg-[#f97316] rounded-sm mt-0.5"></div>
+            <div className="w-1.5 h-1.5 bg-primary rounded-full absolute top-0 left-1/2 -translate-x-1/2"></div>
+            <div className="w-full h-2.5 bg-primary rounded-sm mt-0.5"></div>
           </div>
           <span className="font-extrabold text-[15px] sm:text-[18px] text-[#0f172a] dark:text-gray-200 tracking-tight flex items-center">
             netsmartz
@@ -59,7 +59,7 @@ export function ProductEcosystem() {
             <div className="relative w-4 h-4 flex items-center justify-center mr-0.5">
               <div className="absolute w-2 h-2 bg-pink-400 rounded-full top-0 left-0 mix-blend-multiply"></div>
               <div className="absolute w-2 h-2 bg-cyan-400 rounded-full top-0 right-0 mix-blend-multiply"></div>
-              <div className="absolute w-2 h-2 bg-orange-400 rounded-full bottom-0 left-1/4 mix-blend-multiply"></div>
+              <div className="absolute w-2 h-2 bg-primary rounded-full bottom-0 left-1/4 mix-blend-multiply text-primary"></div>
             </div>
             <span className="text-[14px] sm:text-[15px] tracking-tighter font-extrabold">
               <span className="text-cyan-500 leading-none">Care</span>
@@ -89,8 +89,8 @@ export function ProductEcosystem() {
       id: "seal",
       render: () => (
         <div className="w-[45px] h-[45px] sm:w-[50px] sm:h-[50px] rounded-full border border-gray-200 dark:border-gray-700 flex items-center justify-center relative overflow-hidden bg-white shadow-inner pointer-events-none select-none p-1">
-           <div className="w-full h-full rounded-full border border-orange-200 relative flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-tr from-orange-600 via-orange-500 to-yellow-500 opacity-90 rounded-full"></div>
+           <div className="w-full h-full rounded-full border border-primary/20 relative flex items-center justify-center">
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary via-primary-400 to-sky-400 opacity-90 rounded-full"></div>
               <span className="relative text-white font-serif font-black text-[18px] sm:text-[20px] z-10 leading-[1] mt-[2px] pr-[1px]">N</span>
            </div>
         </div>
@@ -121,7 +121,7 @@ export function ProductEcosystem() {
       render: () => (
         <div className="flex flex-col justify-center pointer-events-none select-none pt-1">
            <div className="flex items-center gap-[2px]">
-             <span className="text-[#f97316] font-black text-[18px] sm:text-[22px] leading-none shrink-0 border-r-2 border-[#f97316] pr-1">AI</span>
+             <span className="text-primary font-black text-[18px] sm:text-[22px] leading-none shrink-0 border-r-2 border-primary pr-1">AI</span>
              <span className="text-[#1f2937] dark:text-gray-200 font-extrabold text-[15px] sm:text-[17px] leading-none tracking-tight">Smartz</span>
            </div>
            <span className="text-[4.5px] sm:text-[5px] text-gray-500 uppercase font-black mt-1.5 tracking-widest leading-[1.2]">
@@ -165,7 +165,7 @@ export function ProductEcosystem() {
       render: () => (
         <div className="flex items-center pointer-events-none select-none">
            <div className="flex relative">
-              <span className="bg-[#ea580c] text-white font-black text-[12px] sm:text-[14px] px-1 sm:px-1.5 py-0.5 rounded-sm relative z-10 shadow-sm border border-orange-600/50">APP</span>
+              <span className="bg-primary text-white font-black text-[12px] sm:text-[14px] px-1 sm:px-1.5 py-0.5 rounded-sm relative z-10 shadow-sm border border-primary-600/50">APP</span>
               <span className="text-[#3f3f46] dark:text-gray-200 font-black text-[14px] sm:text-[16px] flex items-center justify-center pl-[2px] tracking-tight">WORX</span>
            </div>
         </div>
@@ -175,7 +175,7 @@ export function ProductEcosystem() {
       id: "tigers",
       render: () => (
         <div className="flex flex-col items-center justify-center pointer-events-none select-none pt-1">
-          <div className="w-5 h-5 bg-gradient-to-tr from-[#ea580c] to-amber-300 rounded-[3px] mb-[2px] flex items-center justify-center border border-orange-500/30">
+          <div className="w-5 h-5 bg-gradient-to-tr from-primary to-sky-300 rounded-[3px] mb-[2px] flex items-center justify-center border border-primary/30">
              <div className="w-2.5 h-2.5 bg-white mix-blend-overlay rounded-full blur-[0.5px]"></div>
           </div>
           <span className="text-[8px] sm:text-[9px] font-bold text-gray-800 dark:text-gray-300 leading-none tracking-tight">netsmartz</span>
@@ -205,7 +205,7 @@ export function ProductEcosystem() {
         
         <div className="text-center w-full mb-12 sm:mb-16">
           <h2 className="text-[26px] sm:text-[28px] md:text-[34px] font-bold text-[#111827] dark:text-[var(--color-text)] leading-tight">
-            Our Deep Expertise is Evident in <span className="text-[#ea580c]">Our Successful,<br className="hidden sm:block" /> Home-Grown Businesses</span>
+            Our Deep Expertise is Evident in <span className="text-primary">Our Successful,<br className="hidden sm:block" /> Home-Grown Businesses</span>
           </h2>
         </div>
 

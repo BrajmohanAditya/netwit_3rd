@@ -12,7 +12,7 @@ export function TrustedBy() {
         <div className="flex items-center h-full">
           <span className="text-[34px] font-bold text-[#1a2b3c] tracking-tight relative flex items-center">
             Clutch
-            <div className="absolute right-[22px] bottom-[11px] w-1.5 h-1.5 bg-[#ea580c] rounded-full"></div>
+            <div className="absolute right-[22px] bottom-[11px] w-1.5 h-1.5 bg-primary rounded-full"></div>
           </span>
         </div>
       ),
@@ -22,7 +22,7 @@ export function TrustedBy() {
       rating: "4.8",
       renderLogo: () => (
         <div className="flex items-center justify-center h-full gap-2.5">
-          <div className="w-9 h-9 bg-[#f97316] rounded-md flex items-center justify-center text-white text-[28px] font-serif leading-none pt-2">
+          <div className="w-9 h-9 bg-primary rounded-md flex items-center justify-center text-white text-[28px] font-serif leading-none pt-2">
             "
           </div>
           <div className="flex flex-col leading-[1.1] text-left">
@@ -87,7 +87,7 @@ export function TrustedBy() {
           transition={{ duration: 0.4 }}
         >
           <h2 className="text-[28px] md:text-[36px] font-bold text-[#111827] dark:text-[var(--color-text)] mb-3">
-            Trusted By <span className="text-[#f97316]">2000+ SaaS Businesses</span>
+            Trusted By <span className="text-primary">2000+ SaaS Businesses</span>
           </h2>
           <p className="text-[17px] md:text-[19px] text-[#4b5563] dark:text-[var(--color-muted)] mb-14">
             And Industry Experts Globally

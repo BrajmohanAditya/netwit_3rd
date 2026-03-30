@@ -70,7 +70,7 @@ export function StrategyCTA() {
         </h2>
         
         <Link
-          href="#contact"
+          href="/drive-innovation"
           className="inline-flex items-center justify-center bg-white text-[#0c1e2a] px-8 py-3.5 rounded-[4px] text-[14px] font-bold tracking-wide transition-all hover:bg-gray-100 hover:-translate-y-0.5 shadow-lg active:scale-[0.98]"
         >
           Let's Drive Innovation

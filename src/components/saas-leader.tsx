@@ -35,8 +35,8 @@ export function SaasLeaderSection() {
       label: "ESG Alignment",
       icon: Leaf,
       href: "/data-smartz360",
-      color: "text-emerald-500",
-      bg: "bg-emerald-500/5"
+      color: "text-primary-400",
+      bg: "bg-primary-400/5"
     },
   ];
 
