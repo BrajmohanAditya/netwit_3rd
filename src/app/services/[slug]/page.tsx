@@ -2,9 +2,21 @@ import { services, servicesList } from "@/config/menu-data";
 import { ServicePage } from "@/components/service-page";
 
 export function generateStaticParams() {
-  return servicesList.map((service) => ({
-    slug: service.slug,
-  }));
+  const customPages = [
+    'accounting-services',
+    'customer-support',
+    'devops',
+    'global-capability-center',
+    'marketing-services',
+    'qa-automation-testing',
+    'sales-acceleration'
+  ];
+
+  return servicesList
+    .filter((service) => !customPages.includes(service.slug))
+    .map((service) => ({
+      slug: service.slug,
+    }));
 }
 
 export default function ServiceDynamicPage({ params }: { params: Promise<{ slug: string }> }) {
