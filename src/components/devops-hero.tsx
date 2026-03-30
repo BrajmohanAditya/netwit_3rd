@@ -1,8 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Link from "next/link";
-import { ArrowRight, Cloud, Cpu, Globe, Infinity, Layers, Lock, ShieldCheck, Zap, Activity, Database } from "lucide-react";
+import { Cloud, Cpu, Globe, Infinity, Layers, Lock, ShieldCheck, Zap, Activity, Database } from "lucide-react";
 
 export function DevOpsHero() {
   return (
@@ -52,25 +51,6 @@ export function DevOpsHero() {
             Fast-track your SaaS deployments with AI-powered DevOps orchestration. We build the high-fidelity pipelines that transform manual bottlenecks into autonomous technical capital.
           </motion.p>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="flex flex-wrap items-center gap-6 mt-4"
-          >
-            <Link
-              href="#contact"
-              className="group relative px-10 py-5 bg-blue-600 text-white font-black rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_20px_50px_rgba(37,99,235,0.4)] hover:bg-blue-500 italic uppercase tracking-wider"
-            >
-              Initialize Roadmap
-            </Link>
-            <Link
-              href="#services"
-              className="flex items-center gap-3 px-10 py-5 rounded-full font-black border border-white/10 text-white hover:bg-white/5 transition-all backdrop-blur-md italic uppercase tracking-wider group"
-            >
-              Explore Services <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
-          </motion.div>
 
           {/* Institutional Partners Row */}
           <motion.div 

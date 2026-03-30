@@ -37,9 +37,9 @@ export function QAAutomationHero() {
             <Link href="#services" className="group relative px-8 py-4 bg-blue-600 text-white font-black rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_0_40px_rgba(59,130,246,0.3)] hover:bg-blue-500">
                Explore QA Services
             </Link>
-            <button className="flex items-center gap-2 px-8 py-4 rounded-full font-bold border border-white/20 text-white hover:bg-white/5 transition-colors backdrop-blur-md">
+            <Link href="/services/qa-automation-testing/tech-stack" className="flex items-center gap-2 px-8 py-4 rounded-full font-bold border border-white/20 text-white hover:bg-white/5 transition-colors backdrop-blur-md">
                Our Tech Stack <ArrowRight className="w-4 h-4 text-blue-400" />
-            </button>
+            </Link>
           </div>
           
           <div className="flex items-center gap-8 mt-8 pt-6 border-t border-white/10 w-full mb-10 lg:mb-0">

@@ -277,3 +277,107 @@ export const solutionsList = Object.entries(solutions).map(([slug, data]) => ({
   title: data.title,
   subtitle: data.subtitle,
 }));
+export const qaSubServices = {
+  "functional-testing": {
+    title: "Functional Testing",
+    subtitle: "Precision Validation of Every Application Feature",
+    description: "Our functional testing services ensure that your software behaves exactly as intended. We use AI-driven test modeling to cover every user scenario, from core business logic to edge cases, ensuring 100% adherence to requirements.",
+    features: [
+      { title: "AI-Powered Test Modeling", description: "Automated test case generation based on application architecture." },
+      { title: "Boundary Value Analysis", description: "Rigorous testing of input limits and data constraints." },
+      { title: "End-to-End Workflow Validation", description: "Verifying complex user journeys across multiple integrated systems." },
+      { title: "Exploratory Testing", description: "Human-centric testing to identify unexpected defects." },
+    ],
+    benefits: [
+      "100% requirements compliance",
+      "Early defect detection",
+      "Enhanced user satisfaction",
+      "Stable and predictable software behavior",
+    ],
+  },
+  "performance-testing": {
+    title: "Performance Testing",
+    subtitle: "Optimize Velocity and Scalability for Peak Traffic",
+    description: "We push your application to its limits to ensure it remains stable, responsive, and fast under any load. Our engineers simulate massive concurrent user traffic to identify bottlenecks before they affect your users.",
+    features: [
+      { title: "Load & Stress Testing", description: "Simulating high-volume traffic to determine breaking points." },
+      { title: "Scalability Assessment", description: "Verifying how your infrastructure handles rapid growth." },
+      { title: "Endurance Testing", description: "Ensuring long-term stability under continuous operational load." },
+      { title: "Network Latency Analysis", description: "Optimizing response times across global regions." },
+    ],
+    benefits: [
+      "No downtime during peak traffic",
+      "Optimized infrastructure costs",
+      "Ultra-fast page load times",
+      "Proactive bottleneck identification",
+    ],
+  },
+  "security-testing": {
+    title: "Security Testing",
+    subtitle: "Fortify Your SaaS Ecosystem Against Modern Threats",
+    description: "Protecting user data is non-negotiable. We conduct rigorous security assessments, including vulnerability scanning and penetration testing, to safeguard your application from unauthorized access and data breaches.",
+    features: [
+      { title: "Penetration Testing", description: "Simulated cyber-attacks to identify exploitable vulnerabilities." },
+      { title: "Static & Dynamic Analysis (SAST/DAST)", description: "Automated code and runtime security auditing." },
+      { title: "Compliance Auditing", description: "Ensuring adherence to NIST, GDPR, and SOC2 standards." },
+      { title: "Data Integrity Validation", description: "Verifying encryption and secure data handling protocols." },
+    ],
+    benefits: [
+      "Zero-compromise data security",
+      "Regulatory compliance assurance",
+      "Enhanced customer trust",
+      "Minimized risk of data breaches",
+    ],
+  },
+  "regression-testing": {
+    title: "Regression Testing",
+    subtitle: "Ship Updates with Confidence and Stability",
+    description: "Every new feature should enhance your product, not break it. Our automated regression suites ensure that your core functionalities remain intact after every deployment using self-healing AI scripts.",
+    features: [
+      { title: "Self-Healing Test Suites", description: "AI-driven scripts that automatically adapt to UI changes." },
+      { title: "Change Impact Analysis", description: "Identifying precisely which areas need re-testing after an update." },
+      { title: "Parallel Test Execution", description: "Running hundreds of tests simultaneously for rapid feedback." },
+      { title: "Standardized Build Validation", description: "Strict checks before any code reaches production." },
+    ],
+    benefits: [
+      "Faster deployment cycles",
+      "No unexpected regressions",
+      "Reduced manual testing effort",
+      "High-confidence release cycles",
+    ],
+  },
+  "cicd-testing": {
+    title: "CI/CD Pipeline Testing",
+    subtitle: "Automated Validation for Modern Engineering Velocity",
+    description: "We integrate automated testing into your DevOps pipeline, ensuring that every commit is validated before it moves forward. This 'Shift Left' approach identifies bugs earlier, reducing costs and accelerating delivery.",
+    features: [
+      { title: "Pipeline Integration", description: "Seamless embedding of tests into Jenkins, GitHub Actions, or GitLab." },
+      { title: "Gated Deployment Logic", description: "Automatically halting builds that don't meet quality standards." },
+      { title: "Real-time Feedback Loops", description: "Immediate reports for developers after every code push." },
+      { title: "Infrastructure-as-Tests", description: "Validating infrastructure configurations alongside application code." },
+    ],
+    benefits: [
+      "Accelerated time-to-market",
+      "Reduced manual intervention",
+      "Lower cost per defect",
+      "Continuous quality assurance",
+    ],
+  },
+  "ui-ux-automation": {
+    title: "UI/UX Automation",
+    subtitle: "Pixel-Perfect Visual and Experiential Excellence",
+    description: "Guarantee a consistent and beautiful experience across all devices and browsers. We use visual regression tools and pixel-perfect comparison to ensure your brand's aesthetic remains flawless in every deployment.",
+    features: [
+      { title: "Visual Regression Testing", description: "Identifying unintended UI changes at the pixel level." },
+      { title: "Cross-Browser/Device Matrix", description: "Testing across Chrome, Safari, iOS, and Android ecosystems." },
+      { title: "Accessibility (a11y) Audits", description: "Ensuring compliance with WCAG standards for all users." },
+      { title: "User Journey Automation", description: "Simulating real human interactions to verify UX flow." },
+    ],
+    benefits: [
+      "Consistent brand experience",
+      "Flawless cross-platform display",
+      "Improved mobile conversion",
+      "Full accessibility compliance",
+    ],
+  },
+};

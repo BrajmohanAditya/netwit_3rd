@@ -6,42 +6,48 @@ import Link from "next/link";
 const services = [
   { 
     title: "Functional Testing", 
-    description: "We validate every core feature of your application using AI-enabled test case generation and prioritization, ensuring it functions as expected in various real-world scenarios. This intelligent approach to software testing tools helps maintain a smooth and intuitive user experience.", 
+    slug: "functional-testing",
+    description: "We validate every core feature of your application using AI-enabled test case generation and prioritization, ensuring it functions as expected in various real-world scenarios.", 
     tag: "Integrity",
     icon: MonitorPlay,
     benefit: "End-to-End"
   },
   { 
     title: "Performance Testing", 
-    description: "We assess your product's ability to handle different levels of usage, using anomaly detection and AI tools for software testing to ensure it remains fast, responsive, and stable even under peak traffic conditions.", 
+    slug: "performance-testing",
+    description: "We assess your product's ability to handle different levels of usage, using anomaly detection and AI tools for software testing to ensure it remains fast and responsive.", 
     tag: "Velocity",
     icon: Zap,
     stat: "High Scale"
   },
   { 
     title: "Security Testing", 
-    description: "Protecting user data is a top priority. We conduct rigorous security assessments to identify vulnerabilities, safeguard against potential threats, and prevent unauthorized access, ensuring your application remains safe and trustworthy.", 
+    slug: "security-testing",
+    description: "Protecting user data is a top priority. We conduct rigorous security assessments to identify vulnerabilities, safeguard against potential threats, and prevent unauthorized access.", 
     tag: "Fortified",
     icon: ShieldCheck,
     stat: "NIST Audit"
   },
   { 
     title: "Regression Testing", 
-    description: "Every update or new feature should integrate seamlessly without disrupting existing functionalities. We automate regression tests using self-healing AI scripts to ensure continuous stability and prevent unexpected issues in evolving software environments.", 
+    slug: "regression-testing",
+    description: "Every update should integrate seamlessly. We automate regression tests using self-healing AI scripts to ensure continuous stability and prevent unexpected issues.", 
     tag: "Autopilot",
     icon: RefreshCw,
     stat: "Self-Healing"
   },
   { 
     title: "CI/CD Testing", 
-    description: "We support modern development workflows with AI test automation at every stage of CI/CD. Our data-driven pipelines enable quicker deployments, early bug detection, and improved reliability helping you maintain a fast-paced development cycle.", 
+    slug: "cicd-testing",
+    description: "We support modern development workflows with AI test automation at every stage of CI/CD. Our data-driven pipelines enable quicker deployments and early bug detection.", 
     tag: "Sync",
     icon: InfinityIcon,
     stat: "Automated Feed"
   },
   { 
     title: "UI/UX Automation", 
-    description: "Ensuring visual and experiential excellence across all devices. We use visual regression and pixel-perfect comparison tools to guarantee that your brand’s aesthetic remains consistent across every deployment.", 
+    slug: "ui-ux-automation",
+    description: "Ensuring visual and experiential excellence across all devices. We use visual regression and pixel-perfect comparison tools to guarantee brand aesthetic remains consistent.", 
     tag: "Aesthetic",
     icon: Sparkles,
     stat: "Pixel Perfect"
@@ -70,7 +76,8 @@ export function QAAutomationServices() {
         {/* High-Fi Service Tiles */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((item, index) => (
-            <div 
+            <Link 
+              href={`/services/qa-automation-testing/${item.slug}`}
               key={index} 
               className="group bg-[#0f172a]/40 backdrop-blur-3xl border border-blue-500/10 rounded-[3.5rem] p-10 flex flex-col h-full hover:border-blue-500/30 transition-all duration-500 hover:-translate-y-2 shadow-2xl relative overflow-hidden"
             >
@@ -94,7 +101,7 @@ export function QAAutomationServices() {
               <div className="mt-10 flex items-center justify-between pt-8 border-t border-white/5 text-[10px] font-black uppercase tracking-widest text-slate-600 group-hover:text-blue-400 transition-colors italic">
                  Deploy Service Protocol <ArrowRight className="w-4 h-4 group-hover:translate-x-1" />
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
@@ -108,12 +115,12 @@ export function QAAutomationServices() {
               <p className="text-slate-400 text-lg font-light leading-relaxed">Our QA specialists are ready to architect your testing ecosystem. Connect with our engineering desk for a high-fidelity roadmap audit.</p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                 <button className="px-14 py-6 bg-blue-600 text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(59,130,246,0.3)] italic">
+                 <Link href="/schedule-demo" className="px-14 py-6 bg-blue-600 text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(59,130,246,0.3)] italic">
                     <Microscope className="w-5 h-5 flex-shrink-0" /> Enterprise QA Audit
-                 </button>
-                 <button className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic">
+                 </Link>
+                 <Link href="/schedule-demo" className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic">
                     <Globe className="w-4 h-4" /> Global Desk
-                 </button>
+                 </Link>
               </div>
            </div>
         </div>
