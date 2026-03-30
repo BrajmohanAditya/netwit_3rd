@@ -132,7 +132,6 @@ export function AiPodsContact() {
                      <span className="text-[13px] text-gray-700 font-medium">I'm not a robot</span>
                    </div>
                    <div className="flex flex-col items-center">
-                     {/* eslint-disable-next-line @next/next/no-img-element */}
                      <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={24} height={24} alt="reCAPTCHA" />
                      <div className="text-[8px] text-gray-500 mt-1 whitespace-nowrap">
                        Privacy - Terms

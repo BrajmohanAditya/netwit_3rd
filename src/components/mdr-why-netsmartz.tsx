@@ -176,7 +176,6 @@ export function MdrWhyNetwit() {
                      <span className="text-[12px] text-gray-600 font-medium tracking-tight">I'm not a robot</span>
                    </div>
                    <div className="flex flex-col items-center">
-                     {/* eslint-disable-next-line @next/next/no-img-element */}
                      <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={24} height={24} alt="reCAPTCHA" className="opacity-80" />
                      <div className="text-[8px] text-gray-400 mt-[1px] whitespace-nowrap">
                        Privacy - Terms

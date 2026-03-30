@@ -2,6 +2,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { ServiceCards } from "@/components/service-cards";
 import { ContactForm } from "@/components/contact-form";
+import Link from "next/link";
 
 export default function ServicesPage() {
   return (
@@ -33,22 +34,22 @@ export default function ServicesPage() {
                  <div className="p-8 border border-white/5 rounded-3xl bg-[#0f172a] hover:border-primary/30 transition-all">
                     <h4 className="text-xl font-bold mb-4 italic">Accounting SVCS</h4>
                     <p className="text-slate-400 text-sm mb-6">Fractional accounting and specialized financial reporting for high-growth tech firms.</p>
-                    <a href="/services/accounting-services" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</a>
+                    <Link href="/services/accounting-services" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</Link>
                  </div>
                  <div className="p-8 border border-white/5 rounded-3xl bg-[#0f172a] hover:border-primary/30 transition-all">
                     <h4 className="text-xl font-bold mb-4 italic">Customer Support</h4>
                     <p className="text-slate-400 text-sm mb-6">Institutional-grade customer experience teams for global enterprise assets.</p>
-                    <a href="/services/customer-support" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</a>
+                    <Link href="/services/customer-support" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</Link>
                  </div>
                  <div className="p-8 border border-white/5 rounded-3xl bg-[#0f172a] hover:border-primary/30 transition-all">
                     <h4 className="text-xl font-bold mb-4 italic">Marketing SVCS</h4>
                     <p className="text-slate-400 text-sm mb-6">Targeted outreach and growth strategy for SaaS product ecosystems.</p>
-                    <a href="/services/marketing-services" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</a>
+                    <Link href="/services/marketing-services" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</Link>
                  </div>
                  <div className="p-8 border border-white/5 rounded-3xl bg-[#0f172a] hover:border-primary/30 transition-all">
                     <h4 className="text-xl font-bold mb-4 italic">Sales Acceleration</h4>
                     <p className="text-slate-400 text-sm mb-6">Optimized lead intake and high-velocity sales engineering for technical builds.</p>
-                    <a href="/services/sales-acceleration" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</a>
+                    <Link href="/services/sales-acceleration" className="text-primary text-xs font-bold uppercase tracking-widest hover:underline">Learn More</Link>
                  </div>
               </div>
            </div>

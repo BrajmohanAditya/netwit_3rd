@@ -155,7 +155,6 @@ export function DataPodsWhyNetwit() {
                     <span className="text-[13px] text-gray-700 font-medium tracking-tight">I'm not a robot</span>
                   </div>
                   <div className="flex flex-col items-center">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" width={26} height={26} alt="reCAPTCHA" className="opacity-80" />
                     <div className="text-[8px] text-gray-500 mt-0.5 whitespace-nowrap">
                       Privacy - Terms
