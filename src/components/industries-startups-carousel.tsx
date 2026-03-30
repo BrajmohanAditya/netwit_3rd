@@ -1,6 +1,7 @@
 "use client";
 
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import Link from "next/link";
 
 export function StartupsCarousel() {
   const industries = [
@@ -65,9 +66,12 @@ export function StartupsCarousel() {
            Our premium vendors are focused on incorporating agility in business operations to help enterprises deliver a truly unified customer experience.
       </p>
 
-      <button className="bg-black text-white text-[13px] font-bold py-3.5 px-10 shadow-md hover:-translate-y-0.5 transition-transform rounded-sm">
+      <Link 
+        href="/industries" 
+        className="bg-black text-white text-[13px] font-bold py-3.5 px-10 shadow-md hover:-translate-y-0.5 transition-transform rounded-sm flex items-center justify-center w-fit"
+      >
            Learn More
-      </button>
+      </Link>
 
     </section>
   );

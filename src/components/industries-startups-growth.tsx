@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function StartupsGrowth() {
   return (
@@ -96,9 +97,12 @@ export function StartupsGrowth() {
           </div>
         </div>
 
-        <button className="bg-black text-white text-[13px] font-bold py-4 px-10 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-0.5 rounded-sm">
+        <Link 
+          href="/success-stories" 
+          className="bg-black text-white text-[13px] font-bold py-4 px-10 shadow-sm hover:shadow-lg transition-transform hover:-translate-y-0.5 rounded-sm flex items-center justify-center w-fit"
+        >
           View all Success Stories
-        </button>
+        </Link>
       </div>
       
     </section>

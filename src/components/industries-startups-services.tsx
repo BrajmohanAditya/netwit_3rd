@@ -1,6 +1,7 @@
 "use client";
 
 import { Activity, Users, Play, DollarSign, ArrowDown } from "lucide-react";
+import Link from "next/link";
 
 export function StartupsServices() {
   const topFeatures = [
@@ -130,12 +131,18 @@ export function StartupsServices() {
             Over 100+ global companies leverage our pool of certified professionals for outsourcing projects.
             </p>
             <div className="flex gap-4">
-            <button className="bg-black text-white text-[13px] font-bold py-3 px-8 shadow-sm rounded-sm hover:-translate-y-0.5 transition-transform">
+            <Link 
+              href="#contact" 
+              className="bg-black text-white text-[13px] font-bold py-3 px-8 shadow-sm rounded-sm hover:-translate-y-0.5 transition-transform flex items-center justify-center"
+            >
                 Work With Us
-            </button>
-            <button className="bg-white border-2 border-gray-900 text-black text-[13px] font-bold py-3 px-8 shadow-sm rounded-sm hover:bg-gray-50 transition-colors">
+            </Link>
+            <Link 
+              href="#contact" 
+              className="bg-white border-2 border-gray-900 text-black text-[13px] font-bold py-3 px-8 shadow-sm rounded-sm hover:bg-gray-50 transition-colors flex items-center justify-center"
+            >
                 Get Started
-            </button>
+            </Link>
             </div>
         </div>
       </div>

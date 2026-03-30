@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 export function StartupsHero() {
   return (
@@ -30,12 +31,18 @@ export function StartupsHero() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-5 w-full">
-          <button className="bg-white text-black text-[13.5px] font-bold py-3 px-8 transition-transform hover:-translate-y-0.5 w-[160px] h-[50px] shadow-[0_4px_14px_rgba(255,255,255,0.15)] rounded-sm">
+          <Link 
+            href="/hire" 
+            className="bg-white text-black text-[13.5px] font-bold py-3 px-8 transition-transform hover:-translate-y-0.5 w-[160px] h-[50px] shadow-[0_4px_14px_rgba(255,255,255,0.15)] rounded-sm flex items-center justify-center"
+          >
             Build Your Team
-          </button>
-          <button className="bg-transparent border-[1.5px] border-white text-white text-[13.5px] font-bold py-3 px-8 transition-colors hover:bg-white/10 w-[160px] h-[50px] rounded-sm">
-            Work with Us
-          </button>
+          </Link>
+          <Link 
+            href="/about/engagement-model" 
+            className="bg-transparent border-[1.5px] border-white text-white text-[13.5px] font-bold py-3 px-8 transition-colors hover:bg-white/10 w-[200px] h-[50px] rounded-sm flex items-center justify-center text-center leading-tight"
+          >
+            Our Engagement Model
+          </Link>
         </div>
 
       </div>

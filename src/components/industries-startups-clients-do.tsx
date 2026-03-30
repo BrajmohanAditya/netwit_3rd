@@ -2,6 +2,7 @@
 
 import { Monitor, Layers, PenTool, CheckSquare, Terminal, Play } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export function StartupsClientsDo() {
    const services = [
@@ -138,9 +139,12 @@ export function StartupsClientsDo() {
                Our on-time process methodology and low-cost services fulfillment has helped startups launch powerful and quickly scalable solutions.
             </p>
 
-            <button className="bg-white text-black text-[13.5px] font-bold py-4 px-10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-transform rounded-[3px]">
+            <Link 
+              href="#contact" 
+              className="bg-white text-black text-[13.5px] font-bold py-4 px-10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-transform rounded-[3px] flex items-center justify-center w-fit"
+            >
                Get Started
-            </button>
+            </Link>
 
          </div>
 

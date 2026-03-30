@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export function StartupsInsights() {
   return (
     <section className="w-full bg-white py-24 px-6 flex flex-col items-center border-t border-gray-100">
@@ -29,9 +31,12 @@ export function StartupsInsights() {
              Outsourcing is gaining traction with every passing day. Established organizations have been outsourcing their complex projects to offshore experts and are thumbs up for the end-development results. As...
           </p>
           <div className="mt-auto">
-             <button className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3.5 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit">
+             <Link 
+               href="#contact" 
+               className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3.5 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit flex items-center justify-center"
+             >
                Download Whitepaper
-             </button>
+             </Link>
           </div>
         </div>
 
@@ -56,9 +61,12 @@ export function StartupsInsights() {
               <div className="absolute bottom-2 left-6 w-[12px] h-[24px] bg-gray-700"></div>
             </div>
           </div>
-          <button className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit mt-10">
+          <Link 
+            href="/resources" 
+            className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit mt-10 flex items-center justify-center"
+          >
             Read Article
-          </button>
+          </Link>
         </div>
 
         {/* Right Column: Blog 2 */}
@@ -83,9 +91,12 @@ export function StartupsInsights() {
                </div>
             </div>
           </div>
-          <button className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit mt-10">
+          <Link 
+            href="/resources" 
+            className="bg-white border-2 border-gray-900 text-black text-[12px] font-bold py-3 px-8 hover:bg-gray-50 transition-colors shadow-sm w-fit mt-10 flex items-center justify-center"
+          >
             Read Article
-          </button>
+          </Link>
         </div>
 
       </div>
@@ -94,9 +105,12 @@ export function StartupsInsights() {
          Learn more about the intricacies and processes of the Remote Development industry and scale your Team today!
       </p>
 
-      <button className="bg-black text-white text-[13px] font-bold py-4 px-10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-transform rounded-sm">
+      <Link 
+        href="/resources" 
+        className="bg-black text-white text-[13px] font-bold py-4 px-10 shadow-sm hover:shadow-lg hover:-translate-y-0.5 transition-transform rounded-sm flex items-center justify-center w-fit"
+      >
          View All Insights
-      </button>
+      </Link>
 
     </section>
   );

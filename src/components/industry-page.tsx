@@ -111,6 +111,8 @@ import { RetailClients } from "@/components/industries-retail-clients";
 import { RetailSolutions } from "@/components/industries-retail-solutions";
 import { RetailBenefits } from "@/components/industries-retail-benefits";
 
+import { ContactForm } from "@/components/contact-form";
+
 export default function IndustryPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = use(params);
   const pageData = industriesData[slug as keyof typeof industriesData];
@@ -131,21 +133,20 @@ export default function IndustryPage({ params }: { params: Promise<{ slug: strin
     );
   }
 
-  // Render the requested layout mockups directly to the startups slug as instructed
+  // Dedicated Startups Layout
   if (slug === "startups") {
     return (
       <>
         <Header />
-        <main className="pt-[80px]">
-          <EnterpriseHero />
-          <EnterpriseWhatWeDo />
-          <EnterpriseMetricsTech />
-          <ScaleupsEngagement />
-          <EnterpriseSuccessStories />
-          <EnterpriseClients />
-          <EnterpriseIndustries />
+        <main className="pt-[0px]">
+          <StartupsHero />
+          <StartupsCarousel />
+          <StartupsServices />
+          <StartupsGrowth />
+          <StartupsClientsDo />
           <StartupsHire /> 
-          <EnterpriseInsights />
+          <StartupsInsights />
+          <ContactForm />
         </main>
         <Footer />
       </>
