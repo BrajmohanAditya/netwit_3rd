@@ -59,7 +59,7 @@ export function AiPodsWorkflow() {
                     {/* Pill Shadow */}
                     <div className="absolute inset-0 translate-x-[3px] translate-y-[3px] border-[1.5px] border-gray-600 rounded-full"></div>
                     {/* Pill Main */}
-                    <div className="relative bg-accent-gold text-white font-bold text-[13px] px-6 py-1.5 border-[1.5px] border-gray-600 rounded-full uppercase tracking-wider">
+                    <div className="relative bg-primary text-white font-bold text-[13px] px-6 py-1.5 border-[1.5px] border-gray-600 rounded-full uppercase tracking-wider">
                       STEP {item.step}
                     </div>
                   </div>
@@ -102,7 +102,7 @@ export function AiPodsWorkflow() {
           {customPodFeatures.map((feature, idx) => (
             <div 
               key={idx} 
-              className="bg-[#E76C1E] text-white font-bold text-[13px] md:text-[14px] py-6 px-4 rounded-[6px] shadow-sm flex items-center justify-center text-center whitespace-pre-line leading-snug"
+              className="bg-primary text-white font-bold text-[13px] md:text-[14px] py-6 px-4 rounded-[6px] shadow-sm flex items-center justify-center text-center whitespace-pre-line leading-snug"
             >
               {feature}
             </div>
@@ -125,7 +125,7 @@ export function AiPodsWorkflow() {
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {choosingReasons.map((reason, idx) => (
-            <div key={idx} className="bg-[#FFF1E5] rounded-[8px] p-6 flex flex-col items-center justify-start text-center border border-[#FFE4CC]">
+            <div key={idx} className="bg-primary/5 rounded-[8px] p-6 flex flex-col items-center justify-start text-center border border-primary/10">
               <div className="w-14 h-14 bg-white rounded-full flex items-center justify-center border border-gray-200 mb-4 shadow-sm">
                 {reason.icon}
               </div>

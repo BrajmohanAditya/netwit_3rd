@@ -36,7 +36,7 @@ export function AiPodsContact() {
             <div className="mt-auto pt-8">
               <p className="font-semibold text-lg">
                 Fill out the form or email us at<br/>
-                <a href="mailto:sales@netsmartz.com" className="text-accent-gold hover:underline">sales@netsmartz.com</a>
+                <a href="mailto:sales@netsmartz.com" className="text-primary hover:underline">sales@netsmartz.com</a>
               </p>
             </div>
           </div>
@@ -54,7 +54,7 @@ export function AiPodsContact() {
               <input 
                 type="text" 
                 placeholder="Name*" 
-                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-primary transition-colors"
                 required
               />
             </div>
@@ -64,10 +64,10 @@ export function AiPodsContact() {
               <input 
                 type="email" 
                 placeholder="Email Address*" 
-                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-primary transition-colors"
                 required
               />
-              <div className="relative flex items-center border border-gray-300 rounded-[4px] focus-within:border-accent-gold transition-colors overflow-hidden">
+              <div className="relative flex items-center border border-gray-300 rounded-[4px] focus-within:border-primary transition-colors overflow-hidden">
                 <div className="flex items-center justify-center px-3 bg-gray-50 border-r border-gray-300 h-full">
                   <span className="text-lg">🇺🇸</span>
                   <svg className="w-3 h-3 ml-1 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -88,7 +88,7 @@ export function AiPodsContact() {
               <input 
                 type="text" 
                 placeholder="Company" 
-                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-primary transition-colors"
                 required
               />
             </div>
@@ -98,7 +98,7 @@ export function AiPodsContact() {
               <textarea 
                 placeholder="Tell us more about your requirements" 
                 rows={3}
-                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-accent-gold transition-colors resize-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-[4px] text-sm focus:outline-none focus:border-primary transition-colors resize-none"
               ></textarea>
             </div>
 
@@ -107,7 +107,7 @@ export function AiPodsContact() {
               <input 
                 type="checkbox" 
                 id="consent" 
-                className="mt-1 w-3.5 h-3.5 flex-shrink-0 cursor-pointer accent-accent-gold"
+                className="mt-1 w-3.5 h-3.5 flex-shrink-0 cursor-pointer accent-primary"
                 required
               />
               <label htmlFor="consent" className="text-[10px] text-gray-500 leading-tight">
@@ -119,7 +119,7 @@ export function AiPodsContact() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4">
               <button 
                 type="submit" 
-                className="bg-[#f06f12] hover:bg-[#d5610e] text-white font-bold py-2.5 px-8 rounded-[4px] text-sm transition-colors w-full sm:w-auto"
+                className="bg-primary hover:bg-primary-600 text-white font-bold py-2.5 px-8 rounded-[4px] text-sm transition-colors w-full sm:w-auto"
               >
                 Submit
               </button>

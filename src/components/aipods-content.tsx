@@ -85,8 +85,8 @@ export function AiPodsContent() {
               <div 
                 className={`absolute inset-0 w-full h-full rounded-[10px] transition-all duration-300 ease-in-out p-6 flex items-center justify-center text-center
                   ${hoveredIndex === idx 
-                    ? 'bg-[#ffe8cc] text-text border border-[#ffdbb5]' 
-                    : 'bg-[#ee7111] text-white'
+                    ? 'bg-primary/10 text-text border border-primary/20' 
+                    : 'bg-primary text-white'
                   }`}
               >
                 {hoveredIndex === idx ? (
@@ -119,9 +119,9 @@ export function AiPodsContent() {
         <div className="max-w-[1000px] mx-auto border border-[#E5E7EB] rounded-[16px] p-6 md:p-10 bg-white shadow-[0_2px_15px_-4px_rgba(0,0,0,0.03)]">
           {/* Headers */}
           <div className="grid grid-cols-3 gap-6 mb-6">
-            <div className="text-accent-gold font-bold text-sm md:text-lg tracking-tight">Common AI Challenge</div>
-            <div className="text-accent-gold font-bold text-sm md:text-lg tracking-tight">Our AI Pod Approach</div>
-            <div className="text-accent-gold font-bold text-sm md:text-lg tracking-tight">Business Outcome</div>
+            <div className="text-primary font-bold text-sm md:text-lg tracking-tight">Common AI Challenge</div>
+            <div className="text-primary font-bold text-sm md:text-lg tracking-tight">Our AI Pod Approach</div>
+            <div className="text-primary font-bold text-sm md:text-lg tracking-tight">Business Outcome</div>
           </div>
           
           {/* Rows */}
@@ -131,10 +131,10 @@ export function AiPodsContent() {
                 <div className="bg-[#F3F4F6] text-text font-semibold text-[11px] md:text-[14px] py-3.5 px-4 rounded-[6px] text-center w-full leading-tight">
                   {row.challenge}
                 </div>
-                <div className="bg-[#FFF1E5] text-accent-gold font-bold text-[11px] md:text-[14px] py-3.5 px-4 rounded-[6px] text-center w-full leading-tight">
+                <div className="bg-primary/5 text-primary font-bold text-[11px] md:text-[14px] py-3.5 px-4 rounded-[6px] text-center w-full leading-tight">
                   {row.approach}
                 </div>
-                <div className="bg-[#E76C1E] text-white font-bold text-[11px] md:text-[14px] py-3.5 px-4 rounded-[6px] shadow-sm text-center w-full leading-tight">
+                <div className="bg-primary text-white font-bold text-[11px] md:text-[14px] py-3.5 px-4 rounded-[6px] shadow-sm text-center w-full leading-tight">
                   {row.outcome}
                 </div>
               </div>
@@ -156,9 +156,9 @@ export function AiPodsContent() {
           {useCases.map((useCase, idx) => (
             <div 
               key={idx}
-              className="bg-white rounded-xl border border-gray-200 hover:border-accent-gold/40 p-8 text-center transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.06)]"
+              className="bg-white rounded-xl border border-gray-200 hover:border-primary/40 p-8 text-center transition-all duration-300 hover:shadow-[0_8px_30px_rgb(11,61,145,0.06)]"
             >
-              <h3 className="text-accent-gold font-bold text-lg md:text-[19px] leading-tight mb-4 whitespace-pre-line">
+              <h3 className="text-primary font-bold text-lg md:text-[19px] leading-tight mb-4 whitespace-pre-line">
                 {useCase.title}
               </h3>
               <p className="text-[#64748B] text-[15px] leading-relaxed">

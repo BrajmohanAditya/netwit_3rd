@@ -52,7 +52,7 @@ export function AiPodsComparison() {
           <div className="grid grid-cols-1 md:grid-cols-2">
             {/* Ideal For Column */}
             <div className="p-8 md:p-10 border-b md:border-b-0 md:border-r border-gray-200">
-              <h3 className="text-accent-gold font-bold text-lg mb-8 tracking-tight">
+              <h3 className="text-primary font-bold text-lg mb-8 tracking-tight">
                 Ideal For
               </h3>
               <div className="space-y-4">
@@ -69,12 +69,12 @@ export function AiPodsComparison() {
 
             {/* Not Ideal For Column */}
             <div className="p-8 md:p-10">
-              <h3 className="text-accent-gold font-bold text-lg mb-8 tracking-tight">
+              <h3 className="text-primary font-bold text-lg mb-8 tracking-tight">
                 Not Ideal For
               </h3>
               <div className="space-y-4">
                 {notIdealFor.map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3 bg-[#FFF1E5] py-3 px-4 rounded-[6px]">
+                  <div key={idx} className="flex items-center gap-3 bg-primary/5 py-3 px-4 rounded-[6px]">
                     <X className="w-5 h-5 text-danger stroke-[2.5] flex-shrink-0" />
                     <span className="text-sm md:text-[15px] font-medium text-text text-left leading-tight">
                       {item}
@@ -118,7 +118,7 @@ export function AiPodsComparison() {
 
         <Link
           href="/success-stories"
-          className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[4px] font-bold transition-all bg-accent-gold text-white hover:bg-accent-gold/90 shadow-md text-sm md:text-base"
+          className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-[4px] font-bold transition-all bg-primary text-white hover:bg-primary-600 shadow-md text-sm md:text-base"
         >
           Explore All AI Pod Success Stories <ArrowRight className="w-5 h-5" />
         </Link>

@@ -48,7 +48,7 @@ function AnimatedNumber({ end, duration = 2000, suffix = "" }: { end: number, du
     };
   }, [end, duration]);
 
-  return <div ref={nodeRef} className="text-[40px] font-bold text-accent-gold mb-3">{count}{suffix}</div>;
+  return <div ref={nodeRef} className="text-[40px] font-bold text-primary mb-3">{count}{suffix}</div>;
 }
 
 export function AiPodsHero() {
@@ -67,11 +67,11 @@ export function AiPodsHero() {
         
         <div className="max-w-[1200px] mx-auto px-6 relative z-10 w-full pt-10 pb-20">
           <div className="max-w-[700px]">
-            <span className="inline-block px-4 py-1.5 rounded-full mb-6 font-semibold text-sm bg-accent-gold text-white">
+            <span className="inline-block px-4 py-1.5 rounded-full mb-6 font-semibold text-sm bg-primary text-white">
               AI Pods for Enterprise Leaders
             </span>
             <h1 className="text-4xl md:text-[54px] font-bold mb-6 leading-[1.1] text-text">
-              Deploy Production-Ready <span className="text-accent-gold">AI in 90 Days</span> Without Hiring an AI Team
+              Deploy Production-Ready <span className="text-primary">AI in 90 Days</span> Without Hiring an AI Team
             </h1>
             <p className="text-lg md:text-xl mb-8 leading-relaxed text-muted">
               Dedicated AI Pods from Netwit to integrate with your engineering teams to rapidly design, build, and deploy enterprise AI solutions with measurable outcomes.
@@ -96,13 +96,13 @@ export function AiPodsHero() {
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 href="#contact"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-md font-bold transition-all bg-accent-gold text-white hover:opacity-90 shadow-lg"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-md font-bold transition-all bg-primary text-white hover:bg-primary-600 shadow-lg"
               >
                 Request an AI Pod & ROI Assessment Now!
               </Link>
               <Link
                 href="#how-it-works"
-                className="inline-flex items-center justify-center px-8 py-4 rounded-md font-bold transition-all border-[2px] border-accent-gold text-accent-gold hover:bg-accent-gold/5"
+                className="inline-flex items-center justify-center px-8 py-4 rounded-md font-bold transition-all border-[2px] border-primary text-primary hover:bg-primary/5"
               >
                 See How AI Pods Work
               </Link>
@@ -111,8 +111,8 @@ export function AiPodsHero() {
         </div>
       </section>
 
-      {/* Orange Banner */}
-      <div className="bg-accent-gold py-5 w-full relative z-20 shadow-sm">
+      {/* Primary Banner */}
+      <div className="bg-primary py-5 w-full relative z-20 shadow-sm">
         <div className="max-w-[1200px] mx-auto px-6">
           <div className="flex flex-wrap items-center justify-center gap-x-12 gap-y-4 text-white font-bold text-lg">
             <div className="flex items-center gap-3">
@@ -146,7 +146,7 @@ export function AiPodsHero() {
               { stat: 40, suffix: "%", text: "Reduction in AI Bias" },
               { stat: 30, suffix: "%", text: "Improvement in AI Accuracy" }
             ].map((item, idx) => (
-              <div key={idx} className="bg-surface rounded-xl shadow-[0_4px_20px_rgba(0,0,0,0.05)] border border-gray-100 p-8 text-center hover:shadow-[0_4px_25px_rgba(0,0,0,0.08)] transition-all">
+              <div key={idx} className="bg-surface rounded-xl shadow-[0_4px_20px_rgba(11, 61, 145, 0.05)] border border-gray-100 p-8 text-center hover:shadow-[0_4px_25px_rgba(11, 61, 145, 0.08)] transition-all">
                 <AnimatedNumber end={item.stat} suffix={item.suffix} />
                 <div className="text-text font-bold text-sm tracking-wide px-2 leading-relaxed">{item.text}</div>
               </div>

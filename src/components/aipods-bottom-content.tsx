@@ -6,12 +6,12 @@ export function AiPodsBottomContent() {
   const industries = ["SaaS", "Healthcare", "Manufacturing"];
   
   const podMembers = [
-    { title: "AI/ML\nEngineers", icon: <Brain className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> },
-    { title: "Data\nScientists", icon: <Database className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> },
-    { title: "MLOps & DevOps\nSpecialists", icon: <Settings className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> },
-    { title: "Product-Focused\nSoftware Engineers", icon: <Code className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> },
-    { title: "Delivery\nAssurance & QA Experts", icon: <ShieldCheck className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> },
-    { title: "Dedicated Pod\nLead/Delivery Owner", icon: <UserCog className="w-8 h-8 text-accent-gold mb-3 stroke-[1.5]" /> }
+    { title: "AI/ML\nEngineers", icon: <Brain className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
+    { title: "Data\nScientists", icon: <Database className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
+    { title: "MLOps & DevOps\nSpecialists", icon: <Settings className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
+    { title: "Product-Focused\nSoftware Engineers", icon: <Code className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
+    { title: "Delivery\nAssurance & QA Experts", icon: <ShieldCheck className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
+    { title: "Dedicated Pod\nLead/Delivery Owner", icon: <UserCog className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> }
   ];
 
   const packages = ["Foundation", "Scale", "Enterprise"];
@@ -19,14 +19,14 @@ export function AiPodsBottomContent() {
   return (
     <div className="w-full">
       {/* Banner 1: Launch Production-Safe AI */}
-      <section className="w-full bg-[#FFF1E5] py-16 text-center px-6">
+      <section className="w-full bg-primary/5 py-16 text-center px-6">
         <h2 className="text-2xl md:text-3xl font-bold text-text mb-3">
           Launch Production-Safe AI Without Disrupting Your Business Operations
         </h2>
         <p className="text-muted text-[15px] md:text-base mb-8">
           A 1-Page Executive Brief on How AI Pods Ensure Fast, Governed AI Execution.
         </p>
-        <button className="bg-accent-gold hover:bg-accent-gold/90 transition-colors text-white font-bold py-3 px-8 rounded-[4px] shadow-md text-sm md:text-base cursor-pointer">
+        <button className="bg-primary hover:bg-primary-600 transition-colors text-white font-bold py-3 px-8 rounded-[4px] shadow-md text-sm md:text-base cursor-pointer">
           Download the Executive Brief
         </button>
       </section>
@@ -46,7 +46,7 @@ export function AiPodsBottomContent() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {industries.map((ind, idx) => (
-              <div key={idx} className="bg-accent-gold text-white font-bold text-lg md:text-[22px] py-10 md:py-14 rounded-[8px] shadow-sm transform transition-transform hover:scale-105 cursor-pointer">
+              <div key={idx} className="bg-primary text-white font-bold text-lg md:text-[22px] py-10 md:py-14 rounded-[8px] shadow-sm transform transition-transform hover:scale-105 cursor-pointer">
                 {ind}
               </div>
             ))}
@@ -67,7 +67,7 @@ export function AiPodsBottomContent() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             {podMembers.map((member, idx) => (
-              <div key={idx} className="bg-[#FFF1E5] rounded-[8px] p-6 flex flex-col items-center justify-center text-center shadow-sm border border-[#FFE4CC] hover:bg-[#ffe3c9] transition-colors cursor-pointer min-h-[160px]">
+              <div key={idx} className="bg-primary/5 rounded-[8px] p-6 flex flex-col items-center justify-center text-center shadow-sm border border-primary/10 hover:bg-primary/10 transition-colors cursor-pointer min-h-[160px]">
                 {member.icon}
                 <span className="text-text font-bold text-[13px] md:text-[14px] leading-tight whitespace-pre-line">
                   {member.title}
@@ -88,7 +88,7 @@ export function AiPodsBottomContent() {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {packages.map((pkg, idx) => (
-              <div key={idx} className="bg-accent-gold text-white font-bold text-lg md:text-[22px] py-10 md:py-14 rounded-[8px] shadow-sm transform transition-transform hover:scale-105 cursor-pointer">
+              <div key={idx} className="bg-primary text-white font-bold text-lg md:text-[22px] py-10 md:py-14 rounded-[8px] shadow-sm transform transition-transform hover:scale-105 cursor-pointer">
                 {pkg}
               </div>
             ))}
@@ -97,11 +97,11 @@ export function AiPodsBottomContent() {
       </div>
 
       {/* Banner 2: Ready to Turn AI Ideas */}
-      <section className="w-full bg-[#FFF1E5] py-16 text-center px-6">
+      <section className="w-full bg-primary/5 py-16 text-center px-6">
         <h2 className="text-2xl md:text-[28px] font-bold text-text mb-8">
           Ready to Turn AI Ideas into Production Reality?
         </h2>
-        <button className="bg-accent-gold hover:bg-accent-gold/90 transition-colors text-white font-bold py-3 px-8 rounded-[4px] shadow-md text-sm md:text-base cursor-pointer">
+        <button className="bg-primary hover:bg-primary-600 transition-colors text-white font-bold py-3 px-8 rounded-[4px] shadow-md text-sm md:text-base cursor-pointer">
           Design Your AI Pod Today
         </button>
       </section>

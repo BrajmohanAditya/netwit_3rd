@@ -64,7 +64,7 @@ export function AiPodsFaq() {
         </div>
 
         <div className="text-left w-full pl-1">
-          <button className="text-accent-gold font-bold text-[13px] md:text-[14px] hover:underline transition-all">
+          <button className="text-primary font-bold text-[13px] md:text-[14px] hover:underline transition-all">
             Load More FAQs
           </button>
         </div>
