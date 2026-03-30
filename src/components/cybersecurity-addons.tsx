@@ -81,7 +81,7 @@ export function CybersecurityAddons() {
             {addons.map((addon, index) => (
               <div 
                 key={index} 
-                className="bg-white p-8 rounded-2xl border border-[#FFE8D6] shadow-sm flex flex-col items-start"
+                className="bg-white p-8 rounded-2xl border border-primary/20 shadow-sm flex flex-col items-start"
               >
                 <h3 className="text-lg font-bold text-[#2d2d2d] mb-6 min-h-[50px]">
                   {addon.title}

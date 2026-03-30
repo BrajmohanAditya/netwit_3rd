@@ -28,7 +28,7 @@ export function AzureMigrationAMMP() {
                 "An AI-ready foundation built on secure, well-governed data platforms"
               ].map((item, idx) => (
                 <li key={idx} className="flex items-center gap-3 border border-gray-100 p-3.5 rounded-[4px] shadow-sm bg-white">
-                  <Check className="w-[15px] h-[15px] text-accent-gold stroke-[3] shrink-0" />
+                  <Check className="w-[15px] h-[15px] text-primary stroke-[3] shrink-0" />
                   <span className="text-[13px] font-medium text-text leading-[1.2]">{item}</span>
                 </li>
               ))}
@@ -38,7 +38,7 @@ export function AzureMigrationAMMP() {
               Make Your Cloud Journey Secure and Compliant
             </h3>
             
-            <button className="bg-accent-gold hover:bg-accent-gold/90 text-white font-bold py-[14px] px-8 rounded-[4px] text-[14px] w-full max-w-[340px] transition-colors shadow-sm">
+            <button className="bg-primary hover:bg-primary-600 text-white font-bold py-[14px] px-8 rounded-[4px] text-[14px] w-full max-w-[340px] transition-colors shadow-sm">
               Start Your Cloud Assessment
             </button>
           </div>
@@ -69,24 +69,24 @@ export function AzureMigrationAMMP() {
           
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-10 text-center">
             <div className="bg-white border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.03)] rounded-[10px] p-6 flex flex-col items-center">
-              <ClipboardList className="w-10 h-10 text-accent-gold mb-5 stroke-[1.5]" />
+              <ClipboardList className="w-10 h-10 text-primary mb-5 stroke-[1.5]" />
               <p className="text-[13px] font-bold text-text leading-tight max-w-[150px]">Cloud readiness and<br/>migration assessments</p>
             </div>
             <div className="bg-white border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.03)] rounded-[10px] p-6 flex flex-col items-center">
-              <Network className="w-10 h-10 text-accent-gold mb-5 stroke-[1.5]" />
+              <Network className="w-10 h-10 text-primary mb-5 stroke-[1.5]" />
               <p className="text-[13px] font-bold text-text leading-tight max-w-[150px]">Architecture design and<br/>Azure cloud<br/>modernization planning</p>
             </div>
             <div className="bg-white border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.03)] rounded-[10px] p-6 flex flex-col items-center">
-              <ShieldCheck className="w-10 h-10 text-accent-gold mb-5 stroke-[1.5]" />
+              <ShieldCheck className="w-10 h-10 text-primary mb-5 stroke-[1.5]" />
               <p className="text-[13px] font-bold text-text leading-tight max-w-[150px]">Security, compliance,<br/>and governance<br/>enablement</p>
             </div>
             <div className="bg-white border border-gray-100 shadow-[0_4px_15px_rgba(0,0,0,0.03)] rounded-[10px] p-6 flex flex-col items-center">
-              <ListChecks className="w-10 h-10 text-accent-gold mb-5 stroke-[1.5]" />
+              <ListChecks className="w-10 h-10 text-primary mb-5 stroke-[1.5]" />
               <p className="text-[13px] font-bold text-text leading-tight max-w-[150px]">Migration execution and<br/>workload optimization</p>
             </div>
           </div>
 
-          <div className="mx-auto bg-[#FFF4EB] border-y-[3px] border-accent-gold rounded-sm py-3.5 px-6 shadow-sm inline-block max-w-[800px]">
+          <div className="mx-auto bg-primary/5 border-y-[3px] border-primary rounded-sm py-3.5 px-6 shadow-sm inline-block max-w-[800px]">
             <p className="text-[13px] md:text-[14px] text-text font-bold italic tracking-wide">
               Funding eligibility depends on workload type, scale, and migration scope—early validation is key to maximize program benefits.
             </p>
@@ -102,7 +102,7 @@ export function AzureMigrationAMMP() {
         <p className="text-[14.5px] text-muted mb-8 font-medium">
           A concise executive brief on reducing risk, controlling cost, and maximizing ROI with Microsoft-funded, security-led Azure migrations.
         </p>
-        <button className="bg-accent-gold hover:bg-accent-gold/90 text-white font-bold py-3 px-8 rounded-[4px] text-[14px] transition-colors shadow-sm">
+        <button className="bg-primary hover:bg-primary-600 text-white font-bold py-3 px-8 rounded-[4px] text-[14px] transition-colors shadow-sm">
           Download the Executive Brief
         </button>
       </section>

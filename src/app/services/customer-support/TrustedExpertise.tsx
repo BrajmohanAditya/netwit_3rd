@@ -10,11 +10,11 @@ export default function TrustedExpertise() {
           
           {/* Left Content */}
           <div className="w-full md:w-1/2 flex flex-col items-start text-left">
-            <h2 className="text-[32px] md:text-[38px] font-bold text-[#ea580c] mb-6 leading-[1.2]">
+            <h2 className="text-[32px] md:text-[38px] font-bold text-primary mb-6 leading-[1.2]">
               Trusted Customer Support Expertise
             </h2>
             <p className="text-[15px] md:text-[16px] text-[#4b5563] leading-[1.8] mb-8">
-              With over two decades of experience in customer support services, and a global team of support professionals, Netsmartz is the partner of choice for businesses looking to elevate AI-powered customer support. Our AI customer service solutions are trusted by startups, enterprises, and everything in between.
+              With over two decades of experience in customer support services, and a global team of support professionals, Netwit is the partner of choice for businesses looking to elevate AI-powered customer support. Our AI customer service solutions are trusted by startups, enterprises, and everything in between.
             </p>
             
             <ul className="flex flex-col gap-4">

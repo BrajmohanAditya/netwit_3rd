@@ -16,7 +16,7 @@ export default function CybersecurityBanner() {
           className="object-cover object-center opacity-30 mix-blend-color-dodge"
         />
         {/* Deep dark gradient overlay with a hint of warm orange/amber tint mimicking the reference */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/80 to-[#1a0b02]/90 w-full z-10"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/95 via-black/80 to-[#0a0f1d]/90 w-full z-10"></div>
       </div>
 
       <div className="relative z-20 max-w-[1000px] mx-auto w-full px-6 flex flex-col items-center text-center">
@@ -40,7 +40,7 @@ export default function CybersecurityBanner() {
         {/* CTA Button */}
         <Link 
           href="#contact" 
-          className="bg-[#f26522] hover:bg-[#d9531e] text-white font-bold py-3.5 px-8 rounded-[4px] shadow-[0_4px_20px_rgba(242,101,34,0.3)] transition-all flex items-center gap-2 text-[14px] md:text-[15px] tracking-wide"
+          className="bg-primary hover:bg-primary-600 text-white font-bold py-3.5 px-8 rounded-[4px] shadow-primary/30 transition-all flex items-center gap-2 text-[14px] md:text-[15px] tracking-wide"
         >
           Secure Your Global Operations Today
         </Link>

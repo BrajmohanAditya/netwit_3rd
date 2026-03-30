@@ -5,23 +5,23 @@ import { AlertTriangle, RefreshCcw, BellOff, CloudOff, BellRing } from "lucide-r
 export function MdrBreaches() {
   const breaches = [
     {
-      icon: <AlertTriangle className="w-[32px] h-[32px] text-[#f06f12] stroke-[1.5] mb-4" />,
+      icon: <AlertTriangle className="w-[32px] h-[32px] text-primary stroke-[1.5] mb-4" />,
       text: "Initial access through identity misuse, stolen credentials, or misconfigurations"
     },
     {
-      icon: <RefreshCcw className="w-[32px] h-[32px] text-[#f06f12] stroke-[1.5] mb-4" />,
+      icon: <RefreshCcw className="w-[32px] h-[32px] text-primary stroke-[1.5] mb-4" />,
       text: "Quiet lateral movement across systems and environments"
     },
     {
-      icon: <BellOff className="w-[32px] h-[32px] text-[#f06f12] stroke-[1.5] mb-4" />,
+      icon: <BellOff className="w-[32px] h-[32px] text-primary stroke-[1.5] mb-4" />,
       text: "Alerts accumulating while teams are offline"
     },
     {
-      icon: <CloudOff className="w-[32px] h-[32px] text-[#f06f12] stroke-[1.5] mb-4" />,
+      icon: <CloudOff className="w-[32px] h-[32px] text-primary stroke-[1.5] mb-4" />,
       text: "Identity abuse and cloud misconfigurations going unchallenged"
     },
     {
-      icon: <BellRing className="w-[32px] h-[32px] text-[#f06f12] stroke-[1.5] mb-4" />,
+      icon: <BellRing className="w-[32px] h-[32px] text-primary stroke-[1.5] mb-4" />,
       text: "Incidents discovered only after damage, disruption, or external notification"
     }
   ];
@@ -42,7 +42,7 @@ export function MdrBreaches() {
           {breaches.map((item, idx) => (
             <div 
               key={idx} 
-              className="bg-white border border-gray-100 rounded-[8px] py-10 px-5 flex flex-col items-center text-center shadow-[0_2px_15px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-[#f06f12]/30 transition-all"
+              className="bg-white border border-gray-100 rounded-[8px] py-10 px-5 flex flex-col items-center text-center shadow-[0_2px_15px_rgba(0,0,0,0.04)] hover:shadow-lg hover:border-primary/30 transition-all"
             >
               {item.icon}
               <p className="text-[13px] text-[#444] font-medium leading-[1.6]">
@@ -54,7 +54,7 @@ export function MdrBreaches() {
 
         {/* Footer Bar */}
         <div className="inline-flex">
-          <div className="border border-[#f06f12]/30 bg-[#FFF8F3] px-8 py-4 flex items-center shadow-[2px_2px_10px_rgba(240,111,18,0.05)] border-l-[4px] border-l-[#f06f12]">
+          <div className="border border-primary/30 bg-primary/5 px-8 py-4 flex items-center shadow-[2px_2px_10px_rgba(11,61,145,0.05)] border-l-[4px] border-l-primary">
             <p className="text-[14px] text-[#333]">
               <strong className="font-bold text-[#111]">Hard truth:</strong> Most organizations detect incidents after impact has already begun.
             </p>

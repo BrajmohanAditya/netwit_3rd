@@ -27,7 +27,7 @@ export function AzureMigrationSecurity() {
               "Operational readiness for post-migration incident response and compliance audits"
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3 bg-white border border-gray-100 p-3.5 rounded-[6px] shadow-sm transition-shadow hover:shadow-md">
-                <Check className="w-[18px] h-[18px] text-accent-gold stroke-[3] shrink-0" />
+                <Check className="w-[18px] h-[18px] text-primary stroke-[3] shrink-0" />
                 <span className="text-[14px] text-text font-medium leading-snug">{item}</span>
               </li>
             ))}

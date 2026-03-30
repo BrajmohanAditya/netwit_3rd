@@ -64,7 +64,7 @@ export function AzureMigrationFaq() {
         </div>
 
         <div className="mt-8 text-left">
-          <button className="text-accent-gold font-bold text-[13px] hover:underline transition-all tracking-wide">
+          <button className="text-primary font-bold text-[13px] hover:underline transition-all tracking-wide">
             Load More FAQs
           </button>
         </div>

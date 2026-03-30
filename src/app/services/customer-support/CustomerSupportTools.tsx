@@ -43,7 +43,7 @@ export default function CustomerSupportTools() {
         {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-[28px] md:text-[34px] font-bold text-[#111827]">
-            <span className="text-[#ea580c]">Customer Support</span> Tools and Platforms
+            <span className="text-primary">Customer Support</span> Tools and Platforms
           </h2>
         </div>
 
@@ -99,7 +99,7 @@ export default function CustomerSupportTools() {
           {/* Right Arrow */}
           <button 
             onClick={() => scroll("right")}
-            className="absolute -right-2 md:-right-6 z-10 bg-[#ea580c] text-white w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-sm hover:bg-[#c2410c] focus:outline-none shadow-md transition-colors"
+            className="absolute -right-2 md:-right-6 z-10 bg-primary text-white w-8 h-8 md:w-10 md:h-10 flex items-center justify-center rounded-sm hover:bg-primary-600 focus:outline-none shadow-md transition-colors"
             aria-label="Scroll right"
           >
             <ArrowRight className="w-4 h-4 md:w-5 md:h-5" />
@@ -116,7 +116,7 @@ export default function CustomerSupportTools() {
                 key={dotIndex}
                 className={`transition-all duration-300 rounded-full ${
                   isActive 
-                    ? 'w-6 h-1.5 md:h-2 bg-[#ea580c]' 
+                    ? 'w-6 h-1.5 md:h-2 bg-primary' 
                     : 'w-1.5 md:w-2 h-1.5 md:h-2 bg-blue-100'
                 }`}
               />

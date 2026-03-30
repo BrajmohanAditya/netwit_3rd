@@ -54,7 +54,7 @@ export default function MarketingServicesPage() {
               {/* CTA Button */}
               <Link 
                 href="#contact" 
-                className="bg-[#f97316] hover:bg-[#ea580c] text-white font-semibold py-3.5 px-7 rounded-[4px] shadow-[0_4px_14px_rgba(234,88,12,0.3)] transition-all flex items-center gap-2 text-[15px] inline-flex group w-fit"
+                className="bg-primary hover:bg-primary-600 text-white font-semibold py-3.5 px-7 rounded-[4px] shadow-primary/20 transition-all flex items-center gap-2 text-[15px] inline-flex group w-fit"
               >
                 Build Your AI-Powered Marketing Plan 
                 <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" strokeWidth={2} />

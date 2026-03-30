@@ -12,7 +12,7 @@ export default function MarketingExpertise() {
         {/* Top Centered Section */}
         <div className="text-center max-w-[900px] mx-auto mb-24">
           <h2 className="text-[28px] md:text-[36px] font-bold text-[#111827] leading-snug mb-6">
-            <span className="text-[#ea580c]">Deliver the Right Messaging, </span>
+            <span className="text-primary">Deliver the Right Messaging, </span>
             at the Right Time, in the Right Place, to the Right People
           </h2>
           <p className="text-[15px] md:text-[17px] text-[#4b5563] leading-[1.6]">
@@ -25,7 +25,7 @@ export default function MarketingExpertise() {
           
           {/* Left Content */}
           <div className="order-2 lg:order-1">
-            <h2 className="text-[32px] md:text-[40px] font-bold text-[#ea580c] leading-tight mb-6">
+            <h2 className="text-[32px] md:text-[40px] font-bold text-primary leading-tight mb-6">
               Trusted SaaS Marketing <br className="hidden lg:block"/>
               Expertise
             </h2>

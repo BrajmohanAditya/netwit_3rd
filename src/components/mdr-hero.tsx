@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function MdrHero() {
   return (
-    <section className="relative min-h-[520px] w-full bg-[#fdfaf5] overflow-hidden flex flex-col items-center justify-center pt-24 pb-20 border-b border-[#f06f12]/10">
+    <section className="relative min-h-[520px] w-full bg-surface-1 overflow-hidden flex flex-col items-center justify-center pt-24 pb-20 border-b border-primary/10">
       
       {/* Generated Background Image overlay */}
       <div className="absolute inset-0 z-0">
@@ -15,7 +15,7 @@ export function MdrHero() {
           className="object-cover object-right opacity-90 mix-blend-multiply"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#fdfbf8]/95 via-[#fcf8f3]/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-white/95 via-white/80 to-transparent"></div>
       </div>
 
       <div className="relative z-10 max-w-[900px] w-full px-6 flex flex-col items-center text-center">
@@ -44,7 +44,7 @@ export function MdrHero() {
         {/* Headline */}
         <h1 className="text-4xl md:text-5xl lg:text-[54px] font-black text-[#211F1D] leading-[1.15] tracking-tight mb-8">
           You&apos;re Not Under Attack. You&apos;re<br/>
-          <span className="text-[#f06f12]">Under-Detected.</span>
+          <span className="text-primary">Under-Detected.</span>
         </h1>
 
         {/* Description */}
@@ -53,9 +53,10 @@ export function MdrHero() {
         </p>
 
         {/* Call to Action Container */}
-        <button className="bg-[#F06F12] hover:bg-[#d5610e] text-white font-medium py-[15px] px-[28px] rounded-[6px] text-[15.5px] transition-all shadow-[0_4px_14px_rgba(240,111,18,0.30)] tracking-wide hover:shadow-[0_6px_20px_rgba(240,111,18,0.45)] hover:-translate-y-0.5">
+        <button className="bg-primary hover:bg-primary-600 text-white font-medium py-[15px] px-[28px] rounded-[6px] text-[15.5px] transition-all shadow-[0_4px_14px_rgba(11,61,145,0.30)] tracking-wide hover:shadow-[0_6px_20px_rgba(11,61,145,0.45)] hover:-translate-y-0.5">
           Get Your Free 14-Day Executive Threat Exposure Assessment
         </button>
+
 
       </div>
     </section>

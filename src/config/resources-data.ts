@@ -61,7 +61,7 @@ export const resourcesData = {
     description: "Read the latest press releases and company announcements. Stay informed about our new services, partnerships, awards, and organizational updates.",
     category: "Press",
     items: [
-      { title: "Netsmartz Launches AI-Powered DevOps", description: "New AI services announcement", tag: "News" },
+      { title: "Netwit Launches AI-Powered DevOps", description: "New AI services announcement", tag: "News" },
       { title: "Partnership with AWS", description: "Cloud partnership", tag: "Partnership" },
       { title: "Award for Innovation", description: "Industry recognition", tag: "Award" },
       { title: "Expansion to Europe", description: "Global expansion", tag: "News" },

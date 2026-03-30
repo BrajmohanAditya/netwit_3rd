@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { Award, MonitorSmartphone, Users, Hourglass, Handshake } from "lucide-react";
 
-export function MdrWhyNetsmartz() {
+export function MdrWhyNetwit() {
   const reasons = [
     { 
       title: "26+ years as a trusted MSP, not just a security vendor",
@@ -31,7 +31,7 @@ export function MdrWhyNetsmartz() {
     <section className="bg-white py-24 px-6 w-full flex flex-col items-center">
       <div className="max-w-[1100px] w-full text-center mb-16">
         <h2 className="text-[26px] md:text-[34px] font-bold text-text mb-4 tracking-tight">
-          Why Executive Teams Choose Netsmartz
+          Why Executive Teams Choose Netwit
         </h2>
         <p className="text-[14px] text-[#666] mb-12 font-medium">
           Most MDR providers focus on tools. We focus on operational reality.
@@ -41,7 +41,7 @@ export function MdrWhyNetsmartz() {
           {reasons.map((reason, idx) => (
             <div 
               key={idx} 
-              className="bg-[#FFF4EB] border border-[#f06f12]/20 rounded-[4px] py-8 px-4 flex flex-col items-center justify-start text-center shadow-[0_2px_8px_rgba(240,111,18,0.05)] min-h-[160px] transition-shadow hover:shadow-md"
+              className="bg-primary/5 border border-primary/20 rounded-[4px] py-8 px-4 flex flex-col items-center justify-start text-center shadow-[0_2px_8px_rgba(11,61,145,0.05)] min-h-[160px] transition-shadow hover:shadow-md"
             >
               {reason.icon}
               <p className="text-[#333] font-semibold text-[13px] leading-[1.35]">
@@ -83,7 +83,7 @@ export function MdrWhyNetsmartz() {
             <div className="mt-6">
               <p className="font-bold text-[14px] leading-relaxed">
                 To reserve your slot, fill out the form or email us at<br/>
-                <a href="mailto:sales@netsmartz.com" className="text-[#f06f12] hover:text-[#d5610e] transition-colors underline decoration-[#f06f12]/30 underline-offset-4 tracking-wide">sales@netsmartz.com</a>
+                <a href="mailto:sales@netsmartz.com" className="text-primary hover:text-primary-600 transition-colors underline decoration-primary/30 underline-offset-4 tracking-wide">sales@netsmartz.com</a>
               </p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export function MdrWhyNetsmartz() {
               <input 
                 type="text" 
                 placeholder="Name*" 
-                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-primary transition-colors"
                 required
               />
             </div>
@@ -111,10 +111,10 @@ export function MdrWhyNetsmartz() {
               <input 
                 type="email" 
                 placeholder="Email Address*" 
-                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-primary transition-colors"
                 required
               />
-              <div className="relative flex bg-white items-center border border-gray-200 rounded-[4px] focus-within:border-accent-gold transition-colors overflow-hidden">
+              <div className="relative flex bg-white items-center border border-gray-200 rounded-[4px] focus-within:border-primary transition-colors overflow-hidden">
                 <div className="flex items-center justify-center px-4 bg-gray-50 border-r border-gray-200 h-full">
                   <span className="text-[16px] leading-none">🇺🇸</span>
                 </div>
@@ -132,7 +132,7 @@ export function MdrWhyNetsmartz() {
               <input 
                 type="text" 
                 placeholder="Company" 
-                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-accent-gold transition-colors"
+                className="w-full px-4 py-[14px] bg-white border border-gray-200 rounded-[4px] text-[13px] placeholder:text-gray-400 focus:outline-none focus:border-primary transition-colors"
                 required
               />
             </div>
@@ -151,11 +151,11 @@ export function MdrWhyNetsmartz() {
               <input 
                 type="checkbox" 
                 id="consent_netsmartz_mdr" 
-                className="mt-1 flex-shrink-0 cursor-pointer accent-accent-gold border-gray-300 rounded-sm"
+                className="mt-1 flex-shrink-0 cursor-pointer accent-primary border-gray-300 rounded-sm"
                 required
               />
               <label htmlFor="consent_netsmartz_mdr" className="text-[10px] text-gray-400 leading-[13px]">
-                By checking this box, I consent to receive text messages Conversational purpose from Netsmartz. You can reply &quot;STOP&quot; at any time to opt-out. Message and data rates may apply. For more information, please refer to our Privacy Policy and SMS Terms and Conditions on our website.
+                By checking this box, I consent to receive text messages Conversational purpose from Netwit. You can reply &quot;STOP&quot; at any time to opt-out. Message and data rates may apply. For more information, please refer to our Privacy Policy and SMS Terms and Conditions on our website.
               </label>
             </div>
 
@@ -163,7 +163,7 @@ export function MdrWhyNetsmartz() {
             <div className="flex flex-col sm:flex-row items-center justify-between gap-5 pt-5">
               <button 
                 type="submit" 
-                className="bg-[#f06f12] hover:bg-[#d5610e] text-white font-bold py-[14px] px-10 rounded-[6px] text-[13.5px] transition-all w-full sm:w-auto shadow-sm tracking-wide"
+                className="bg-primary hover:bg-primary-600 text-white font-bold py-[14px] px-10 rounded-[6px] text-[13.5px] transition-all w-full sm:w-auto shadow-sm tracking-wide"
               >
                 Submit
               </button>

@@ -68,7 +68,7 @@ export function EsgBenefits() {
               </p>
               
               <div className="pt-6 border-t border-gray-50">
-                <div className="flex items-center gap-2 text-[#F05A22] font-semibold text-sm mb-3">
+                <div className="flex items-center gap-2 text-primary font-semibold text-sm mb-3">
                   <Lightbulb className="w-4 h-4" />
                   <span>Case in point:</span>
                 </div>

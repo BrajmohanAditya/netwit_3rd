@@ -52,7 +52,7 @@ export default function CustomerSupportPage() {
               {/* CTA Button */}
               <Link 
                 href="#contact" 
-                className="bg-[#f97316] hover:bg-[#ea580c] text-white font-bold py-3.5 px-6 rounded shadow-lg transition-all flex items-center gap-2 text-[14px] md:text-[15px] group"
+                className="bg-primary hover:bg-primary-600 text-white font-bold py-3.5 px-6 rounded shadow-lg transition-all flex items-center gap-2 text-[14px] md:text-[15px] group"
               >
                 Boost CSAT with AI-driven Customer Service 
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
@@ -62,7 +62,7 @@ export default function CustomerSupportPage() {
 
             {/* Right Content - Visual Element */}
             <div className="w-full md:w-[45%] flex justify-center md:justify-end">
-              <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full border-[10px] sm:border-[16px] border-[#f97316] shadow-2xl overflow-hidden shadow-[#f97316]/20">
+              <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full border-[10px] sm:border-[16px] border-primary shadow-2xl overflow-hidden shadow-primary/20">
                 {/* Image of support representative */}
                 <Image 
                   src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" 

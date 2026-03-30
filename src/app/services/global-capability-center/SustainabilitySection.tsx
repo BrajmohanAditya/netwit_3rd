@@ -50,7 +50,7 @@ const ecoBlocks = [
 
 export default function SustainabilitySection() {
   return (
-    <section className="py-24 bg-[#fefaf6]">
+    <section className="py-24 bg-surface-2">
       <div className="max-w-[1000px] mx-auto px-6">
         
         {/* Header Section */}
@@ -67,11 +67,11 @@ export default function SustainabilitySection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
           
           {/* Left Column Container */}
-          <div className="flex flex-col gap-6 lg:gap-8 bg-[#fff3e6] p-6 lg:p-8 rounded-sm border border-orange-100">
+          <div className="flex flex-col gap-6 lg:gap-8 bg-primary/5 p-6 lg:p-8 rounded-sm border border-primary/20">
             {greenBlocks.map((block, idx) => (
               <div key={idx} className="flex gap-4">
                 {/* Orange Left Indicator */}
-                <div className="w-[6px] h-[36px] bg-[#ea580c] rounded-full mt-1 shrink-0"></div>
+                <div className="w-[6px] h-[36px] bg-primary rounded-full mt-1 shrink-0"></div>
                 <div className="flex-1 w-full">
                   <h3 className="text-[16px] md:text-[17px] font-bold text-[#111827] mb-4">
                     {block.title}
@@ -80,11 +80,11 @@ export default function SustainabilitySection() {
                     {block.items.map((item, itemIdx) => (
                       <li key={itemIdx} className="flex items-start justify-between text-[13px] md:text-[14px] text-gray-700 leading-[1.5]">
                         <div className="flex items-start gap-2">
-                          <span className="text-[#ea580c] mt-1 text-[18px] leading-none">•</span>
+                          <span className="text-primary mt-1 text-[18px] leading-none">•</span>
                           <span>{item}</span>
                         </div>
                         <div className="w-5 h-5 ml-4 shrink-0 rounded-[4px] border border-gray-300 flex items-center justify-center bg-white shadow-sm">
-                          <Leaf className="w-3 h-3 text-[#ea580c]" strokeWidth={2} />
+                          <Leaf className="w-3 h-3 text-primary" strokeWidth={2} />
                         </div>
                       </li>
                     ))}
@@ -99,7 +99,7 @@ export default function SustainabilitySection() {
             {ecoBlocks.map((block, idx) => (
               <div key={idx} className="flex gap-4">
                 {/* Orange Left Indicator */}
-                <div className="w-[6px] h-[36px] bg-[#ea580c] rounded-full mt-1 shrink-0"></div>
+                <div className="w-[6px] h-[36px] bg-primary rounded-full mt-1 shrink-0"></div>
                 <div className="flex-1 w-full">
                   <h3 className="text-[16px] md:text-[17px] font-bold text-[#111827] mb-4">
                     {block.title}
@@ -108,11 +108,11 @@ export default function SustainabilitySection() {
                     {block.items.map((item, itemIdx) => (
                       <li key={itemIdx} className="flex items-start justify-between text-[13px] md:text-[14px] text-gray-700 leading-[1.5]">
                         <div className="flex items-start gap-2">
-                          <span className="text-[#ea580c] mt-1 text-[18px] leading-none">•</span>
+                          <span className="text-primary mt-1 text-[18px] leading-none">•</span>
                           <span>{item}</span>
                         </div>
                         <div className="w-5 h-5 ml-4 shrink-0 rounded-[4px] border border-gray-300 flex items-center justify-center bg-white shadow-sm">
-                          <Leaf className="w-3 h-3 text-[#ea580c]" strokeWidth={2} />
+                          <Leaf className="w-3 h-3 text-primary" strokeWidth={2} />
                         </div>
                       </li>
                     ))}
@@ -126,7 +126,7 @@ export default function SustainabilitySection() {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <button className="border-2 border-[#ea580c] text-[#ea580c] hover:bg-[#ea580c] hover:text-white transition-colors duration-300 text-[12px] font-bold uppercase tracking-wider py-3 px-8 rounded-sm">
+          <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-300 text-[12px] font-bold uppercase tracking-wider py-3 px-8 rounded-sm">
             OUR SUSTAINABILITY COMMITMENT
           </button>
         </div>

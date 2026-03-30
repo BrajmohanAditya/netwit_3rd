@@ -4,7 +4,7 @@ import { Brain, Database, Settings, Code, ShieldCheck, UserCog } from "lucide-re
 
 export function AiPodsBottomContent() {
   const industries = ["SaaS", "Healthcare", "Manufacturing"];
-  
+
   const podMembers = [
     { title: "AI/ML\nEngineers", icon: <Brain className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
     { title: "Data\nScientists", icon: <Database className="w-8 h-8 text-primary mb-3 stroke-[1.5]" /> },
@@ -56,7 +56,7 @@ export function AiPodsBottomContent() {
         {/* What's inside an AI Pod Section */}
         <section className="py-10 max-w-[1240px] mx-auto px-6 text-center">
           <h2 className="text-2xl md:text-[28px] font-bold text-text mb-4">
-            What's Inside a Netsmartz AI Pod?
+            What's Inside a Netwit AI Pod?
           </h2>
           <div className="inline-block px-4 py-1.5 rounded-full mb-6 font-semibold text-xs md:text-sm bg-surface-2 border border-gray-200 text-text">
             A Complete, Accountable Delivery Unit

@@ -39,7 +39,7 @@ export function AzureMigrationStall() {
               "AI and analytics initiatives blocked by weak data security and access controls"
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3 bg-white border border-gray-200 p-4 rounded-[6px] shadow-[0_2px_10px_rgba(0,0,0,0.02)] transition-shadow hover:shadow-md">
-                <Check className="w-[18px] h-[18px] text-accent-gold stroke-[3] shrink-0" />
+                <Check className="w-[18px] h-[18px] text-primary stroke-[3] shrink-0" />
                 <span className="text-[14px] text-text font-medium leading-snug">{item}</span>
               </li>
             ))}

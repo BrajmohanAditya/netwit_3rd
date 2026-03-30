@@ -71,7 +71,7 @@ export default function SalesAccelerationPage() {
             {/* CTA Button */}
             <Link 
               href="#contact" 
-              className="bg-[var(--color-primary)] hover:bg-[#ea580c] text-white font-bold py-[16px] px-10 rounded-[4px] shadow-lg transition-transform hover:scale-105 text-[15px] tracking-wide inline-flex items-center justify-center w-full sm:w-auto min-w-[340px]"
+              className="bg-primary hover:bg-primary-600 text-white font-bold py-[16px] px-10 rounded-[4px] shadow-lg transition-transform hover:scale-105 text-[15px] tracking-wide inline-flex items-center justify-center w-full sm:w-auto min-w-[340px]"
             >
               Build a Scalable, AI-Powered Sales Engine
             </Link>
@@ -83,7 +83,7 @@ export default function SalesAccelerationPage() {
         <section className="py-20 md:py-28 bg-[var(--color-bg)] px-6">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--color-text)] mb-6 leading-tight">
-              Tap into <span className="text-[#ea580c]">AI-powered</span> Sales
+              Tap into <span className="text-primary">AI-powered</span> Sales
             </h2>
             <p className="text-[16px] md:text-[18px] text-[var(--color-muted)] leading-[1.8]">
               Harness the power of AI-first sales enablement to enhance lead generation, optimize sales cycles, and boost conversion rates. Our intelligent automation and predictive analytics in AI-driven B2B appointment settings for SaaS enable your team to focus on high-value opportunities while reducing manual effort.
@@ -105,13 +105,13 @@ export default function SalesAccelerationPage() {
                 />
               </div>
               {/* Subtle accent matching the image's faint circle glow/overlay */}
-              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-[#ea580c]/10 rounded-full blur-2xl pointer-events-none hidden md:block"></div>
+              <div className="absolute -bottom-10 -right-10 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none hidden md:block"></div>
             </div>
 
             {/* Content Side */}
             <div className="w-full lg:w-1/2">
               <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--color-text)] mb-6 leading-tight">
-                Trusted Sales <span className="text-[#ea580c]">Expertise</span>
+                Trusted Sales <span className="text-primary">Expertise</span>
               </h2>
               <p className="text-[16px] md:text-[18px] text-[var(--color-muted)] leading-[1.8]">
                 With years of experience in sales appointment setting services in the USA, our specialists bring deep industry knowledge to craft customized solutions that accelerate growth. We implement proven methodologies, backed by AI-powered technology, to drive results and enhance sales efficiency through an AI appointment setter.
@@ -125,7 +125,7 @@ export default function SalesAccelerationPage() {
           <div className="max-w-[1200px] mx-auto px-6 text-center">
             
             <h2 className="text-[32px] md:text-[40px] font-bold text-[var(--color-text)] mb-4 leading-tight">
-              Comprehensive Sales <span className="text-[#ea580c]">Acceleration Services</span>
+              Comprehensive Sales <span className="text-primary">Acceleration Services</span>
             </h2>
             
             <p className="text-[15px] md:text-[16px] text-[var(--color-muted)] max-w-4xl mx-auto mb-16 leading-[1.8]">
@@ -186,7 +186,7 @@ export default function SalesAccelerationPage() {
         <section className="py-20 md:py-28 bg-[var(--color-surface-2)]">
           <div className="max-w-[1000px] mx-auto px-6">
             <h2 className="text-[28px] md:text-[36px] font-bold text-[var(--color-text)] mb-12 text-center">
-              Increasing Your Leads in <span className="text-[#ea580c]">6 Steps</span>
+              Increasing Your Leads in <span className="text-primary">6 Steps</span>
             </h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -230,7 +230,7 @@ export default function SalesAccelerationPage() {
               ].map((step) => (
                 <div 
                   key={step.number}
-                  className="group bg-[var(--color-bg)] hover:bg-[#ea580c] rounded-3xl p-8 relative overflow-hidden flex flex-col items-center text-center justify-center min-h-[220px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-transparent dark:border-[var(--color-surface-2)] transition-all duration-300"
+                  className="group bg-[var(--color-bg)] hover:bg-primary rounded-3xl p-8 relative overflow-hidden flex flex-col items-center text-center justify-center min-h-[220px] shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-transparent dark:border-[var(--color-surface-2)] transition-all duration-300"
                 >
                   {/* Decorative background curve on hover */}
                   <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
@@ -238,18 +238,18 @@ export default function SalesAccelerationPage() {
                   </div>
 
                   {/* Huge background number */}
-                  <span className="absolute top-2 right-4 text-[100px] leading-none font-bold text-[#ea580c] opacity-10 group-hover:text-white group-hover:opacity-20 pointer-events-none select-none transition-colors duration-300">
+                  <span className="absolute top-2 right-4 text-[100px] leading-none font-bold text-primary opacity-10 group-hover:text-white group-hover:opacity-20 pointer-events-none select-none transition-colors duration-300">
                     {step.number}
                   </span>
 
                   {/* Icon container */}
                   <div className="relative mb-5 mt-2 z-10 transition-transform duration-500 group-hover:-translate-y-2">
-                    <div className="absolute -top-1.5 -left-2 w-8 h-8 rounded-full bg-[#ea580c]/20 group-hover:bg-white/20 transition-colors duration-300 z-0"></div>
+                    <div className="absolute -top-1.5 -left-2 w-8 h-8 rounded-full bg-primary/20 group-hover:bg-white/20 transition-colors duration-300 z-0"></div>
                     <step.icon className="w-10 h-10 text-[var(--color-text)] group-hover:text-white stroke-[1.5] relative z-10 transition-colors duration-300" />
                   </div>
 
                   {/* Title */}
-                  <h3 className="text-[13px] font-bold text-[#ea580c] group-hover:text-white tracking-wide uppercase px-2 z-10 transition-all duration-500 group-hover:-translate-y-2 text-center">
+                  <h3 className="text-[13px] font-bold text-primary group-hover:text-white tracking-wide uppercase px-2 z-10 transition-all duration-500 group-hover:-translate-y-2 text-center">
                     {step.title}
                   </h3>
 
@@ -288,7 +288,7 @@ export default function SalesAccelerationPage() {
             {/* Right Content */}
             <div className="w-full md:w-1/2 flex flex-col">
               <h2 className="text-[28px] md:text-[32px] font-bold text-[#111827] dark:text-[var(--color-text)] leading-[1.15] mb-5 tracking-tight">
-                <span className="text-[#ea580c]">Meet Sally</span>– Our AI-powered<br className="hidden md:block"/> Sales Assistant
+                <span className="text-primary">Meet Sally</span>– Our AI-powered<br className="hidden md:block"/> Sales Assistant
               </h2>
               
               <p className="text-[13px] md:text-[14px] font-medium text-[#4b5563] dark:text-[var(--color-muted)] leading-[1.7] mb-3 max-w-[420px]">
@@ -311,7 +311,7 @@ export default function SalesAccelerationPage() {
                   "Save valuable time for human employees"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-2.5">
-                    <span className="text-[#ea580c] font-black text-[13px] md:text-[14px] leading-snug shrink-0 drop-shadow-sm mt-[2px] opacity-90">✓</span>
+                    <span className="text-primary font-black text-[13px] md:text-[14px] leading-snug shrink-0 drop-shadow-sm mt-[2px] opacity-90">✓</span>
                     <span className="text-[13px] md:text-[14.5px] text-[#374151] dark:text-gray-400 font-medium leading-snug pt-[1px]">
                       {item}
                     </span>

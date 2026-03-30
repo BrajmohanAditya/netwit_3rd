@@ -50,7 +50,7 @@ const stories = [
   },
   {
     id: 8,
-    title: "Netsmartz Boosts a Fundraising Platform's User Experience Capabilities with AI Chatbot Integration",
+    title: "Netwit Boosts a Fundraising Platform's User Experience Capabilities with AI Chatbot Integration",
     image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80&w=600",
     link: "#"
   },
@@ -163,7 +163,7 @@ export default function SuccessStoriesSlider() {
                 </h3>
                 <Link 
                   href={story.link}
-                  className="text-[#e20b5b] dark:text-[#f43f5e] text-[13px] font-medium flex items-center gap-2 hover:underline mt-auto"
+                  className="text-primary dark:text-primary-400 text-[13px] font-medium flex items-center gap-2 hover:underline mt-auto"
                 >
                   Learn More <span aria-hidden="true">&rarr;</span>
                 </Link>

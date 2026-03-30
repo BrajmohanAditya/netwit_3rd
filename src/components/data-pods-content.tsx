@@ -20,7 +20,7 @@ export function DataPodsContent() {
             ].map((text, idx) => (
               <div 
                 key={idx} 
-                className="bg-accent-gold rounded-md p-8 flex items-center justify-center text-center shadow-lg min-h-[140px]"
+                className="bg-primary rounded-md p-8 flex items-center justify-center text-center shadow-lg min-h-[140px]"
               >
                 <p className="text-white font-medium text-[15px] md:text-[17px] leading-snug">
                   {text}
@@ -29,7 +29,7 @@ export function DataPodsContent() {
             ))}
           </div>
 
-          <div className="mx-auto bg-[#FFF4EB] border-x-[3px] border-accent-gold rounded-sm shadow-[0_2px_15px_-4px_rgba(0,0,0,0.05)] py-5 px-6 max-w-[850px]">
+          <div className="mx-auto bg-primary/5 border-x-[3px] border-primary rounded-sm shadow-[0_2px_15px_-4px_rgba(11,61,145,0.05)] py-5 px-6 max-w-[850px]">
             <p className="text-[14px] md:text-[15px] text-text font-bold">
               At this stage, AI stops being a technical initiative and becomes an executive risk decision
             </p>
@@ -46,7 +46,7 @@ export function DataPodsContent() {
           <p className="text-[15px] md:text-[16px] text-muted mb-8 leading-relaxed font-medium">
             A concise executive brief on fixing data foundations, restoring trust in analytics, and scaling AI safely in 90 days.
           </p>
-          <button className="bg-accent-gold hover:bg-accent-gold/90 text-white font-bold py-3.5 px-8 rounded-[4px] text-[15px] transition-colors shadow-md">
+          <button className="bg-primary hover:bg-primary-600 text-white font-bold py-3.5 px-8 rounded-[4px] text-[15px] transition-colors shadow-md">
             Download the Executive Brief
           </button>
         </div>
@@ -76,13 +76,13 @@ export function DataPodsContent() {
                   "Tie every outcome to measurable business impact"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 bg-[#f5f5f5] p-3 rounded-[4px]">
-                    <Check className="w-4 h-4 text-accent-gold stroke-[3] mt-0.5 flex-shrink-0" />
+                    <Check className="w-4 h-4 text-primary stroke-[3] mt-0.5 flex-shrink-0" />
                     <span className="text-[13px] md:text-[14px] font-bold text-text">{item}</span>
                   </li>
                 ))}
               </ul>
               
-              <div className="inline-block bg-[#FFF4EB] py-3 px-5 rounded-[4px] w-max font-bold text-text text-[14px]">
+              <div className="inline-block bg-primary/5 py-3 px-5 rounded-[4px] w-max font-bold text-text text-[14px]">
                 Delivered in 90 days - not 12 months.
               </div>
             </div>
@@ -118,7 +118,7 @@ export function DataPodsContent() {
             ].map((text, idx) => (
               <div 
                 key={idx} 
-                className="bg-[#f06f12] rounded-[4px] p-5 flex items-center justify-center text-center shadow-md min-h-[140px] hover:bg-[#d5610e] transition-colors"
+                className="bg-primary rounded-[4px] p-5 flex items-center justify-center text-center shadow-md min-h-[140px] hover:bg-primary-600 transition-colors"
               >
                 <p className="text-white font-medium text-[13px] md:text-[14px] leading-snug">
                   {text}
@@ -127,7 +127,7 @@ export function DataPodsContent() {
             ))}
           </div>
 
-          <div className="mx-auto bg-[#FFF4EB] border-y-[3px] border-[#f06f12] rounded-sm py-5 px-6 max-w-[650px] shadow-sm">
+          <div className="mx-auto bg-primary/5 border-y-[3px] border-primary rounded-sm py-5 px-6 max-w-[650px] shadow-sm">
             <p className="text-[14px] md:text-[15px] text-text font-bold italic tracking-wide">
               These are production deployments, not experiments.
             </p>
@@ -156,7 +156,7 @@ export function DataPodsContent() {
                   "Dashboards showing before-and-after impact"
                 ].map((item, idx) => (
                   <li key={idx} className="flex items-start gap-3 bg-[#f5f5f5] p-3 md:p-4 rounded-[4px]">
-                    <Check className="w-5 h-5 text-accent-gold stroke-[3] mt-0 flex-shrink-0" />
+                    <Check className="w-5 h-5 text-primary stroke-[3] mt-0 flex-shrink-0" />
                     <span className="text-[13px] md:text-[14px] font-bold text-text leading-tight">{item}</span>
                   </li>
                 ))}

@@ -22,7 +22,7 @@ export function AzureMigrationPaths() {
           {paths.map((path, idx) => (
             <div 
               key={idx} 
-              className="bg-[#f06f12] rounded-[8px] shadow-md p-8 min-h-[140px] flex items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(240,111,18,0.3)] bg-gradient-to-br from-[#f06f12] to-[#d5610e]"
+              className="bg-primary rounded-[8px] shadow-md p-8 min-h-[140px] flex items-center justify-center transition-transform hover:-translate-y-1 hover:shadow-[0_10px_30px_rgba(11,61,145,0.3)] bg-gradient-to-br from-primary to-primary-600"
             >
               <h3 className="text-white font-bold text-[18px] md:text-[20px] text-center tracking-wide leading-tight">
                 {path.title}

@@ -61,13 +61,13 @@ export default function ComprehensiveMarketing() {
   const activeData = servicesData.find(s => s.id === activeTab) || servicesData[1];
 
   return (
-    <section className="py-20 bg-[#fefaf6]">
+    <section className="py-20 bg-surface-2">
       <div className="max-w-[1240px] mx-auto px-6">
         
         {/* Header Section */}
         <div className="text-center max-w-[900px] mx-auto mb-16">
           <h2 className="text-[32px] md:text-[38px] font-bold text-[#111827] mb-4">
-            Comprehensive <span className="text-[#ea580c]">Marketing Services</span>
+            Comprehensive <span className="text-primary">Marketing Services</span>
           </h2>
           <p className="text-[14px] md:text-[15px] text-[#4b5563] leading-[1.7] max-w-[850px] mx-auto">
             We offer a full suite of AI-integrated B2B SaaS marketing strategies tailored for SaaS businesses, including content marketing, SEO, paid advertising, and social media. By blending innovation, data intelligence, and strategic execution, we empower brands to achieve sustainable growth through our SaaS marketing services.
@@ -85,8 +85,8 @@ export default function ComprehensiveMarketing() {
                 onClick={() => setActiveTab(service.id)}
                 className={`text-left px-5 py-4 rounded-xl font-bold text-[14px] transition-all duration-300 ${
                   activeTab === service.id
-                    ? "bg-[#ea580c] text-white shadow-[0_8px_20px_rgba(234,88,12,0.3)]"
-                    : "bg-white text-gray-800 shadow-[0_4px_15px_rgba(234,88,12,0.08)] hover:shadow-[0_6px_20px_rgba(234,88,12,0.15)]"
+                    ? "bg-primary text-white shadow-primary/30"
+                    : "bg-white text-gray-800 shadow-primary/5 hover:shadow-primary/10"
                 }`}
               >
                 {service.title}

@@ -39,7 +39,7 @@ const tools = [
 
 export default function MarketingTools() {
   return (
-    <section className="py-24 bg-[#fefaf6]">
+    <section className="py-24 bg-surface-2">
       <div className="max-w-[1200px] mx-auto px-6">
         
         {/* Title */}
@@ -68,7 +68,7 @@ export default function MarketingTools() {
                     }
                   }}
                 />
-                <div className="hidden w-full h-full items-center justify-center font-bold text-[#ea580c] uppercase text-xl">
+                <div className="hidden w-full h-full items-center justify-center font-bold text-primary uppercase text-xl">
                   {tool.name.substring(0, 2)}
                 </div>
               </div>

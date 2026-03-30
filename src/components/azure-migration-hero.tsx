@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export function AzureMigrationHero() {
   return (
-    <section className="relative w-full py-28 md:py-36 flex items-center overflow-hidden min-h-[550px] bg-[#FFF8F3]">
+    <section className="relative w-full py-28 md:py-36 flex items-center overflow-hidden min-h-[550px] bg-surface-1">
       <div className="absolute inset-0 z-0">
         <Image 
           src="/images/azure_hero_bg.png" 
@@ -21,14 +21,14 @@ export function AzureMigrationHero() {
         {/* Left Content */}
         <div className="max-w-[700px] text-left">
           <h1 className="text-4xl md:text-5xl lg:text-[52px] font-extrabold mb-6 text-text leading-[1.1] tracking-tight">
-            Microsoft-Funded Azure Migration Services, Built for <span className="text-accent-gold pt-1 inline-block">Security & ROI</span>
+            Microsoft-Funded Azure Migration Services, Built for <span className="text-primary pt-1 inline-block">Security & ROI</span>
           </h1>
           
           <p className="text-[16px] md:text-[17px] text-muted mb-10 leading-relaxed font-medium">
             Modernize your IT estate with confidence using Microsoft Azure Migration Services powered by the Azure Migration and Modernization Program (AMMP). Reduce financial and execution risk by moving to Azure through a security-led, partner-accountable approach.
           </p>
           
-          <button className="bg-[#F06F12] hover:bg-[#d5610e] text-white font-medium py-[14px] px-[22px] rounded-[6px] text-[15px] transition-colors shadow-[0_2px_10px_rgba(240,111,18,0.3)] tracking-wide">
+          <button className="bg-primary hover:bg-primary-600 text-white font-medium py-[14px] px-[22px] rounded-[6px] text-[15px] transition-colors shadow-[0_2px_10px_rgba(11,61,145,0.3)] tracking-wide">
             Get a Free Azure Cloud Readiness Assessment
           </button>
         </div>

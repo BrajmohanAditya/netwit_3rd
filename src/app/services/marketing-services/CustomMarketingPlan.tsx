@@ -32,7 +32,7 @@ export default function CustomMarketingPlan() {
         {/* Header Section */}
         <div className="text-center max-w-[1000px] mx-auto mb-16">
           <h2 className="text-[30px] md:text-[38px] font-bold text-[#111827] mb-6 leading-tight">
-            Leverage a Custom <span className="text-[#ea580c]">AI-informed</span> Marketing Plan
+            Leverage a Custom <span className="text-primary">AI-informed</span> Marketing Plan
           </h2>
           <p className="text-[14px] md:text-[15px] text-[#4b5563] leading-[1.7] max-w-[900px] mx-auto">
             Our AI-first SaaS marketing solutions are tailored to your SaaS product&apos;s unique value proposition, customer journey, and growth goals. By combining deep industry insights with advanced data analytics, we craft strategies that are not only intelligent—but also actionable for marketing SaaS products and enhancing AI-driven digital marketing efforts.
@@ -52,7 +52,7 @@ export default function CustomMarketingPlan() {
                 </div>
               </div>
               
-              <h3 className="text-[18px] md:text-[20px] font-bold text-[#ea580c] mb-4">
+              <h3 className="text-[18px] md:text-[20px] font-bold text-primary mb-4">
                 {feature.title}
               </h3>
               

@@ -33,7 +33,7 @@ export const aboutData = {
       "Trusted by Fortune 500 companies",
     ],
   },
-  "why-netsmartz": {
+  "why-netwit": {
     title: "Why Netwit",
     subtitle: "Your Partner in Digital Transformation",
     description: "At Netwit, we don't just provide technology solutions – we become your strategic partner in digital transformation. Our commitment to excellence, innovation, and client success sets us apart.",
@@ -84,7 +84,7 @@ export const aboutData = {
       "Commitment to innovation",
     ],
   },
-  "life-at-netsmartz": {
+  "life-at-netwit": {
     title: "Life at Netwit",
     subtitle: "Where Innovation Meets Culture",
     description: "At Netwit, we believe that great work happens in an environment that nurtures creativity, collaboration, and well-being. Our culture is built on trust, transparency, and continuous learning.",
@@ -101,7 +101,7 @@ export const aboutData = {
       "Work-life balance initiatives",
     ],
   },
-  "netsmartz-academy": {
+  "netwit-academy": {
     title: "Netwit Academy",
     subtitle: "Building Future Tech Leaders",
     description: "Netwit Academy is our commitment to nurturing the next generation of tech talent. Through comprehensive training programs, mentorship, and hands-on projects, we develop industry-ready professionals.",

@@ -5,7 +5,7 @@ import { MoveRight, Building, Settings, LayoutDashboard, HardHat } from "lucide-
 
 const evaluateFeatures = [
   {
-    icon: <MoveRight className="w-5 h-5 text-[#ea580c]" />,
+    icon: <MoveRight className="w-5 h-5 text-primary" />,
     title: "India Entry Strategy",
     items: [
       "Business case development",
@@ -14,7 +14,7 @@ const evaluateFeatures = [
     ]
   },
   {
-    icon: <Building className="w-5 h-5 text-[#ea580c]" />,
+    icon: <Building className="w-5 h-5 text-primary" />,
     title: "Premises & Lease Management",
     items: [
       "Premises search and identification",
@@ -22,7 +22,7 @@ const evaluateFeatures = [
     ]
   },
   {
-    icon: <Settings className="w-5 h-5 text-[#ea580c]" />,
+    icon: <Settings className="w-5 h-5 text-primary" />,
     title: "Operational Setup",
     items: [
       "Talent recruitment and onboarding",
@@ -30,7 +30,7 @@ const evaluateFeatures = [
     ]
   },
   {
-    icon: <LayoutDashboard className="w-5 h-5 text-[#ea580c]" />,
+    icon: <LayoutDashboard className="w-5 h-5 text-primary" />,
     title: "Workplace & Facility Management",
     items: [
       "Workplace management and occupancy planning",
@@ -38,7 +38,7 @@ const evaluateFeatures = [
     ]
   },
   {
-    icon: <HardHat className="w-5 h-5 text-[#ea580c]" />,
+    icon: <HardHat className="w-5 h-5 text-primary" />,
     title: "Fit-Out & Construction Services",
     items: [
       "Design and build of workspace",
@@ -73,7 +73,7 @@ export default function EvaluateSetup() {
             >
               {/* Feature Icon and Title Wrapper */}
               <div className="flex items-center gap-3 mb-6">
-                <div className="shrink-0 p-1.5 rounded-full border border-[#ea580c]/20 bg-[#ea580c]/5">
+                <div className="shrink-0 p-1.5 rounded-full border border-primary/30 bg-primary/10">
                   {feature.icon}
                 </div>
                 <h3 className="text-[15px] md:text-[16px] font-bold text-[#111827]">

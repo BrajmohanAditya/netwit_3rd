@@ -16,7 +16,7 @@ export function AzureMigrationValue() {
           
           <div className="bg-[#F5F5F5] p-5 rounded-md mb-8 border border-gray-100">
             <p className="font-bold text-text text-[15px] leading-snug italic">
-              <span className="text-accent-gold text-[26px] mr-1">80%</span> of organizations believe outdated technology is holding back their progress and innovation efforts.
+              <span className="text-primary text-[26px] mr-1">80%</span> of organizations believe outdated technology is holding back their progress and innovation efforts.
             </p>
           </div>
           
@@ -35,7 +35,7 @@ export function AzureMigrationValue() {
               "Defining the right migration strategy and execution roadmap"
             ].map((item, idx) => (
               <li key={idx} className="flex items-center gap-3 bg-white border border-gray-100 p-3.5 rounded-[4px] shadow-sm">
-                <Check className="w-4 h-4 text-accent-gold stroke-[3]" />
+                <Check className="w-4 h-4 text-primary stroke-[3]" />
                 <span className="text-[14px] text-text font-medium">{item}</span>
               </li>
             ))}

@@ -41,18 +41,18 @@ export function AiPodsWorkflow() {
         <div className="relative flex flex-col md:flex-row items-center justify-between w-full gap-y-12 gap-x-4 text-left">
           {/* Main absolute line connecting the boxes on Desktop */}
           <div className="hidden md:block absolute top-[60%] left-0 w-full h-[1.5px] bg-gray-600 z-0"></div>
-          
+
           {steps.map((item, idx) => (
             <div key={idx} className="relative w-full md:w-[19%] h-[160px] md:h-[180px] flex justify-center">
-              
+
               {/* Outer Wrapper for positioning */}
               <div className="relative w-[200px] md:w-full h-full pt-4">
-                
+
                 {/* Connector Circle directly on the line (Right side, disabled for last) */}
                 {idx !== steps.length - 1 && (
                   <div className="hidden md:block absolute right-[-10px] top-[calc(60%-4px)] w-[8px] h-[8px] rounded-full border-[1.5px] border-gray-600 bg-white z-20"></div>
                 )}
-                
+
                 {/* The Top Pill */}
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 z-30 w-max pointer-events-none">
                   <div className="relative">
@@ -100,8 +100,8 @@ export function AiPodsWorkflow() {
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-[1100px] mx-auto">
           {customPodFeatures.map((feature, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="bg-primary text-white font-bold text-[13px] md:text-[14px] py-6 px-4 rounded-[6px] shadow-sm flex items-center justify-center text-center whitespace-pre-line leading-snug"
             >
               {feature}
@@ -113,13 +113,13 @@ export function AiPodsWorkflow() {
       {/* Why Enterprises Choose... */}
       <section className="pt-20 px-6 max-w-[1240px] mx-auto text-center">
         <h2 className="text-2xl md:text-[26px] font-bold text-text mb-4">
-          Why Do Enterprises Choose Netsmartz AI Pods?
+          Why Do Enterprises Choose Netwit AI Pods?
         </h2>
         <div className="inline-block px-4 py-1.5 rounded-full mb-6 font-semibold text-[11px] md:text-sm bg-surface-2 border border-gray-200 text-text">
           Ensuring Execution Without Enterprise Risk
         </div>
         <p className="text-[14px] md:text-[15px] text-muted max-w-[800px] mx-auto mb-14 leading-relaxed whitespace-pre-line">
-          Netsmartz AI Pods are built for organizations that value outcomes over experimentation. We combine deep AI capability with
+          Netwit AI Pods are built for organizations that value outcomes over experimentation. We combine deep AI capability with
           enterprise-grade delivery discipline.
         </p>
 

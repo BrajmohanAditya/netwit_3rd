@@ -53,9 +53,9 @@ export function CybersecurityServices() {
           Our Comprehensive AI Based Cybersecurity Consulting Services
         </h2>
         
-        <div className="grid lg:grid-cols-[450px_1fr] gap-0 bg-[#FFF9F5] rounded-3xl overflow-hidden border border-[#FFE8D6]">
+        <div className="grid lg:grid-cols-[450px_1fr] gap-0 bg-primary/5 rounded-3xl overflow-hidden border border-primary/20">
           {/* Left Side - Navigation */}
-          <div className="flex flex-col border-r border-[#FFE8D6]">
+          <div className="flex flex-col border-r border-primary/20">
             {consultingServices.map((service) => {
               const Icon = service.icon;
               const isActive = activeTab === service.id;
@@ -66,12 +66,12 @@ export function CybersecurityServices() {
                   onClick={() => setActiveTab(service.id)}
                   className={`relative flex items-center gap-4 px-8 py-8 text-left transition-all group ${
                     isActive 
-                      ? "bg-[#F05A22] text-white" 
-                      : "text-[#666] hover:bg-[#FFF2E8]"
-                  } border-b border-[#FFE8D6] last:border-0`}
+                      ? "bg-primary text-white" 
+                      : "text-[#666] hover:bg-primary/10"
+                  } border-b border-primary/10 last:border-0`}
                 >
                   <div className={`flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg ${
-                    isActive ? "text-white" : "text-[#F05A22]"
+                    isActive ? "text-white" : "text-primary"
                   }`}>
                     <Icon className="w-6 h-6" />
                   </div>
@@ -80,7 +80,7 @@ export function CybersecurityServices() {
                   </span>
                   
                   {isActive && (
-                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-8 bg-[#F05A22] rotate-45 z-10" />
+                    <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1/2 w-8 h-8 bg-primary rotate-45 z-10" />
                   )}
                 </button>
               );

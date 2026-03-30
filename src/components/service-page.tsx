@@ -22,7 +22,7 @@ import { DataPodsProblem } from "@/components/data-pods-problem";
 import { DataPodsContent } from "@/components/data-pods-content";
 import { DataPodsIndustries } from "@/components/data-pods-industries";
 import { AIPodsTrustedBy } from "@/components/aipods-trusted-by";
-import { DataPodsWhyNetsmartz } from "@/components/data-pods-why-netsmartz";
+import { DataPodsWhyNetwit } from "@/components/data-pods-why-netsmartz";
 import { AzureMigrationHero } from "@/components/azure-migration-hero";
 import { AzureMigrationValue } from "@/components/azure-migration-value";
 import { AzureMigrationStall } from "@/components/azure-migration-stall";
@@ -30,13 +30,13 @@ import { AzureMigrationAMMP } from "@/components/azure-migration-ammp";
 import { AzureMigrationSecurity } from "@/components/azure-migration-security";
 import { AzureMigrationPaths } from "@/components/azure-migration-paths";
 import { AzureMigrationIndustries } from "@/components/azure-migration-industries";
-import { AzureMigrationWhyNetsmartz } from "@/components/azure-migration-why-netsmartz";
+import { AzureMigrationWhyNetwit } from "@/components/azure-migration-why-netsmartz";
 import { AzureMigrationFaq } from "@/components/azure-migration-faq";
 import { MdrHero } from "@/components/mdr-hero";
 import { MdrBreaches } from "@/components/mdr-breaches";
 import { MdrAssessment } from "@/components/mdr-assessment";
 import { MdrIndustries } from "@/components/mdr-industries";
-import { MdrWhyNetsmartz } from "@/components/mdr-why-netsmartz";
+import { MdrWhyNetwit } from "@/components/mdr-why-netsmartz";
 
 interface Feature {
   title: string;
@@ -136,9 +136,9 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
                   href="#contact"
                   className={`inline-flex items-center gap-2 px-8 py-4 rounded-lg font-semibold transition-all hover:scale-105 hover:shadow-2xl ${
                     slug === 'cybersecurity' 
-                      ? 'bg-gradient-to-r from-[#FF8C42] to-[#F05A22] text-white' 
+                      ? 'bg-primary text-white hover:bg-primary-600 shadow-primary/30' 
                       : slug === 'esg'
-                      ? 'bg-gradient-to-r from-green-500 to-emerald-600 text-white'
+                      ? 'bg-primary text-white hover:bg-primary-600 shadow-lg'
                       : 'bg-primary text-white hover:bg-primary-600 shadow-lg'
                   }`}
                 >
@@ -206,7 +206,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             <DataPodsContent />
             <DataPodsIndustries />
             <AIPodsTrustedBy />
-            <DataPodsWhyNetsmartz />
+            <DataPodsWhyNetwit />
           </>
         )}
 
@@ -220,7 +220,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             <AzureMigrationPaths />
             <AzureMigrationIndustries />
             <AIPodsTrustedBy />
-            <AzureMigrationWhyNetsmartz />
+            <AzureMigrationWhyNetwit />
             <AzureMigrationFaq />
           </>
         )}
@@ -232,7 +232,7 @@ export function ServicePage({ type, data, params }: ServicePageProps) {
             <MdrAssessment />
             <MdrIndustries />
             <AIPodsTrustedBy />
-            <MdrWhyNetsmartz />
+            <MdrWhyNetwit />
           </>
         )}
 
