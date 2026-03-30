@@ -29,7 +29,7 @@ export function EnterpriseIndustries() {
   return (
     <section className="w-full bg-white flex flex-col items-center py-24 px-6 relative overflow-hidden">
       
-      <p className="text-[10px] text-[#f06f12] font-bold tracking-[0.15em] uppercase mb-4 text-center">
+      <p className="text-[10px] text-primary font-bold tracking-[0.15em] uppercase mb-4 text-center">
         INDUSTRIES
       </p>
       <h2 className="text-[32px] md:text-[38px] font-bold text-[#222] mb-6 text-center tracking-tight">
@@ -43,8 +43,8 @@ export function EnterpriseIndustries() {
       <div className="max-w-[1000px] w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-20 relative">
         
         {/* Navigation Arrows representation (absolute) */}
-        <div className="absolute top-1/2 -left-12 -translate-y-1/2 w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center cursor-pointer hover:border-[#f06f12] z-10 hidden lg:flex">
-           <ArrowLeft className="w-4 h-4 text-[#f06f12]" />
+        <div className="absolute top-1/2 -left-12 -translate-y-1/2 w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center cursor-pointer hover:border-primary z-10 hidden lg:flex">
+           <ArrowLeft className="w-4 h-4 text-primary" />
         </div>
         <div className="absolute top-1/2 -right-12 -translate-y-1/2 w-8 h-8 rounded-full border border-gray-300 flex items-center justify-center cursor-pointer hover:border-[#f06f12] z-10 hidden lg:flex">
            <ArrowRight className="w-4 h-4 text-[#f06f12]" />
@@ -65,7 +65,7 @@ export function EnterpriseIndustries() {
              <div className="relative z-10 p-8 flex flex-col h-full justify-center w-[85%]">
                <h3 className="text-[20px] font-bold text-white mb-4 drop-shadow-sm">{ind.title}</h3>
                <p className="text-[12.5px] text-gray-200 mb-6 leading-[1.6] drop-shadow-sm font-medium">{ind.desc}</p>
-               <span className="text-[12.5px] font-bold text-white flex items-center gap-1 group-hover:text-[#f06f12] transition-colors mt-auto w-fit">
+               <span className="text-[12.5px] font-bold text-white flex items-center gap-1 group-hover:text-primary transition-colors mt-auto w-fit">
                  Learn More
                </span>
              </div>

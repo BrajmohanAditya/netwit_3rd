@@ -7,7 +7,7 @@ export function EnterpriseClients() {
     <section className="w-full bg-white py-24 px-6 flex flex-col items-center">
         
         <h2 className="text-[28px] md:text-[36px] font-bold text-[#222] mb-16 tracking-tight">
-          What <span className="text-[#f06f12]">Our Clients</span> Say
+          What <span className="text-primary">Our Clients</span> Say
         </h2>
         
         <div className="max-w-[850px] w-full grid grid-cols-1 md:grid-cols-[1.3fr,1fr] gap-16 items-center mx-auto">
@@ -33,7 +33,7 @@ export function EnterpriseClients() {
           <div className="flex flex-col items-center md:items-start w-full gap-4 relative pl-4 md:pl-0 border-l border-gray-100/50 md:border-none">
              
              {/* Thumbnail card offset representation */}
-             <div className="bg-[#f06f12] p-5 text-white font-bold h-[160px] w-full max-w-[320px] relative flex flex-col justify-end shadow-md overflow-hidden rounded-[2px] cursor-pointer group hover:shadow-lg transition-transform hover:-translate-y-1">
+             <div className="bg-primary p-5 text-white font-bold h-[160px] w-full max-w-[320px] relative flex flex-col justify-end shadow-md overflow-hidden rounded-[2px] cursor-pointer group hover:shadow-lg transition-transform hover:-translate-y-1">
                 <span className="text-[14px] z-10">#ClientSpeak</span>
                 <span className="text-[18px] uppercase tracking-widest leading-[1.1] md:leading-[1.0] mt-1 z-10 drop-shadow-sm opacity-90 pb-2">GEORGE<br/>KOUNIS</span>
                 
@@ -56,8 +56,8 @@ export function EnterpriseClients() {
                 <div className="w-[36px] h-[36px] rounded-full bg-gray-100 border-2 border-white shadow-sm overflow-hidden flex items-center justify-center opacity-60 hover:opacity-100 cursor-pointer">
                     <div className="text-[10px] text-gray-500 font-bold">JB</div>
                 </div>
-                <div className="w-[36px] h-[36px] rounded-full bg-gray-100 border-2 border-white shadow-sm -ml-3 overflow-hidden flex items-center justify-center opacity-100 border-orange-500 z-10">
-                    <div className="text-[10px] text-orange-600 font-bold">GK</div>
+                <div className="w-[36px] h-[36px] rounded-full bg-gray-100 border-2 border-white shadow-sm -ml-3 overflow-hidden flex items-center justify-center opacity-100 border-primary z-10">
+                    <div className="text-[10px] text-primary font-bold">GK</div>
                 </div>
                 <div className="w-[36px] h-[36px] rounded-full bg-gray-100 border-2 border-white shadow-sm -ml-3 overflow-hidden flex items-center justify-center opacity-60 hover:opacity-100 cursor-pointer">
                     <div className="text-[10px] text-gray-500 font-bold">AK</div>

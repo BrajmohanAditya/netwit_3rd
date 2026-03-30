@@ -5,7 +5,7 @@ import { Monitor, Smartphone, Globe, Database, Settings, RefreshCcw } from "luci
 export function EnterpriseWhatWeDo() {
   const services = [
     {
-      icon: <Monitor className="w-7 h-7 text-[#f06f12]" strokeWidth={1.5} />,
+      icon: <Monitor className="w-7 h-7 text-primary" strokeWidth={1.5} />,
       title: "Custom Enterprise Software\nDevelopment",
       desc: "Leverage robust enterprise applications and eCommerce solutions - web and mobile"
     },
@@ -45,7 +45,7 @@ export function EnterpriseWhatWeDo() {
       </div>
 
       <div className="relative z-10 flex flex-col items-center w-full max-w-[1200px]">
-        <p className="text-[10px] text-[#f06f12] font-bold tracking-[0.15em] uppercase mb-4">
+        <p className="text-[10px] text-primary font-bold tracking-[0.15em] uppercase mb-4">
           SERVICES
         </p>
         <h2 className="text-[32px] md:text-[40px] font-bold text-[#222] mb-6 tracking-tight">
@@ -58,7 +58,7 @@ export function EnterpriseWhatWeDo() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-16 gap-x-8 justify-items-center w-full mb-16 px-4">
           {services.map((svc, idx) => (
             <div key={idx} className="flex flex-col items-center text-center max-w-[300px] group cursor-pointer hover:-translate-y-1 transition-transform">
-              <div className="w-16 h-16 rounded-full bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-6 drop-shadow-sm group-hover:border-orange-200 transition-colors">
+              <div className="w-16 h-16 rounded-full bg-white shadow-sm border border-gray-100 flex items-center justify-center mb-6 drop-shadow-sm group-hover:border-primary/20 transition-colors">
                 {svc.icon}
               </div>
               <h4 className="text-[15px] font-bold text-[#222] mb-4 tracking-wide whitespace-pre-line leading-tight">{svc.title}</h4>

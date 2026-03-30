@@ -71,7 +71,7 @@ export function EnterpriseMetricsTech() {
                            {tech.icon ? (
                               <img src={tech.icon} alt={tech.name} className="max-w-full max-h-full object-contain filter drop-shadow-sm" />
                            ) : (
-                              <div className="w-full h-full bg-gradient-to-br from-[#f06f12]/10 to-[#f06f12]/20 border border-[#f06f12]/30 rounded-sm flex items-center justify-center text-[#f06f12] text-[8px] font-black tracking-tighter shadow-sm">{tech.fallback}</div>
+                              <div className="w-full h-full bg-gradient-to-br from-primary/10 to-primary/20 border border-primary/30 rounded-sm flex items-center justify-center text-primary text-[8px] font-black tracking-tighter shadow-sm">{tech.fallback}</div>
                            )}
                         </div>
                         <span className="text-[9.5px] text-gray-700 font-bold whitespace-pre-line text-center leading-tight">{tech.name}</span>

@@ -7,7 +7,7 @@ export function EnterpriseSuccessStories() {
    return (
       <section className="w-full bg-white flex flex-col items-center pt-24 pb-16 overflow-hidden">
 
-         <p className="text-[10px] text-[#f06f12] font-bold tracking-[0.15em] uppercase mb-4 text-center">
+         <p className="text-[10px] text-primary font-bold tracking-[0.15em] uppercase mb-4 text-center">
             SUCCESS STORIES
          </p>
          <h2 className="text-[32px] md:text-[38px] font-bold text-[#222] mb-5 text-center tracking-tight">
@@ -24,7 +24,7 @@ export function EnterpriseSuccessStories() {
             <div className="hidden lg:flex w-[400px] h-[280px] bg-gray-300 relative border border-gray-200 shrink-0 shadow-sm opacity-50 cursor-pointer hover:opacity-80 transition-opacity">
                <div className="absolute inset-0 bg-white/50 z-0"></div>
                <div className="relative z-10 p-8 flex flex-col">
-                  <span className="text-[9px] text-[#f06f12] font-bold tracking-widest uppercase mb-4 opacity-70">Commerce / Texas, USA</span>
+                  <span className="text-[9px] text-primary font-bold tracking-widest uppercase mb-4 opacity-70">Commerce / Texas, USA</span>
                   <h3 className="text-[24px] font-bold text-gray-600 leading-tight mb-20">
                      Rehash & Building a Scalable Software Solutions for an eCommerce Agency
                   </h3>
@@ -42,11 +42,11 @@ export function EnterpriseSuccessStories() {
                </div>
 
                <div className="relative z-20 p-10 h-full flex flex-col w-[60%]">
-                  <span className="text-[9px] text-[#f06f12] font-bold tracking-widest uppercase mb-6 opacity-90 drop-shadow-sm">Canary / Texas, USA</span>
+                  <span className="text-[9px] text-primary font-bold tracking-widest uppercase mb-6 opacity-90 drop-shadow-sm">Canary / Texas, USA</span>
                   <h3 className="text-[25px] md:text-[27px] font-bold text-white leading-[1.15] mb-auto tracking-tight drop-shadow-md pr-4">
                      Rehash & Building a Scalable Software Solutions for an eCommerce Agency
                   </h3>
-                  <span className="text-[12px] font-bold text-[#f06f12] uppercase tracking-wider flex items-center gap-2 group-hover:text-white transition-colors">
+                  <span className="text-[12px] font-bold text-primary uppercase tracking-wider flex items-center gap-2 group-hover:text-white transition-colors">
                      Read Success Story <ArrowRight className="w-4 h-4" />
                   </span>
                </div>
@@ -56,7 +56,7 @@ export function EnterpriseSuccessStories() {
             <div className="hidden lg:flex w-[400px] h-[280px] bg-gray-300 relative border border-gray-200 shrink-0 shadow-sm opacity-50 cursor-pointer hover:opacity-80 transition-opacity">
                <div className="absolute inset-0 bg-white/50 z-0"></div>
                <div className="relative z-10 p-8 flex flex-col">
-                  <span className="text-[9px] text-[#f06f12] font-bold tracking-widest uppercase mb-4 opacity-70">Art Fundraising Company / New York</span>
+                  <span className="text-[9px] text-primary font-bold tracking-widest uppercase mb-4 opacity-70">Art Fundraising Company / New York</span>
                   <h3 className="text-[24px] font-bold text-gray-600 leading-tight mb-20 max-w-[280px]">
                      Netwit Boosts a Fundraising Platform&apos;s User Experience Capabilities with AI Chatbot Integration
                   </h3>

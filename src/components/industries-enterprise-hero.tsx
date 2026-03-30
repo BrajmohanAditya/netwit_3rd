@@ -44,22 +44,22 @@ export function EnterpriseHero() {
         {/* 4 Icons Grid */}
         <div className="max-w-[1240px] w-full grid grid-cols-2 md:grid-cols-4 gap-8 mb-24 justify-items-center">
             <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-orange-50 rounded-full flex items-center justify-center mb-4">
-                <CheckCircle className="w-6 h-6 text-[#f06f12]" />
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <CheckCircle className="w-6 h-6 text-primary" />
             </div>
             <h4 className="text-[14px] font-bold text-[#222] mb-1">Reliable Processes</h4>
             <p className="text-[11px] text-gray-400">Integrated suite of development services.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-purple-50 rounded-full flex items-center justify-center mb-4">
-                <Users className="w-6 h-6 text-purple-600" />
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <Users className="w-6 h-6 text-primary" />
             </div>
             <h4 className="text-[14px] font-bold text-[#222] mb-1">Dedicated Teams</h4>
             <p className="text-[11px] text-gray-400">High-performance, certified resource pool.</p>
             </div>
             <div className="flex flex-col items-center text-center">
-            <div className="w-16 h-16 bg-teal-50 rounded-full flex items-center justify-center mb-4">
-                <Globe className="w-6 h-6 text-teal-500" />
+            <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+                <Globe className="w-6 h-6 text-primary" />
             </div>
             <h4 className="text-[14px] font-bold text-[#222] mb-1">10+ Global Campuses</h4>
             <p className="text-[11px] text-gray-400">Your Timezone, Your Terms.</p>

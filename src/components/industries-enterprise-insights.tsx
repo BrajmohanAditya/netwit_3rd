@@ -48,26 +48,26 @@ export function EnterpriseInsights() {
         {/* Middle Column: Blog 1 */}
         <div className="group relative flex flex-col bg-white rounded-3xl overflow-hidden shadow-xl shadow-gray-200/50 border border-gray-100 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-gray-200/80 h-full">
           <div className="h-[220px] w-full relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-orange-100 via-orange-50 to-white group-hover:scale-105 transition-transform duration-700">
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-primary/5 to-white group-hover:scale-105 transition-transform duration-700">
               {/* Decorative background elements */}
-              <div className="absolute top-0 right-0 w-32 h-32 bg-orange-200/50 rounded-bl-full blur-2xl"></div>
-              <div className="absolute bottom-0 left-0 w-32 h-32 bg-yellow-200/50 rounded-tr-full blur-2xl"></div>
+              <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-bl-full blur-2xl"></div>
+              <div className="absolute bottom-0 left-0 w-32 h-32 bg-blue-200/50 rounded-tr-full blur-2xl"></div>
               
               <div className="w-full h-full flex items-center justify-center relative z-10">
-                <div className="w-20 h-20 bg-white rounded-2xl shadow-lg shadow-orange-100/50 flex items-center justify-center rotate-3 group-hover:-rotate-6 transition-all duration-500 ring-1 ring-orange-100/50">
-                  <FileText className="w-10 h-10 text-orange-500" strokeWidth={1.5} />
+                <div className="w-20 h-20 bg-white rounded-2xl shadow-lg shadow-primary/10 flex items-center justify-center rotate-3 group-hover:-rotate-6 transition-all duration-500 ring-1 ring-primary/10">
+                  <FileText className="w-10 h-10 text-primary" strokeWidth={1.5} />
                 </div>
               </div>
             </div>
           </div>
           <div className="p-8 flex flex-col flex-grow bg-white relative z-20">
-            <span className="text-orange-500 text-xs font-bold tracking-widest uppercase mb-4 block">
+            <span className="text-primary text-xs font-bold tracking-widest uppercase mb-4 block">
               Blog Article
             </span>
-            <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 leading-snug group-hover:text-orange-600 transition-colors duration-300">
+            <h4 className="text-xl md:text-2xl font-bold text-gray-900 mb-4 leading-snug group-hover:text-primary transition-colors duration-300">
               The Key Components of Successful B2B Appointment Setting
             </h4>
-            <div className="mt-auto pt-6 flex items-center text-gray-900 font-bold text-sm tracking-wide group-hover:text-orange-600 hover:gap-2 transition-all duration-300">
+            <div className="mt-auto pt-6 flex items-center text-gray-900 font-bold text-sm tracking-wide group-hover:text-primary hover:gap-2 transition-all duration-300">
                Read Article <ArrowRight className="w-4 h-4 ml-1 inline-block -mt-0.5" />
             </div>
           </div>

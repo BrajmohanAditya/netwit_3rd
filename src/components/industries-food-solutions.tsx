@@ -8,25 +8,25 @@ export function FoodSolutions() {
       title: "Burstable Infrastructure",
       desc: "Our auto-scaling architectures instantly provision resources during lunch/dinner rushes, ensuring zero downtime when order volumes spike by 500%.",
       icon: <Activity className="w-6 h-6 text-white" />,
-      bg: "bg-gradient-to-br from-red-500 to-red-600"
+      bg: "bg-gradient-to-br from-primary to-primary/80"
     },
     {
       title: "Seamless POS Integrations",
       desc: "We centralize your ecosystem by securely connecting diverse POS systems directly with top food delivery aggregators and your custom loyalty apps.",
       icon: <LayoutDashboard className="w-6 h-6 text-white" />,
-      bg: "bg-gradient-to-br from-[#f06f12] to-orange-500"
+      bg: "bg-gradient-to-br from-primary/90 to-primary/70"
     },
     {
       title: "Supply Chain Automation",
       desc: "Prevent stockouts with automated inventory tracking and smart supplier procurement workflows powered by real-time location data.",
       icon: <Truck className="w-6 h-6 text-white" />,
-      bg: "bg-gradient-to-br from-yellow-500 to-amber-500"
+      bg: "bg-gradient-to-br from-primary/80 to-primary/60"
     },
     {
       title: "Real-time Analytics",
       desc: "Build highly responsive dashboards for franchise owners to monitor kitchen prep times, delivery driver locations, and exact revenue per minute.",
       icon: <Database className="w-6 h-6 text-white" />,
-      bg: "bg-gradient-to-br from-emerald-500 to-green-500"
+      bg: "bg-gradient-to-br from-primary/70 to-primary/50"
     }
   ];
 
@@ -39,7 +39,7 @@ export function FoodSolutions() {
             
             {/* Left side: Context */}
             <div className="lg:w-1/3 flex flex-col">
-               <p className="text-[11px] text-[#f06f12] font-bold tracking-[0.15em] uppercase mb-4">
+               <p className="text-[11px] text-primary font-bold tracking-[0.15em] uppercase mb-4">
                   CORE TECH SOLUTIONS
                </p>
                <h2 className="text-[34px] md:text-[42px] font-bold text-[#1a1f33] mb-6 tracking-tight leading-[1.2]">
@@ -48,9 +48,9 @@ export function FoodSolutions() {
                <p className="text-[14px] text-gray-600 mb-8 leading-[1.6]">
                   Whether you are scaling a ghost kitchen network or managing thousands of franchised restaurants, our DevOps pipelines eliminate the technological bottlenecks of growth. 
                </p>
-               <div className="bg-orange-50 p-6 rounded-2xl border border-orange-100">
-                  <h4 className="text-[16px] font-bold text-orange-800 mb-2">Did you know?</h4>
-                  <p className="text-[13px] text-orange-700 leading-relaxed">
+               <div className="bg-primary/5 p-6 rounded-2xl border border-primary/10">
+                  <h4 className="text-[16px] font-bold text-primary mb-2">Did you know?</h4>
+                  <p className="text-[13px] text-primary/80 leading-relaxed">
                      A 2-second delay in your ordering app can lead to a 10% rate of cart abandonment. Don't let infrastructure cost you orders.
                   </p>
                </div>

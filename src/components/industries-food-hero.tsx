@@ -12,9 +12,9 @@ export function FoodHero() {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         
         {/* Soft, appetizing gradient orbs */}
-        <div className="absolute top-[-20%] right-[-10%] w-[700px] h-[700px] bg-orange-500/10 rounded-full blur-[120px]"></div>
-        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-yellow-400/10 rounded-full blur-[100px]"></div>
-        <div className="absolute top-[30%] left-[20%] w-[300px] h-[300px] bg-red-400/5 rounded-full blur-[80px]"></div>
+        <div className="absolute top-[-20%] right-[-10%] w-[700px] h-[700px] bg-primary/10 rounded-full blur-[120px]"></div>
+        <div className="absolute bottom-[-10%] left-[-10%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px]"></div>
+        <div className="absolute top-[30%] left-[20%] w-[300px] h-[300px] bg-primary/5 rounded-full blur-[80px]"></div>
 
         {/* Diagonal subtle pattern */}
         <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTAgMjBMMjAgMCIgc3Ryb2tlPSJyZ2JhKDI0MCwxMTEsMTgsMC4wNCkiIHN0cm9rZS13aWR0aD0iMSIvPjwvc3ZnPg==')] opacity-50"></div>
@@ -24,13 +24,13 @@ export function FoodHero() {
         
         {/* Left Side: Content */}
         <div className="flex flex-col text-left">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-orange-100/80 border border-orange-200 w-fit mb-6">
-             <Utensils className="w-4 h-4 text-[#f06f12]" />
-             <span className="text-orange-800 text-[12px] font-bold tracking-wider uppercase">Food Tech & Restaurants</span>
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 w-fit mb-6">
+             <Utensils className="w-4 h-4 text-primary" />
+             <span className="text-primary text-[12px] font-bold tracking-wider uppercase">Food Tech & Restaurants</span>
           </div>
 
           <h1 className="text-[42px] md:text-[56px] font-extrabold text-[#1a1f33] mb-6 tracking-tight leading-[1.1]">
-            Scale Your <br/><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f06f12] to-red-500">Food Delivery Apps</span> Without a Hitch
+            Scale Your <br/><span className="text-primary">Food Delivery Apps</span> Without a Hitch
           </h1>
           
           <p className="text-[16px] md:text-[18px] text-gray-600 mb-8 max-w-[500px] leading-[1.6]">
@@ -38,25 +38,25 @@ export function FoodHero() {
           </p>
           
           <div className="flex flex-col sm:flex-row items-center gap-5 w-full mb-10">
-            <Link href="#contact" className="flex items-center justify-center gap-2 bg-gradient-to-r from-[#f06f12] to-red-500 text-white text-[15px] font-bold py-3.5 px-8 transition-transform hover:-translate-y-0.5 w-full sm:w-auto rounded-full shadow-[0_4px_25px_rgba(240,111,18,0.3)]">
+            <Link href="#contact" className="flex items-center justify-center gap-2 bg-primary text-white text-[15px] font-bold py-3.5 px-8 transition-transform hover:-translate-y-0.5 w-full sm:w-auto rounded-full shadow-[0_4px_25px_rgba(11,61,145,0.3)]">
               Optimize Operations <ArrowRight className="w-4 h-4" />
             </Link>
-            <Link href="#solutions" className="flex items-center justify-center bg-white border border-gray-200 text-gray-700 text-[15px] font-bold py-3.5 px-8 transition-colors hover:border-orange-200 hover:bg-orange-50 hover:text-orange-700 w-full sm:w-auto rounded-full shadow-sm">
+            <Link href="#solutions" className="flex items-center justify-center bg-white border border-gray-200 text-gray-700 text-[15px] font-bold py-3.5 px-8 transition-colors hover:border-primary/30 hover:bg-primary/5 hover:text-primary w-full sm:w-auto rounded-full shadow-sm">
               View Capabilities
             </Link>
           </div>
 
           <div className="flex flex-wrap items-center gap-6">
              <div className="flex items-center gap-2 text-gray-600 text-[13px] font-bold bg-white border border-gray-100 px-4 py-2 rounded-full shadow-sm">
-                <Store className="w-4 h-4 text-orange-500" />
+                <Store className="w-4 h-4 text-primary" />
                 <span>Multi-Location Sync</span>
              </div>
              <div className="flex items-center gap-2 text-gray-600 text-[13px] font-bold bg-white border border-gray-100 px-4 py-2 rounded-full shadow-sm">
-                <TrendingUp className="w-4 h-4 text-orange-500" />
+                <TrendingUp className="w-4 h-4 text-primary" />
                 <span>99.99% Rush Hour Uptime</span>
              </div>
              <div className="flex items-center gap-2 text-gray-600 text-[13px] font-bold bg-white border border-gray-100 px-4 py-2 rounded-full shadow-sm">
-                <Smartphone className="w-4 h-4 text-orange-500" />
+                <Smartphone className="w-4 h-4 text-primary" />
                 <span>Delivery App APIs</span>
              </div>
           </div>
@@ -68,7 +68,7 @@ export function FoodHero() {
            <div className="absolute top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 w-[300px] h-[550px] bg-white rounded-[40px] shadow-[0_20px_60px_rgba(0,0,0,0.08)] border-[6px] border-gray-100 overflow-hidden z-10">
               
               {/* App Header */}
-              <div className="bg-gradient-to-r from-orange-500 to-red-500 p-6 pt-10 text-white flex flex-col items-center relative">
+              <div className="bg-primary p-6 pt-10 text-white flex flex-col items-center relative">
                  <div className="absolute top-2 left-1/2 -translate-x-1/2 w-1/3 h-6 bg-gray-100 rounded-b-2xl"></div>
                  <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center mb-2">
                     <Utensils className="w-6 h-6 text-white" />

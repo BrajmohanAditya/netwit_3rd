@@ -13,7 +13,7 @@ export function ScaleupsEngagement() {
         
         {/* Left Form Content */}
         <div className="flex flex-col pr-8 pt-8">
-           <p className="text-[11px] text-[#f06f12] font-bold tracking-[0.15em] uppercase mb-4">
+           <p className="text-[11px] text-primary font-bold tracking-[0.15em] uppercase mb-4">
              ENGAGEMENT MODELS
            </p>
            <h2 className="text-[34px] md:text-[40px] font-bold text-[#222] mb-6 tracking-tight">
@@ -57,25 +57,25 @@ export function ScaleupsEngagement() {
         {/* Right 2x2 Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
            {/* Card 1 */}
-           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-orange-500 group">
+           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-primary group">
               <h4 className="text-[18px] font-bold text-white leading-tight mb-4">Outsource Project<br/>Development</h4>
               <p className="text-[12px] text-gray-300 leading-relaxed font-medium">Your managed solution, partner with comprehensive services.</p>
            </div>
            
            {/* Card 2 */}
-           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-orange-500 group">
+           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-primary group">
               <h4 className="text-[18px] font-bold text-white leading-tight mb-4">Extend your in-<br/>house team</h4>
               <p className="text-[12px] text-gray-300 leading-relaxed font-medium">Get access to 1000+ skilled software developer.</p>
            </div>
 
            {/* Card 3 */}
-           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-orange-500 group">
+           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-primary group">
               <h4 className="text-[18px] font-bold text-white leading-tight mb-4">Build your Dev<br/>team</h4>
               <p className="text-[12px] text-gray-300 leading-relaxed font-medium">Customize multi-disciplinary teams and save on average 40% on IT costs.</p>
            </div>
 
            {/* Card 4 */}
-           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-orange-500 group">
+           <div className="bg-[#1a1f33] p-10 flex flex-col items-center text-center justify-center min-h-[220px] rounded-[2px] shadow-lg hover:-translate-y-1 transition-transform cursor-pointer border-t-[3px] border-transparent hover:border-primary group">
               <h4 className="text-[18px] font-bold text-white leading-tight mb-4">Offshore Dev<br/>Center</h4>
               <p className="text-[12px] text-gray-300 leading-relaxed font-medium">Choose any of our 10+ Global campuses to offshore your resources.</p>
            </div>
