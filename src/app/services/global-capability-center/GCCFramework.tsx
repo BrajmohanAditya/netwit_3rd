@@ -158,14 +158,64 @@ export default function GCCFramework() {
           )}
 
           {activeTab === "Structure Your Setup" && (
-            <div className="p-12 text-center text-gray-500 bg-gray-50 border border-gray-200 rounded-sm">
-              Setup structure overview coming soon...
+            <div className="w-full bg-gray-50 border border-gray-200 rounded-sm overflow-hidden">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                  {[
+                    {
+                      phase: "Phase 1: Strategy & Discovery",
+                      items: ["Business Case Development", "Location Feasibility Analysis", "Regulatory & Risk Assessment", "Operating Model Design"]
+                    },
+                    {
+                      phase: "Phase 2: Entity & Infrastructure",
+                      items: ["Legal Entity Registration", "Tax & Regulatory Compliance", "Workspace Design & Build", "IT Infrastructure Setup"]
+                    },
+                    {
+                      phase: "Phase 3: Talent & Operations",
+                      items: ["Talent Acquisition Strategy", "Onboarding & Cultural Alignment", "Process Knowledge Transfer", "Systems & Tools Integration"]
+                    },
+                    {
+                      phase: "Phase 4: Governance & Scale",
+                      items: ["Performance Management", "Compliance & Audit Framework", "Service Level Stewardship", "Future Expansion Planning"]
+                    }
+                  ].map((item, idx) => (
+                    <div key={idx} className={`p-8 border-b md:border-b-0 md:border-r last:border-r-0 border-gray-200 hover:bg-white transition-colors duration-300`}>
+                       <h3 className="text-[15px] font-bold text-primary mb-6">{item.phase}</h3>
+                       <ul className="space-y-4">
+                          {item.items.map((li, i) => (
+                            <li key={i} className="text-[13px] text-gray-600 flex items-start gap-2">
+                               <div className="w-1.5 h-1.5 rounded-full bg-primary/40 mt-1.5 shrink-0"></div>
+                               {li}
+                            </li>
+                          ))}
+                       </ul>
+                    </div>
+                  ))}
+               </div>
             </div>
           )}
 
           {activeTab === "Optimize Your Costs" && (
-            <div className="p-12 text-center text-gray-500 bg-gray-50 border border-gray-200 rounded-sm">
-              Cost optimization strategies coming soon...
+            <div className="w-full bg-gray-50 border border-gray-200 rounded-sm p-10">
+               <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                  <div className="space-y-4">
+                     <h3 className="text-[17px] font-bold text-[#111827]">Strategic Labor Arbitrage</h3>
+                     <p className="text-[13px] text-gray-600 leading-[1.6]">
+                        Unlock significant savings through labor cost differentials while maintaining institutional-grade talent quality. Reduce operational expenses by 40-60%.
+                     </p>
+                  </div>
+                  <div className="space-y-4">
+                     <h3 className="text-[17px] font-bold text-[#111827]">Operational Efficiency Levers</h3>
+                     <p className="text-[13px] text-gray-600 leading-[1.6]">
+                        Implement AI-driven process automation and lean management frameworks to optimize workflows and reduce manual overhead across global functions.
+                     </p>
+                  </div>
+                  <div className="space-y-4">
+                     <h3 className="text-[17px] font-bold text-[#111827]">Infrastructure & Tax Incentives</h3>
+                     <p className="text-[13px] text-gray-600 leading-[1.6]">
+                        Leverage regional tax breaks, SEZ incentives, and optimized facility sharing to lower real estate and administrative footprints significantly.
+                     </p>
+                  </div>
+               </div>
             </div>
           )}
         </div>

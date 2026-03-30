@@ -108,12 +108,12 @@ export function AccountingServices() {
               <p className="text-slate-400 text-lg font-light leading-relaxed font-sans">Our capital specialists are ready to architect your fiscal ecosystem. Connect with our financial desk for a high-fidelity capital audit.</p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                 <button className="px-14 py-6 bg-primary text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(11,61,145,0.3)] italic">
+                 <Link href="/enterprise-risk-audit" className="px-14 py-6 bg-primary text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(11,61,145,0.3)] italic">
                     <DollarSign className="w-5 h-5 flex-shrink-0" /> Enterprise ROI Audit
-                 </button>
-                 <button className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic">
+                 </Link>
+                 <Link href="/global-capacity-registry" className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic">
                     <Globe className="w-4 h-4" /> Global Registry
-                 </button>
+                 </Link>
               </div>
            </div>
         </div>

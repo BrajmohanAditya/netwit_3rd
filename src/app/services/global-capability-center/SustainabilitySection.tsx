@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { Leaf } from "lucide-react";
 
 const greenBlocks = [
@@ -126,9 +127,12 @@ export default function SustainabilitySection() {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <button className="border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-300 text-[12px] font-bold uppercase tracking-wider py-3 px-8 rounded-sm">
+          <Link 
+            href="/about/sustainability" 
+            className="inline-block border-2 border-primary text-primary hover:bg-primary hover:text-white transition-colors duration-300 text-[12px] font-bold uppercase tracking-wider py-3 px-8 rounded-sm"
+          >
             OUR SUSTAINABILITY COMMITMENT
-          </button>
+          </Link>
         </div>
 
       </div>

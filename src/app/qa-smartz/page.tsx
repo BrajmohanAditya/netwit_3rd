@@ -1,5 +1,6 @@
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { ContactForm } from "@/components/contact-form";
 
 // High-Fidelity QA Smartz Components
 import { QASmartzHero } from "@/components/qa-smartz-hero";
@@ -16,6 +17,9 @@ export default function QASmartzPage() {
         
         {/* Core Testing Velocity Solutions */}
         <QASmartzVelocity />
+
+        {/* Global Conversion Hook */}
+        <ContactForm />
 
       </main>
       <Footer />

@@ -9,6 +9,7 @@ import GCCFramework from "./GCCFramework";
 import SustainabilitySection from "./SustainabilitySection";
 import EvaluateSetup from "./EvaluateSetup";
 import CybersecurityBanner from "./CybersecurityBanner";
+import { ContactForm } from "@/components/contact-form";
 
 export default function GlobalCapabilityCenterPage() {
   return (
@@ -68,7 +69,7 @@ export default function GlobalCapabilityCenterPage() {
         <GCCFramework />
         <SustainabilitySection />
         <EvaluateSetup />
-
+        <ContactForm />
       </main>
       <Footer />
     </>

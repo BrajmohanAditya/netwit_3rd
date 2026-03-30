@@ -37,9 +37,9 @@ export function AccountingHero() {
             <Link href="#services" className="group relative px-8 py-4 bg-primary text-white font-black rounded-full overflow-hidden transition-all hover:scale-105 shadow-[0_0_40px_rgba(11,61,145,0.3)] hover:bg-primary-600">
                Explore Fiscal Services
             </Link>
-            <button className="flex items-center gap-2 px-8 py-4 rounded-full font-bold border border-white/20 text-white hover:bg-white/5 transition-colors backdrop-blur-md italic">
+            <Link href="/services/accounting-services/roi-audit" className="flex items-center gap-2 px-8 py-4 rounded-full font-bold border border-white/20 text-white hover:bg-white/5 transition-colors backdrop-blur-md italic">
                Financial ROI Audit <ArrowRight className="w-4 h-4 text-primary-400" />
-            </button>
+            </Link>
           </div>
           
           <div className="flex items-center gap-8 mt-8 pt-6 border-t border-white/10 w-full mb-10 lg:mb-0">

@@ -77,9 +77,9 @@ export function CyberSmartzIntelligence() {
                  {item.description}
               </p>
               
-              <div className="mt-10 flex items-center justify-between pt-8 border-t border-white/5 text-[10px] font-black uppercase tracking-widest text-slate-600 group-hover:text-emerald-400 transition-colors italic">
+              <Link href="#contact" className="mt-10 flex items-center justify-between pt-8 border-t border-white/5 text-[10px] font-black uppercase tracking-widest text-slate-600 group-hover:text-emerald-400 transition-colors italic">
                  Deploy Sentinel Protocol <ArrowRight className="w-4 h-4 group-hover:translate-x-1" />
-              </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -94,12 +94,18 @@ export function CyberSmartzIntelligence() {
               <p className="text-slate-400 text-lg font-light leading-relaxed font-sans">Our cyber specialists are ready to architect your AI-safeguarded ecosystem. Connect with our principal desk for a high-fidelity risk audit.</p>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                 <button className="px-14 py-6 bg-emerald-600 text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(16,185,129,0.3)] italic">
+                 <Link 
+                   href="/enterprise-risk-audit" 
+                   className="px-14 py-6 bg-emerald-600 text-white font-black rounded-full hover:scale-105 transition-transform flex items-center justify-center gap-3 shadow-[0_20px_60px_rgba(16,185,129,0.3)] italic"
+                 >
                     <ShieldCheck className="w-5 h-5 flex-shrink-0" /> Enterprise Risk Audit
-                 </button>
-                 <button className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic">
+                 </Link>
+                 <Link 
+                   href="/global-capacity-registry" 
+                   className="px-14 py-6 border border-white/10 text-white font-black rounded-full hover:bg-white/10 transition-all text-sm flex items-center justify-center gap-3 italic"
+                 >
                     <Globe className="w-4 h-4" /> Global Registry
-                 </button>
+                 </Link>
               </div>
            </div>
         </div>
